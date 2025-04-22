@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wazuh on LinhTran&#39;s</title>
+    <link>http://localhost:1313/tags/wazuh/</link>
+    <description>Recent content in Wazuh on LinhTran&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>nhutlinh.work@gmail.com (Linh Tran-Nhut)</managingEditor>
+    <webMaster>nhutlinh.work@gmail.com (Linh Tran-Nhut)</webMaster>
+    <copyright>© 2025 Linh Tran-Nhut</copyright>
+    <lastBuildDate>Thu, 31 Oct 2024 20:28:53 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/wazuh/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Install Wazuh and Wazuh Agent by Ansible</title>
+      <link>http://localhost:1313/posts/202504-install/</link>
+      <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:1313/posts/202504-install/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Comming soon&amp;hellip; 
+    &lt;div id=&#34;comming-soon&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#comming-soon&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;!-- - ArXiv: https://arxiv.org/abs/2310.09291
+- GitHub: https://github.com/ExplainableML/Vision_by_Language
+
+**TL;DR**: A training-free, modular, and interpretable approach that leverages LLMs to enhance text-based queries for compositional image retrieval.
+
+&gt; **Note:** This is my personal learning note, so **some points may not be entirely accurate**. I strive to improve my understanding and will correct any errors I find. If you spot any inaccuracies, please feel free to share your insights to help enhance the content 😊.
+
+## Summary
+
+The paper introduces **CIReVL** (Compositional Image Retrieval through Vision-by-Language), a novel zero-shot compositional image retrieval (ZS-CIR) method. CIReVL leverages existing pre-trained vision-language models (VLMs) and large language models (LLMs) to **perform CIR without any additional training**.
+
+
+## Motivation
+
+Traditional CIR approaches rely on **supervised training** with annotated triplets (query image, modifying text, target image), which are **expensive and time-consuming** to obtain. Existing ZS-CIR methods often still require training task-specific modules on large image-caption datasets. **CIReVL** addresses these limitations by using **only pre-trained models** in a **modular, interpretable** fashion, offering a more accessible alternative.
+
+
+## Methodology
+
+![CIReVL Workflow](./cirevl.png)
+
+CIReVL operates through three main steps:
+
+1. **Captioning:** A pre-trained VLM (e.g., BLIP-2) generates a detailed caption for the query image.
+2. **Reasoning:** An LLM (e.g., GPT-3.5-turbo) processes the generated caption and modification instruction to produce a target caption that reflects the intended changes.
+3. **Retrieval:** A second VLM (e.g., CLIP) encodes the target caption and the database images to retrieve the image most similar to the target description.
+
+
+## Why CIReVL Stands Out
+
+- **Training-Free:** CIReVL doesn’t require any additional training, relying entirely on off-the-shelf pre-trained models, which enhances efficiency and scalability.
+- **Modular Design:** This modular approach allows easy replacement or scaling of individual components, enabling exploration of different VLMs and LLMs.
+- **Human-Interpretable:** Most of the compositional processing occurs in the language domain, making it interpretable and allowing for human intervention in case of potential errors.
+- **State-of-the-Art Performance:** CIReVL matches or surpasses existing training-based and zero-shot methods on several CIR benchmarks, including CIRCO, CIRR, FashionIQ, and GeneCIS.
+
+
+## Conclusion
+
+CIReVL presents a promising new direction for zero-shot CIR research. Its training-free, modular, and interpretable design, along with its high performance, makes it a compelling approach for future work in ZS-CIR.
+
+
+## Reference
+- [Vision-by-Language for Training-Free Compositional Image Retrieval | ICLR 2024](https://arxiv.org/abs/2310.09291) --&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/202504-install/feature.jpg" />
+    </item>
+    
+  </channel>
+</rss>

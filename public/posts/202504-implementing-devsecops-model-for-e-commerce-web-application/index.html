@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Implementing DevSecOps model for E-Commerce Web Application &middot; LinhTran&#39;s</title>
+  <meta name="title" content="Implementing DevSecOps model for E-Commerce Web Application &middot; LinhTran&#39;s" />
+  
+  
+  <meta name="keywords" content="CICD, devops, Microservices, " />
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.1f33427675692f0025e24b4769977f3d46fe3cfae67ef9815a8b34137a4ec9282a9208b667eceac15b8e189ac4ae6ffdc7fd9b1112168626f752540748979ddd.css"
+    integrity="sha512-HzNCdnVpLwAl4ktHaZd/PUb&#43;PPrmfvmBWos0E3pOySgqkgi2Z&#43;zqwVuOGJrErm/9x/2bERIWhib3UlQHSJed3Q==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.827fa4e4523276d4fbafeb177baab022781a885b35699f60775ce8fdb94f87df6088e5e5555d1846206d67806aa47399593ea04bda1fff30dc398aaf5e718ec9.js"
+    integrity="sha512-gn&#43;k5FIydtT7r&#43;sXe6qwIngaiFs1aZ9gd1zo/blPh99giOXlVV0YRiBtZ4BqpHOZWT6gS9of/zDcOYqvXnGOyQ==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/">
+  <meta property="og:site_name" content="LinhTran&#39;s">
+  <meta property="og:title" content="Implementing DevSecOps model for E-Commerce Web Application">
+  <meta property="og:description" content="Comming soon… #">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-16T20:28:53+07:00">
+    <meta property="article:modified_time" content="2024-09-16T20:28:53+07:00">
+    <meta property="article:tag" content="CICD">
+    <meta property="article:tag" content="Devops">
+    <meta property="article:tag" content="Microservices">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Implementing DevSecOps model for E-Commerce Web Application">
+  <meta name="twitter:description" content="Comming soon… #">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Implementing DevSecOps model for E-Commerce Web Application",
+    "headline": "Implementing DevSecOps model for E-Commerce Web Application",
+    
+    "abstract": "\u003ch1 class=\u0022relative group\u0022\u003eComming soon\u0026hellip; \r\n    \u003cdiv id=\u0022comming-soon\u0022 class=\u0022anchor\u0022\u003e\u003c\/div\u003e\r\n    \r\n    \u003cspan\r\n        class=\u0022absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100\u0022\u003e\r\n        \u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022\r\n            style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#comming-soon\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\r\n    \u003c\/span\u003e        \r\n    \r\n\u003c\/h1\u003e\r\n\u003c!-- ## Table of contents\r\n\r\n- [Pfsense, Client to Site \\\u0026  Site to site](#pfsense-client-to-site---site-to-site)\r\n  - [Table of contents](#table-of-contents)\r\n    - [What is Pfsense ?](#what-is-pfsense-)\r\n    - [Features in pfsense](#features-in-pfsense)\r\n    - [Setup firewall (Outscope)](#setup-firewall-outscope)\r\n      - [Initial setup](#initial-setup)\r\n        - [General Information](#general-information)\r\n        - [Time Server Configuration](#time-server-configuration)\r\n        - [WAN Interface Configuration](#wan-interface-configuration)\r\n      - [Configure LAN Interface](#configure-lan-interface)\r\n      - [Change the Admin password](#change-the-admin-password)\r\n      - [Save parameters](#save-parameters)\r\n      - [Configure Interface](#configure-interface)\r\n      - [Configure Rule and NAT(port-forward)](#configure-rule-and-natport-forward)\r\n        - [I. Rule WAN interface](#i-rule-wan-interface)\r\n        - [II. Rule LAN interface](#ii-rule-lan-interface)\r\n    - [Setup firewall (Inscope Non CDE)](#setup-firewall-inscope-non-cde)\r\n    - [Build VPN](#build-vpn)\r\n      - [Setup VPN Client to Site](#setup-vpn-client-to-site)\r\n        - [Step 1: Configure WAN interface](#step-1-configure-wan-interface)\r\n        - [Step 2: Create a Virtual IP](#step-2-create-a-virtual-ip)\r\n        - [Step 3: Create Certificate Authority – CA](#step-3-create-certificate-authority--ca)\r\n        - [Step 4: Create Server Certificate](#step-4-create-server-certificate)\r\n        - [Step 5: Create a VPN – OpenVPN Server](#step-5-create-a-vpn--openvpn-server)\r\n        - [Step 6: Create a VPN – OpenVPN Client](#step-6-create-a-vpn--openvpn-client)\r\n        - [Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client](#step-7-install-the-openvpn-client-export-utility-a-tool-that-helps-export-the-vpn-client)\r\n        - [Step 8 : Create user OpenVPN](#step-8--create-user-openvpn)\r\n        - [Step 9: Configure access permissions in the VPN](#step-9-configure-access-permissions-in-the-vpn)\r\n        - [Step 10: Configure access to the VPN](#step-10-configure-access-to-the-vpn)\r\n        - [Step 11: Configure NAT outbound](#step-11-configure-nat-outbound)\r\n        - [Step 12: Export the VPN Client installation package](#step-12-export-the-vpn-client-installation-package)\r\n        - [Step 13: Test the OpenVPN connection](#step-13-test-the-openvpn-connection)\r\n      - [Setup VPN Site to site](#setup-vpn-site-to-site)\r\n        - [Setup Network on CMC-Cloud Site HCM](#setup-network-on-cmc-cloud-site-hcm)\r\n        - [Configure Interface OutScope, NonCDE, CDE Site HCM](#configure-interface-outscope-noncde-cde-site-hcm)\r\n        - [Configure the IPSec tunnel Site HCM](#configure-the-ipsec-tunnel-site-hcm)\r\n        - [Configure Firewall for local connections Site HCM](#configure-firewall-for-local-connections-site-hcm)\r\n        - [Config Route table in CMC-Cloud on Site HCM](#config-route-table-in-cmc-cloud-on-site-hcm)\r\n        - [Setup Network on CMC-Cloud Site HN](#setup-network-on-cmc-cloud-site-hn)\r\n        - [Configure Interface OutScope, NonCDE, CDE Site HN](#configure-interface-outscope-noncde-cde-site-hn)\r\n        - [Configure the IPSec tunnel Site HN](#configure-the-ipsec-tunnel-site-hn)\r\n        - [Configure Firewall for local connections Site HN](#configure-firewall-for-local-connections-site-hn)\r\n        - [Config Route table in CMC-Cloud on Site HN](#config-route-table-in-cmc-cloud-on-site-hn)\r\n    - [Build VPN Route Base (Using OSPF)](#build-vpn-route-base-using-ospf)\r\n      - [Routed IPsec (VTI)](#routed-ipsec-vti)\r\n        - [HANOI - Khanh\u0027s zone (Vùng 1) - PHAN](#hanoi---khanhs-zone-vùng-1---phan)\r\n        - [HCM - Khanh\u0027s zone (Vùng 2) - GIANG](#hcm---khanhs-zone-vùng-2---giang)\r\n        - [HCM - Tram\u0027s zone (Vùng 3) - TRI](#hcm---trams-zone-vùng-3---tri)\r\n      - [Step 1: Configure IPsec Tunnel on pfSense](#step-1-configure-ipsec-tunnel-on-pfsense)\r\n      - [Step 2: Configure Phase 2 (Child SA) for VTI](#step-2-configure-phase-2-child-sa-for-vti)\r\n      - [Create the VTI Interface](#create-the-vti-interface)\r\n      - [Step 4: Firewall Rules for the VTI Interface](#step-4-firewall-rules-for-the-vti-interface)\r\n      - [Testing the VTI Tunnel](#testing-the-vti-tunnel)\r\n      - [Step 5: Setup for OSPF on pfSense with VTI](#step-5-setup-for-ospf-on-pfsense-with-vti)\r\n        - [I. Install the FRR Package on pfSense](#i-install-the-frr-package-on-pfsense)\r\n        - [II. Configure FRR Global Settings](#ii-configure-frr-global-settings)\r\n        - [III. Configure OSPF in FRR](#iii-configure-ospf-in-frr)\r\n        - [IV. Configure Static Routing in Pfsense](#iv-configure-static-routing-in-pfsense)\r\n        - [V. Check status OSPF in FRR](#v-check-status-ospf-in-frr)\r\n        - [V. Check ping](#v-check-ping)\r\n    - [Build VPN With GRE-TUNNEL](#build-vpn-with-gre-tunnel)\r\n\r\n### What is Pfsense ?\r\n\r\n**\u0060Pfsense\u0060**: is an application that functions as a network firewall router and is free based on \u0060FreeBSD\u0060. Pfsense is configured through a web GUI interface for easy management and customization. It supports filtering based on source address, destination, source port, destination port, supports routing, and can operate in bridge or transparent mode.\r\n\r\n![pfsense](Imgs\/pfsense.png)\r\n\r\nMoreover, If using pfsense as a gateway, we can clearly see the support for NAT and port forwarding on pfsense as well as performing load balancing or failover on the network paths.\r\n\r\n### Features in pfsense\r\n\r\n1. *\u0060Aliases\u0060*: In pfsense, the firewall cannot have a rule consisting of multiple IP groups or a port group. Therefore, it is necessary to group IP, Port, or URL into one alias. An alias allows to substitute one host, one network range, multiple separate IPs, or a group of ports, URLs... Aliases help save time if used correctly.\r\n\r\n2. *\u0060NAT\u0060*: Pfsense supports Static NAT in the form of NAT 1:1. The condition to perform NAT 1:1 is to have a public IP. When performing NAT 1:1, the Private IP being NAT-ed will always go out with the corresponding Public IP, and the ports will also correspond on the Public IP.\r\n\r\n3. *\u0060Powerful firewall\u0060*: PFsense provides a strong firewall with the ability to filter packets based on IP address, port, protocol, application,... It also supports complex and flexible firewall rules. Rules must be created to manage the internal network.\r\n\r\n4. *\u0060Analyze and manage traffic\u0060*: PFsense provides network traffic analysis tools such as NetFlow and many other plugins to help you understand and manage Internet usage in your network.\r\n\r\n5. *\u0060VPN (Virtual Private Network)\u0060*: PFsense supports multiple VPN protocols such as *\u0060IPsec\u0060*, *\u0060OpenVPN\u0060*, *\u0060L2TP\u0060*, and *\u0060PPTP\u0060*, allowing secure VPN connections to be established between locations or remote users.\r\n\r\n6. *\u0060Proxy Server\u0060*: PFsense can act as a \u0060proxy server\u0060, allowing to control and filter web content, providing security and managing Internet traffic.\r\n\r\n7. *\u0060Load balancing and failover\u0060*: PFsense supports load balancing across multiple Internet connections to optimize network performance and availability. It also features redundancy to ensure service continuity.\r\n\r\n8. *\u0060Manage access control lists (ACL)\u0060*: By using access control lists, you can control the Internet access rights of users in the network, from blocking access to specific websites to managing access time.\r\n\r\n9. *\u0060Security\u0060*: PFsense supports many security features such as \u0060IDS\/IPS\u0060 (Intrusion Detection\/Prevention System), \u0060DPI\u0060 (Deep Packet Inspection), \u0060DDoS\u0060 protection, to protect the network from various threats.\r\n\r\n10. *\u0060Managing DHCP and DNS:\u0060*: PFsense also provides DHCP and DNS management services to automatically assign IP addresses and manage domains within the network.\r\n\r\n![pfsense](Imgs\/pfs.jpg)\r\n\r\n### Setup firewall (Outscope)\r\n\r\nThe pfSense solution is an open-source firewall project originating from the Monowall firewall project from many years ago. According to pfsense.org, thousands of enterprises use pfSense. Essentially, pfSense will include a full-featured firewall\/L3 routing suite with many other features such as proxy server, IDS\/IPS, high availability, certificate management, and centralized VPN.\r\n\r\n![architecture](Imgs\/fo.svg)\r\n\r\n#### Initial setup\r\n\r\n\u003e [!CAUTION]\r\n\u003e ***Error login HTTP_REFERER***\r\n\u003e ![pfsense](Imgs\/cts_error.png)\r\n\r\nAccess **terminal console** of **pfsense -\u003e select number \u00608\u0060**.\r\n\r\n![pfsense](Imgs\/cts_fix.png)\r\n\r\n\u0060\u0060\u0060sh\r\npfSsh.php playback disablereferercheck\r\n\u0060\u0060\u0060\r\n\r\n\u003e [!NOTE]\r\n\u003e ***ERR_CONNECTION_TIMED_OUT***\r\n\r\n- Assignment Interface in pfSense:\r\n\r\n  After configuring VLANs, pfSense will prompt you to assign the WAN interface. Typically, pfSense will display a list of network interfaces connected to it, such as vtnet0 and vtnet1. These are common virtual network interface names in cloud environments.\r\n  - \u0060Cloud Environment Consideration:\u0060\r\n    - In a cloud environment, if you do not have a VPN setup, pfSense will require a public IP address on the WAN interface to allow access to the User Interface (UI). This is crucial because, without VPN, the only way to manage pfSense remotely is through this public IP.\r\n\r\n  - \u0060WAN Configuration Before LAN:\u0060\r\n    - It is essential to configure WAN access rules before setting up the LAN interface, especially for ports 443 (HTTPS) and 80 (HTTP). \u0060This is because, once the LAN interface is assigned, pfSense’s \u0022Default Rule\u0022 will automatically shift from the WAN to the LAN interface\u0060.\r\n    - This behavior is part of pfSense’s security mechanism, where the default access rules will prioritize the LAN interface once it\u0027s assigned.\r\n\r\nIf you assign the LAN interface before configuring the necessary WAN rules, you might lose access to pfSense through the WAN interface. This happens because the default allow rules will then apply to the LAN, \u0060leaving the WAN interface without the required access permissions\u0060.\r\n\r\nWhen accessing the Web UI interface, pfSense will automatically display the Setup Wizard page to set up the main parameters for the system.\r\n\r\n![pfsense](Imgs\/pfsense-web-ui.png)\r\n\r\nClick **\u0060Next\u0060** to continue\r\n\r\n##### General Information\r\n\r\n![pfsense](Imgs\/pfsense-web-ui-1.png)\r\n\r\nSet up \u0060Hostname\u0060, \u0060Domain\u0060, \u0060DNS Server\u0060, then click \u0060Next\u0060\r\n\r\n- Hostname: keep pfSense unchanged, you can change later.\r\n\r\n- Domain: keep the default home.arpa, you can change later.\r\n\r\n- Primary \u0026 Secondary DNS Server: Enter Cloudflare DNS (1.1.1.1 and 1.0.0.1) or Google DNS (8.8.8.8 and 8.8.4.4), or leave it blank.\r\n\r\n- Override DNS: Select this if you want to use the DNS provided by the DHCP Server sent to the WAN port.\r\n\r\n##### Time Server Configuration\r\n\r\n![pfsense](Imgs\/pfsense-web-ui-2.png)\r\n\r\nAdjust time zone and Time Server. I use time server \u00601.vn.pool.ntp.org.\u0060\r\n\r\n##### WAN Interface Configuration\r\n\r\nConfigure the WAN Interface and LAN Interface according to the virtual network diagram designed in architecture.\r\n\r\n1. **Step 1:**\r\n\r\n   - Setup IP address of WAN and LAN in portal CMC-Cloud\r\n\r\n    ![pfsense](Imgs\/pfs_oos.png)\r\n\r\n   - Setup security group in portal CMC-Cloud\r\n\r\n    ![pfsense](Imgs\/pfs_oos_1.png)\r\n\r\n2. **Step 2:**\r\n\r\n   - Set the WAN Interface Type to Static with the following IP parameters:\r\n\r\n  ![pfsense](Imgs\/sub_net.png)\r\n\r\n  **IP Address:** \u0060172.24.48.8\u0060\r\n\r\n  **Subnet Mask:** \u006024\u0060\r\n\r\n  **Upstream Gateway:** \u0060172.24.48.1\u0060 (IP of the Mikrotik Router)\r\n\r\n  In a real-world scenario, if you are using pfSense to connect to the ISP\u0027s optical modem, you will need to change the WAN Interface Type to PPPoE and enter the provided Username\/Password for connection authentication.\r\n\r\n  ![pfsense](Imgs\/pfs_oos_.png)\r\n\r\n  Set the \u0060WAN\u0060 Interface to \u0060DHCP\u0060 IP\r\n\r\n  ![pfsense](Imgs\/pfs_oos_2.png)\r\n\r\n  Uncheck the option \u0060Block RFC1918 Private Networks\u0060 and \u0060Block bogon networks\u0060\r\n\r\n  Block RFC1918 Private Networks: This option means that pfSense will block all access to the WAN port from internal IP ranges (\u006010\/8, 172.16\/12, 192.168\/16\u0060).\r\n\r\n  Since I\u0027m using pfSense in a virtual network on CMC-Cloud, where all connections to the WAN port are internal IPs (\u0060172.24.48.0\/24\u0060), it is necessary to uncheck Block RFC1918 Private Networks to allow the Host to access the pfSense management page.\r\n\r\n#### Configure LAN Interface\r\n\r\nChange LAN IP Address to \u0060dhcp\u0060 and Subnet Mask \u006032\u0060\r\n\r\n![pfsense](Imgs\/pfs_oos_3.png)\r\n\r\n#### Change the Admin password\r\n\r\n![pfsense](Imgs\/pfs_oos_4.png)\r\n\r\nEnter \u0060new password\u0060 for Admin account\r\n\r\n#### Save parameters\r\n\r\n![pfsense](Imgs\/pfs_oos_5.png)\r\n\r\nClick \u0060Reload\u0060 to let pfSense save the parameters and restart the service.\r\n\r\n![pfsense](Imgs\/pfs_oos_6.png)\r\n\r\nClick \u0060Finish\u0060 to complete\r\n\r\n**\u0060Result:\u0060** Dashboard of pfsense\r\n\r\n![pfsense](Imgs\/pfs_oos_7.png)\r\n\r\n#### Configure Interface\r\n\r\nAdd interface \u0060vtnet1\u0060\r\n\r\n![pfsense](Imgs\/pfs_oos_8.png)\r\n\r\nConfig \u0060WAN\u0060 interface\r\n\r\n![pfsense](Imgs\/wan-oos.png)\r\n\r\n![pfsense](Imgs\/wan-oos-1.png)\r\n\r\nConfig \u0060LAN\u0060 interface\r\n\r\n![pfsense](Imgs\/lan-oos.png)\r\n\r\n![pfsense](Imgs\/lan-oos-1.png)\r\n\r\n#### Configure Rule and NAT(port-forward)\r\n\r\n\u003e **Rule**\r\n\r\n##### I. Rule WAN interface\r\n\r\n![pfsense](Imgs\/rule-wan.png)\r\n\r\n- Allow Port access UI\r\n\r\n    \u003e [!NOTE]\r\n    \u003e If the service runs on two ports, \u006080 (HTTP)\u0060 and \u0060443 (HTTPS)\u0060, it should be configured to access the public IP address via a different port to avoid conflicts when configuring port forwarding.\r\n\r\n  - Go to: System -\u003e Advanced -\u003e Admin Access -\u003e webConfigurator -\u003e TCP Port: \u0027Port different: 80 and 443\u0027 -\u003e Save -\u003e Apply changes and wait 20 seconds for automatic redirection. (Remember to create an Allow Rule for WAN Access on the configured port).\r\n\r\n  ![pfsense](Imgs\/rule-wan-1.png) ![pfsense](Imgs\/rule-wan-2.png)\r\n\r\n- Virtual IP port-forward to 80 and 443\r\n\r\n  To set up port forwarding to ports 80 and 443 using a Virtual IP, you need to configure the following steps:\r\n  - Step 1. Create a Virtual IP on CMC-lor:\r\n    - Go to Dashboard CMC-Cloud -\u003e\u0060Virtual Private Cloud\u0060 -\u003e \u0060Subnets\u0060 -\u003e \u0060subnet-outscope-bvb\u0060 -\u003e \u0060IP address\u0060.\r\n\r\n      ![pfsense](Imgs\/vip.png)\r\n\r\n    - Select button \u0060Assign Virtual IP address\u0060 -\u003e \u0060Automatic\u0060 -\u003e \u0060OK\u0060.\r\n\r\n      ![pfsense](Imgs\/vip_1.png)\r\n\r\n    - Continue select \u0060Actions\u0060 -\u003e \u0060Bind to Server\u0060 -\u003e \u0060Select Server\u0060 -\u003e \u0060Select Port\u0060 -\u003e \u0060Bind Server\u0060.\r\n\r\n      ![pfsense](Imgs\/vip_2.png)\r\n\r\n      ![pfsense](Imgs\/vip_3.png)\r\n\r\n##### II. Rule LAN interface\r\n\r\n![pfsense](Imgs\/rule-lan.png)\r\n\r\n\u003e **NAT**\r\n\r\n1. NAT Port-forward\r\n\r\n![pfsense](Imgs\/nat-pf.png)\r\n\r\n- Go to Port Forwarding Settings:\r\n  - Navigate to Firewall -\u003e NAT -\u003e Port Forward.\r\n  - Click Add to create a new NAT rule for port forwarding.\r\n\r\nConfigure port forwarding from the \u0060WAN\u0060 interface to the internal \u0060NAT IP\u0060 (\u0060172.24.65.98\u0060) on port \u006080\u0060 (\u0060HTTP\u0060)\r\n\r\n![pfsense](Imgs\/nat-pf1.png)\r\n\r\nConfigure port forwarding from the \u0060WAN\u0060 interface to the internal \u0060NAT IP\u0060 (172.24.65.98) on port \u0060443\u0060 (\u0060HTTPS\u0060)\r\n\r\n![pfsense](Imgs\/nat-pf2.png)\r\n\r\n1. NAT Outbound\r\n\r\n- Select \u0060Hybrid Outbound NAT rule generation. (Automatic Outbound NAT \u002b rules below)\u0060\r\n- Add Mapping LAN address to subnet 172.24.64.0\/20 (outscope)\r\n\r\n![pfsense](Imgs\/Outbound.png)\r\n\r\n![pfsense](Imgs\/Outbound1.png)\r\n\r\n### Setup firewall (Inscope Non CDE)\r\n\r\n### Build VPN\r\n\r\n\u0060OpenVPN\u0060 is a virtual private network (VPN) system that implements techniques to create secure point-to-point or site-to-site connections. It allows parties to authenticate each other using \u0060pre-shared keys\u0060, \u0060certificates\u0060, or \u0060usernames\/passwords\u0060. When used in a multi client-server configuration, it enables the server to issue an authentication certificate to each client. It uses the OpenSSL encryption library as well as the widely-used *TLS protocol*, with many control and security features.\r\n\r\n\u003e [!NOTE]\r\n\u003e ***The pfSense firewall is installed and working with interfaces including WAN and LAN***\r\n\r\n#### Setup VPN Client to Site\r\n\r\n##### Step 1: Configure WAN interface\r\n\r\n- Setup IP address of WAN in portal CMC-Cloud\r\n\r\n![pfsense](Imgs\/cts.png)\r\n\r\n- Setup security group in portal CMC-Cloud\r\n\r\n![pfsense](Imgs\/cts1.png)\r\n\r\n##### Step 2: Create a Virtual IP\r\n\r\n- Navigate to Firewall -\u003e \u0060Virtual IPs\u0060.\r\n- Click \u0060Add\u0060 to create a new Virtual IP.\r\n- Set the \u0060Type\u0060 to \u0060IP Alias\u0060.\r\n- Assign the \u0060Virtual IP Address\u0060 (42.96.47.201) that you want to use.\r\n- Set the Interface to \u0060WAN\u0060 or whichever interface you want the Virtual IP to be associated with.\r\n- Save and apply the changes.\r\n\r\n![pfsense](Imgs\/cts2.png)\r\n![pfsense](Imgs\/cts3.png)\r\n\r\n##### Step 3: Create Certificate Authority – CA\r\n\r\n- Go to the menu \u0060System \u003e Cert. Manager\u0060.\r\n\r\n- Click button \u0060Add\u0060 to create a new CA.\r\n\r\n  ![pfsense](Imgs\/cts_ca.png)\r\n\r\n- Enter an identifying name for the CA.\r\n\r\n- Set the \u0060method\u0060 to **Create an internal Certificate Authority**.\r\n\r\n- Select **Key Type**. (RSA, ECDSA..)\r\n\r\n- Set the length of the key **Key length (2048, 4096, …)**.\r\n\r\n- Select **Digest Algorithm encryption algorithm (sha256, sha512, …)**.\r\n\r\n- Set a common name **Common Name (internal-ca, own-ca, ...)**.\r\n\r\n  ![pfsense](Imgs\/cts_ca1.png)\r\n\r\n- Save to complete CA\r\n\r\n  ![pfsense](Imgs\/cts_ca2.png)\r\n\r\n##### Step 4: Create Server Certificate\r\n\r\n- Go to the \u0060System \u003e Cert. Manager menu\u0060.\r\n\r\n- Access the \u0060Certificates\u0060 tab in the submenu.\r\n\r\n- Select \u0060Add\/Sign\u0060 at the bottom right.\r\n\r\n- Set the \u0060Method\u0060 to \u0060Create an internal Certificate Authority\u0060.\r\n\r\n- Enter a Descriptive name.\r\n\r\n- Set the \u0060Key length\u0060 and \u0060Digest Algorithm\u0060 the same as the previously created \u0060CA\u0060.\r\n\r\n- Adjust the \u0060Lifetime\u0060 to 3650 days or customize it, not exceeding 398 days.\r\n\r\n- Set the Common Name.\r\n\r\n- Set the \u0060Certificate Type\u0060 to Server \u0060Certificate\u0060.\r\n\r\n  ![pfsense](Imgs\/cts_ca3.png)\r\n\r\n- Save to complete \u0060Server Certificate\u0060.\r\n\r\n##### Step 5: Create a VPN – OpenVPN Server\r\n\r\n- Select the \u0060VPN \u003e OpenVPN\u0060.\r\n\r\n  ![pfsense](Imgs\/cts_vpn.png)\r\n\r\n- Select \u0060Add\u0060.\r\n  - General Information:\r\n    1. Set **Server mode** to **Remote Access (SSL\/TLS \u002b User Auth)**.\r\n    2. **Local port**, select the connection port, default port **1194**.\r\n    3. Enter a **description**.\r\n\r\n  ![pfsense](Imgs\/cts_vpn1.png)\r\n\r\n  - \u0060Cryptographic\u0060 Settings:\r\n\r\n    1. Select Use **TLS Key** and automatically enable **Automatically generate a TLS Key**.\r\n    2. In **Peer Certificate Authority**, select the CA that was previously created.\r\n    3. Select the **Server Certificate** created.\r\n    4. Choose 2048 for **DH Parameter Length**.\r\n    5. Set **Auth digest algorithm** to RSA-SHA256 (256-bit).\r\n\r\n    ![pfsense](Imgs\/cts_vpn2.png)![pfsense](Imgs\/cts_vpn3.png)\r\n\r\n  - \u0060VPN Tunnel\u0060 Settings:\r\n    1. Create a subnet in **IPv4 Tunnel Network** as \u006010.20.10.0\/24\u0060.\r\n    2. Leave **IPv6 Tunnel Network** blank.\r\n    3. Enable **Redirect IPv4 Gateway**.\r\n    4. Specify the \u0060maximum number(20)\u0060 of clients allowed to concurrently connect to this server.\r\n\r\n    ![pfsense](Imgs\/cts_vpn4.png)\r\n\r\n  - \u0060Client Settings\u0060 and \u0060Ping settings\u0060\r\n\r\n    Keep default setting\r\n\r\n    ![pfsense](Imgs\/cts_vpn5.png)\r\n\r\n  - \u0060Advanced Client Settings\u0060 and \u0060Advanced Configuration\u0060:\r\n\r\n    1. Enable DNS Server and add IP DNS Server \u006010.20.10.1\u0060.\r\n    2. Choose IPv4 Only in Gateway creation; select Both if using IPv4 and IPv6.\r\n\r\n    ![pfsense](Imgs\/cts_vpn6.png)\r\n\r\n- Press \u0060Save\u0060 to update the configuration.\r\n\r\n  ![pfsense](Imgs\/cts_vpn7.png)\r\n\r\n##### Step 6: Create a VPN – OpenVPN Client\r\n\r\n- Navigate to \u0060VPN \u003e OpenVPN \u003e Clients\u0060.\r\n\r\n![pfsense](Imgs\/cts_c.png)\r\n\r\n- Click the \u0060Add\u0060 button.\r\n\r\n  - General Information:\r\n    1. Enter a **description**.\r\n    2. **Disabled**: Leave this unchecked or your client connection will be disabled.\r\n    3. Set **Server mode** to **Peer to Peer (SSL\/TLS)**.\r\n\r\n    ![pfsense](Imgs\/cts_c1.png)\r\n\r\n  - \u0060Endpoint Configuration\u0060 Setting:\r\n    1. **Protocol**:Have 2 option UDP and TCP. And we used *TCP only on IPv4*.\r\n    2. Set **Interface**: \u006042.96.47.201((VIP))\u0060. The virtual IP (VIP) was created previously.\r\n    3. **Local port**: Leave blank unless specified by your VPN provider\r\n    4. **Server host or address**: The IP address(*\u006042.96.47.201\u0060*) or hostname of the VPN server to which you will connect.\r\n    5. **Server port**: The port(*\u00601194\u0060*) over which the VPN connection will be made.\r\n    6. **Proxy host or address**: Leave blank\r\n    7. **Proxy port**: Leave blank\r\n    8. **Proxy Authentication**: none\r\n    ![pfsense](Imgs\/cts_c2.png)\r\n\r\n  - \u0060User Authentication\u0060 Settings\r\n    1. Username: Your username, client identifier, account number, etc.\r\n    2. Password: Your password (if required)\r\n    3. Automatic Retry: Leave unchecked so that your client will attempt to reconnect when authentication fails.\r\n  \r\n    ![pfsense](Imgs\/cts_c3.png)\r\n\r\n  - \u0060Cryptographic\u0060 Settings\r\n    1. Select Use **TLS Key** and automatically enable **Automatically generate a TLS Key**.\r\n    2. In **Peer Certificate Authority**, select the CA that was previously created.\r\n    3. **Client Certificate**: Leave this set to None.\r\n    4. Set **Auth digest algorithm** to RSA-SHA256 (256-bit).\r\n\r\n    ![pfsense](Imgs\/cts_c4.png)![pfsense](Imgs\/cts_c5.png)\r\n\r\n  - \u0060VPN Tunnel\u0060 Settings: Keep default in Tunnel Setting section.\r\n\r\n    ![pfsense](Imgs\/cts_c6.png)\r\n\r\n  - \u0060Ping settings\u0060\r\n\r\n    Keep default setting\r\n\r\n    ![pfsense](Imgs\/cts_c7.png)\r\n\r\n  - \u0060Advanced Configuration\u0060:\r\n    - Choose IPv4 Only in \u0060Gateway creation\u0060; select Both if using IPv4 and IPv6.\r\n\r\n    ![pfsense](Imgs\/cts_c8.png)\r\n\r\n- Press \u0060Save\u0060 to update the configuration.\r\n\r\n  ![pfsense](Imgs\/cts_c9.png)\r\n\r\n##### Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client\r\n\r\n- Go to \u0060System \u003e Package Manager\u0060.\r\n\r\n- Select **Available Packages** in the submenu.\r\n\r\n  ![pfsense](Imgs\/cts_pkt.png)\r\n\r\n- Find the \u0060openvpn-client-export utility\u0060 and select **install** to install it.\r\n\r\n  ![pfsense](Imgs\/cts_pkt1.png)\r\n\r\n- Press **confirm** to install.\r\n  ![pfsense](Imgs\/cts_pkt2.png)\r\n- Once installation is complete, **Success** will be displayed in the **Package Installer** interface.\r\n  ![pfsense](Imgs\/cts_pkt3.png)![pfsense](Imgs\/cts_pkt4.png)\r\n\r\n##### Step 8 : Create user OpenVPN\r\n\r\n- Go to the menu **System \u003e User Manager**.\r\n\r\n  ![pfsense](Imgs\/cts_user.png)\r\n\r\n- Select the **Add** button and enter a **Username** and **Password** for your user.\r\n\r\n- Press **Save**, and the **OpenVPN user** will be successfully created and then redirected to the initial interface.\r\n\r\n- Configure the authentication method as certificate and password.\r\n\r\n- Select **Add** -\u003e **User Certificate** and enter additional information.\r\n\r\n- Set the method (**Method -\u003e Create an internal Certificate**).\r\n\r\n- Choose **Key length, Type, and Digest Algorithm** to match the previously created **CA**.\r\n\r\n- Set the expiration time **Lifetime to 3650 days**.\r\n\r\n- Ensure that **Certificate Type** is selected as the user certificate just created **(User Certificate)**.\r\n\r\n- **Save** to complete linking the user certificate with the OpenVPN user **(User Certificate – OpenVPN user)**.\r\n\r\n  ![pfsense](Imgs\/cts_user1.png)![pfsense](Imgs\/cts_user2.png)\r\n\r\n- Press **Save** to complete the setup of creating the user account for OpenVPN.\r\n\r\n##### Step 9: Configure access permissions in the VPN\r\n\r\n- Go to the \u0060Firewall \u003e Rules\u0060 menu.\r\n- Select **OpenVPN**.\r\n- Select the first **Add** to add a new rule.\r\n  ![pfsense](Imgs\/cts_rule_vpnn.png)\r\n- **Interface**: OpenVPN\r\n- **Address Family**, choose **IPv4** only.\r\n- **Protocol**, select **TCP**.\r\n  ![pfsense](Imgs\/cts_rule_vpn.png)\r\n\r\n- \u0060Source\u0060, choose **any**.\r\n- Enter a **description**, press Save, and Apply Changes to save the configuration.\r\n\r\n  ![pfsense](Imgs\/cts_rule_vpn1.png)\r\n\r\n##### Step 10: Configure access to the VPN\r\n\r\n- Go to the \u0060Firewall \u003e Rules\u0060 menu.\r\n- Select the **WAN** tab.\r\n- Click **Add** to add a new rule.\r\n\r\n  ![pfsense](Imgs\/cts_rule_wan.png)\r\n\r\n- Set **Address Family** to **IPv4**.\r\n- **Protocol**, choose **TCP**.\r\n\r\n  ![pfsense](Imgs\/cts_rule_wan1.png)\r\n\r\n- Set **Source** to **any**.\r\n- \u0060Destination Port Range\u0060, enter the OpenVPN port configured earlier, which is **\u00601194\u0060**.\r\n- Enter a **description**, press **Save**, and Apply Changes to save the configuration.\r\n\r\n  ![pfsense](Imgs\/cts_rule_wan2.png)\r\n\r\n##### Step 11: Configure NAT outbound\r\n\r\n- Navigate to \u0060Firewall \u003e NAT \u003e Outbound\u0060.\r\n  - Outbound NAT Mode: ***Hybrid Outbound NAT rule generation.\r\n(Automatic Outbound NAT \u002b rules below)*** and then click **Save** and Apply Changes NAT rules.\r\n  ![pfsense](Imgs\/cts_nat.png)\r\n  - Mappings Configure\r\n    - Click the green **Add** button with a downward pointing arrow, to create a new NAT rule.\r\n    - Set the **Interface** field to the VPN interface we created earlier.\r\n    - Set the **Address Family** to either IPv4 or IPv4\u002bIPv6 if your VPN provider explicitly supports IPv6.\r\n    - Set the **Source** and **Destination** network with subnet address.\r\n    - Leave all the other settings untouched. Click **Save** and **Apply Changes**.\r\n\r\n    ![pfsense](Imgs\/cts_nat1.png)! [pfsense](Imgs\/cts_nat2.png)\r\n\r\n##### Step 12: Export the VPN Client installation package\r\n\r\n- Go to \u0060VPN \u003e OpenVPN\u0060.\r\n- Select \u0060Client Export\u0060 in the submenu.\r\n- Select the correct **OpenVPN** server next to **Remote Access Server**.\r\n- If using \u0060Dynamic DNS\u0060 to access the pfSense **WAN** network, choose **Other** and select **Host Name Resolution** (This setting allows access to the pfSense WAN network using a name instead of an IP address, ensuring no loss of access to the OpenVPN server if the ISP changes the IP or WAN network). \u0060Exp: 42.96.47.201\u0060\r\n- If not using this, set **Host Name Resolution** to **Interface IP Address**.\r\n\r\n  ![pfsense](Imgs\/cts_vpn_exp.png)![pfsense](Imgs\/cts_vpn_exp1.png)\r\n\r\n- Scroll down to the user location to download the VPN Client installation file, and choose the appropriate installation file.\r\n  ![pfsense](Imgs\/cts_vpn_exp2.png)\r\n\r\n##### Step 13: Test the OpenVPN connection\r\n\r\n- Run the installation file for the **VPN Client** that was downloaded.\r\n- Once successfully connected to **OpenVPN**,\r\n\r\n  ![pfsense](Imgs\/vpn_test.png)\r\n\r\n- Network information – when connected to **OpenVPN**.\r\n  ![pfsense](Imgs\/vpn_test1.png)\r\n\r\n  ![pfsense](Imgs\/vpn_test2.png)\r\n\r\n  ![pfsense](Imgs\/vpn_test3.png)\r\n\r\n#### Setup VPN Site to site\r\n\r\n\u003e Site HCM\r\n\r\nStart with configuring the tunnel and related settings on the firewall at Site HCM.\r\n\r\n##### Setup Network on CMC-Cloud Site HCM\r\n\r\n1. Setup IP address of \u0060WAN\u0060 and \u0060LAN\u0060 in portal \u0060CMC-Cloud\u0060:\r\n\r\n    Add **IP private** and **IP public**\r\n    ![pfsense](Imgs\/S2S\/vpn_s2s_cmc.png)\r\n2. Setup **security group** in portal CMC-Cloud\r\n    ![pfsense](Imgs\/S2S\/vpn_s2s_cmc0.png)![pfsense](Imgs\/S2S\/vpn_s2s_cmc1.png)![pfsense](Imgs\/S2S\/vpn_s2s_cmc2.png)\r\n3. \u0060Allowed address pairs\u0060\r\n   - Double click to open tab \u0060Update port\u0060 -\u003e **Allowed address pairs**\r\n   - Add Security Group\r\n   - Add *\u0060IP Address or CIDR *\u0060* -\u003e \u0060Mac Address\u0060\r\n   - Click Add to create a new **Allowed address pairs**.\r\n  \r\n    ![pfsense](Imgs\/S2S\/vpn_s2s_cmc3.png)\r\n\r\n    ![pfsense](Imgs\/S2S\/vpn_s2s_cmc4.png)\r\n\r\n    ![pfsense](Imgs\/S2S\/vpn_s2s_cmc5.png)\r\n\r\n    ![pfsense](Imgs\/S2S\/vpn_s2s_cmc6.png)\r\n\r\n##### Configure Interface OutScope, NonCDE, CDE Site HCM\r\n\r\nLet\u0027s start.\r\n\r\nFirst, configure the internal LAN and the gateway interface. To do this, in the browser, go to the server IP address or domain name if any. Enter the username and password and get to the Home screen (Dashboard). In the program menu, go to the interfaces section \u0060Interfaces -\u003e Assignments\u0060. In our case, have 3 interfaces are already distributed - we leave it as it is. If you have several interfaces, you should select the necessary interface by mac-address and click the Add button.\r\n\r\nAssign an IP address to the interface **“looking”** to the local network.\r\n\r\n- Add interface vtnet1 (OutScope)\r\n- Add interface vtnet2 (NonCDE)\r\n- Add interface vtnet3 (CDE)\r\n\r\n![pfsense](Imgs\/S2S\/s2s2.png)\r\n![pfsense](Imgs\/S2S\/s2s.png)\r\n\r\nIn the program menu, change interface name \u0060interfaces section -\u003e OutScope | NonCDE | CDE\u0060. At the end of the setup, click the Save button.\r\n\r\nFor all servers in the local network, as the default gateway, set the IP address specified in the LAN.\r\n\r\n- Assign \u0060Interface \u003e OutScope\u0060\r\n  - Setting \u0060General Configuration\u0060\r\n    - Select **enable interface**\r\n    - IPv4 Type: **DHCP**\r\n  - DHCP Client Configuration\r\n    - Keep default\r\n  - Reserved Networks\r\n    - Untick **Block private networks and loopback addresses** and **Block bogon networks**\r\n\r\n  ![pfsense](Imgs\/S2S\/s2s9.png)![pfsense](Imgs\/S2S\/s2s10.png)\r\n\r\n- Do the same with CDE and Non CDE\r\n  ![pfsense](Imgs\/S2S\/s2s7.png)![pfsense](Imgs\/S2S\/s2s8.png)\r\n  ![pfsense](Imgs\/S2S\/s2s5.png)![pfsense](Imgs\/S2S\/s2s6.png)\r\n  \r\n\u0060Important!\u0060 If you use cloud services, then you need to unite the network nodes from the administration panel of the cloud service through \u0060“Virtual Networks”\u0060.\r\n\r\n##### Configure the IPSec tunnel Site HCM\r\n\r\n***\u0060Phase 1\u0060***\r\n\r\n- Access the \u0060VPN \u003e IPSEC \u003e Tunnel\u0060 section\r\n- Click on the **ADD P1** button![pfsense](Imgs\/S2S\/s2s16.png)\r\n- In the Phase 1 configuration page of the IPsec VPN on the pfsense server, fill in the information according to the configuration similar to IPSec VPN in site HN.\r\n  - \u0060General Information\u0060 Setting\r\n    - Enter a **Description**\r\n    - Uncheck **Disabled** this box so that the tunnel will be operational.\r\n  - \u0060IKE Endpoint Configuration\u0060\r\n    - Key Exchange version: Specifies whether to use IKEv2 or IKEv1. IKEv2 is the best practice when supported by both endpoints. If one side does not support IKEv2, use **IKEv1** instead.\r\n    - Internet Protocol: **IPv4** in most cases unless both WANs have IPv6\r\n    - Interface: Most likely set to **WAN**\r\n    - Remote Gateway: The WAN address at Site HN, in this example: \u006042.96.40.240\u0060.\r\n    ![pfsense](Imgs\/S2S\/s2s17.png)\r\n  - Setup \u0060Phase 1 Proposal (Authentication)\u0060\r\n  \r\n    The next section controls IPsec phase 1 proposals for encryption.\r\n    - Authentication Method:The default, **Mutual PSK**\r\n    - Negotiation mode: **Main**\r\n    - My Identifier: **My IP Address**\r\n    - Peer Identifier: **Any**\r\n    - Pre-Shared key: generate a key (we will also need this value on our end)![pfsense](Imgs\/S2S\/s2s18.png)\r\n  - \u0060Phase 1 Proposal (Encryption Algorithm)\u0060\r\n  \r\n    Encryption Algorithm:\r\n    - Algorithm Select **AES**\r\n    - Key length use **128bits**\r\n    - Hash use **SHA256**\r\n    - DH group **2** (1028bit)\r\n  - \u0060Expiration and Replacement\u0060\r\n    - The Expiration and Replacement section controls the timing and method by which phase 1 will be renegotiated.\r\n      - Life Time: The default \u006028800\u0060 is OK for this endpoint.\r\n      - The other lifetime-related values (Rekey Time, Reauth Time, Rand Time) should be left at their defaults on this endpoint as they are automatically calculated as the correct values.\r\n  - \u0060Advanced Options\u0060\r\n    - Child SA Close Action: Set this endpoint to **Default**. Moreover, have options **Restart\/Reconnect** so that the phase 2 entries will be reconnected if they get disconnected.\r\n    - Leave checked and at the default values.\r\n  ![pfsense](Imgs\/S2S\/s2s19.png)\r\n  - Click **Save** when complete\r\n\r\n***\u0060Phase 2\u0060***\r\n\r\nWith the phase 1 entry complete, now a new phase 2 definition to the VPN:\r\n\r\n- Click **Show Phase 2 Entries** to expand the phase 2 list for this VPN.\r\n\r\n- Click **Add P2** to add a new phase 2 entry.\r\n\r\nNow add settings for phase 2 on this VPN. The settings for phase 2:\r\n\r\n- \u0060General Information\u0060\r\n  - Description: A brief description of the network(s) involved in this phase 2 entry.\r\n  - Mode: Select ***Tunnel IPv4***\r\n- \u0060Networks\u0060\r\n  - Local Network: **WAN subnet** with interface WAN. **LAN Subnet** with interfaces: OutScope, CDE and NonCDE.\r\n- \u0060NAT\/BINAT\u0060\r\n  - Set to **None**.\r\n- \u0060Remote Network\u0060\r\n  - Set to the network at Site HN, in this case: \u0060172.25.49.0\/24\u0060\r\n\r\n![pfsense](Imgs\/S2S\/s2s20.png)\r\n\r\nThe next section of the phase 2 settings covers traffic encryption. Encryption algorithms and Hash algorithms can both be set to allow multiple options in phase 2, and both sides will negotiate and agree upon the settings so long as each side has at least one of each in common. In some cases that may be a good thing, but it is usually better to restrict this to the single specific options desired on both sides.\r\n\r\n- \u0060Phase 2 Proposal (SA\/Key Exchange)\u0060\r\n  - Protocol: Set to **ESP** for encryption.\r\n  - Encryption Algorithms: **AES (128bits)**\r\n  - Hash algorithm use **SHA1**\r\n  - PFS key group with **2(1024bit)**\r\n\r\n- \u0060Expiration and Replacement\u0060 and \u0060Keep Alive\u0060\r\n  - Keep default\r\n\r\n![pfsense](Imgs\/S2S\/s2s22.png)\r\n\r\n***NonCDE***\r\n\r\n![pfsense](Imgs\/S2S\/s2s23.png)![pfsense](Imgs\/S2S\/s2s24.png)\r\n\r\n***CDE***\r\n\r\n![pfsense](Imgs\/S2S\/s2s25.png)![pfsense](Imgs\/S2S\/s2s26.png)![pfsense](Imgs\/S2S\/s2s27.png)\r\n\r\n***OutScope***\r\n\r\n![pfsense](Imgs\/S2S\/s2s28.png)![pfsense](Imgs\/S2S\/s2s29.png)\r\n\r\n\u0060Result:\u0060\r\n\r\n![pfsense](Imgs\/S2S\/s2s30.png)\r\n\r\n##### Configure Firewall for local connections Site HCM\r\n\r\nIn the program menu, select \u0060Firewall -\u003e Rules -\u003e WAN\u0060. Click the **Add** button.\r\n\r\n- Protocol: **TCP**, but you can also use Any.\r\n\r\n- Source: **Any**.\r\n\r\n- Destination: **Any**.\r\n\r\n![alt text](Imgs\/S2S\/s2s11.png)\r\n\r\nConfigure rule OutScope VPN: \u0060Firewall -\u003e Rules -\u003e OutScope\u0060\r\n\r\n- On the new page we check the parameters:\r\n\r\n  - Customizable interface: **OutScope**.\r\n\r\n  - Protocol: **TCP**, but you can also use Any.\r\n\r\n  - Source: **Any**.\r\n\r\n  - Destination: **Any**.\r\n- Save the settings by clicking on the Save button.\r\n\r\n![alt text](Imgs\/S2S\/s2s14.png)\r\n\r\nDo the same with CDE and Non CDE\r\n\r\n![alt text](Imgs\/S2S\/s2s13.png)\r\n\r\n![alt text](Imgs\/S2S\/s2s12.png)\r\n\r\nConfigure rule IPSec VPN: \u0060Firewall -\u003e Rules -\u003e IPSec\u0060\r\n\r\n- Protocol: **TCP**, but you can also use **Any**.\r\n\r\n- Source: **Any**.\r\n\r\n- Destination: **Any**.\r\n\r\n![alt text](Imgs\/S2S\/s2s15.png)\r\n\r\nIt should be noted that the same settings must be made on all remote pfSense servers connected to a single network.\r\n\r\n##### Config Route table in CMC-Cloud on Site HCM\r\n\r\nA route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.\r\n\r\n![alt text](Imgs\/S2S\/route_hcm.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_1.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_1.1.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_1.2.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_2.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_2.1.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_3.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_3.1.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_3.2.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_5.png)\r\n\r\n![alt text](Imgs\/S2S\/route_hcm_5.1.png)\r\n\r\n===================================================\r\n\r\n\u003e Site HN\r\n\r\nNow that Site HCM is configured, it is time to tackle Site HN. Repeat the process on the Site HN endpoint to add a tunnel.\r\n\r\n##### Setup Network on CMC-Cloud Site HN\r\n\r\n1. Setup IP address of \u0060WAN\u0060 and \u0060LAN\u0060 in portal \u0060CMC-Cloud\u0060:\r\n\r\n    Add **IP private** and **IP public**\r\n    ![pfsense](Imgs\/S2S-HN\/s2s_cmc_hn.png)\r\n2. Setup **security group** in portal CMC-Cloud\r\n    ![pfsense](Imgs\/S2S-HN\/s2s_cmc_hn1.png)![pfsense](Imgs\/S2S-HN\/s2s_cmc_hn2.png)\r\n3. \u0060Allowed address pairs\u0060\r\n   - Double click to open tab \u0060Update port\u0060 -\u003e **Allowed address pairs**\r\n   - Add Security Group\r\n   - Add *\u0060IP Address or CIDR *\u0060* -\u003e \u0060Mac Address\u0060\r\n   - Click Add to create a new **Allowed address pairs**.\r\n  \r\n    ![pfsense](Imgs\/S2S-HN\/s2s_cmc_hn3.png)\r\n\r\n    ![pfsense](Imgs\/S2S-HN\/s2s_cmc_hn4.png)\r\n\r\n    ![pfsense](Imgs\/S2S-HN\/s2s_cmc_hn5.png)\r\n\r\n    ![pfsense](Imgs\/S2S-HN\/s2s_cmc_hn6.png)\r\n\r\n##### Configure Interface OutScope, NonCDE, CDE Site HN\r\n\r\nLet\u0027s start.\r\n\r\nFirst, configure the internal LAN and the gateway interface. To do this, in the browser, go to the server IP address or domain name if any. Enter the username and password and get to the Home screen (Dashboard). In the program menu, go to the interfaces section \u0060Interfaces -\u003e Assignments\u0060. In our case, have 3 interfaces are already distributed - we leave it as it is. If you have several interfaces, you should select the necessary interface by mac-address and click the Add button.\r\n\r\nAssign an IP address to the interface **“looking”** to the local network.\r\n\r\n- Add interface vtnet1 (OutScope)\r\n- Add interface vtnet2 (NonCDE)\r\n- Add interface vtnet3 (CDE)\r\n\r\n![pfsense](Imgs\/S2S-HN\/hn.png)\r\n![pfsense](Imgs\/S2S-HN\/hn0.png)\r\n\r\nIn the program menu, change interface name \u0060interfaces section -\u003e OutScope | NonCDE | CDE\u0060. At the end of the setup, click the Save button.\r\n\r\nFor all servers in the local network, as the default gateway, set the IP address specified in the LAN.\r\n\r\n- Assign \u0060Interface \u003e OutScope\u0060\r\n  - Setting \u0060General Configuration\u0060\r\n    - Select **enable interface**\r\n    - IPv4 Type: **DHCP**\r\n  - DHCP Client Configuration\r\n    - Keep default\r\n  - Reserved Networks\r\n    - Untick **Block private networks and loopback addresses** and **Block bogon networks**\r\n\r\n  ![pfsense](Imgs\/S2S-HN\/hn7.png)![pfsense](Imgs\/S2S-HN\/hn8.png)\r\n\r\n- Do the same with CDE and Non CDE\r\n  ![pfsense](Imgs\/S2S-HN\/hn6.png)![pfsense](Imgs\/S2S-HN\/hn6a.png)\r\n  ![pfsense](Imgs\/S2S-HN\/hn4.png)![pfsense](Imgs\/S2S-HN\/hn5.png)\r\n  \r\n\u0060Important!\u0060 If you use cloud services, then you need to unite the network nodes from the administration panel of the cloud service through \u0060“Virtual Networks”\u0060.\r\n\r\n##### Configure the IPSec tunnel Site HN\r\n\r\n***\u0060Phase 1\u0060***\r\n\r\n- Access the \u0060VPN \u003e IPSEC \u003e Tunnel\u0060 section\r\n- Click on the **ADD P1** button![pfsense](Imgs\/S2S-HN\/hn15.png)\r\n- In the Phase 1 configuration page of the IPsec VPN on the pfsense server, fill in the information according to the configuration similar to IPSec VPN in site HN.\r\n  - \u0060General Information\u0060 Setting\r\n    - Enter a **Description**\r\n    - Uncheck **Disabled** this box so that the tunnel will be operational.\r\n  - \u0060IKE Endpoint Configuration\u0060\r\n    - Key Exchange version: Specifies whether to use IKEv2 or IKEv1. IKEv2 is the best practice when supported by both endpoints. If one side does not support IKEv2, use **IKEv1** instead.\r\n    - Internet Protocol: **IPv4** in most cases unless both WANs have IPv6\r\n    - Interface: Most likely set to **WAN**\r\n    - Remote Gateway: The WAN address at Site HN, in this example: \u006042.96.45.27\u0060.\r\n    ![pfsense](Imgs\/S2S-HN\/hn16.png)\r\n  - Setup \u0060Phase 1 Proposal (Authentication)\u0060\r\n  \r\n    The next section controls IPsec phase 1 proposals for encryption.\r\n    - Authentication Method:The default, **Mutual PSK**\r\n    - Negotiation mode: **Main**\r\n    - My Identifier: **My IP Address**\r\n    - Peer Identifier: **Any**\r\n    - Pre-Shared key: generate a key (we will also need this value on our end)![pfsense](Imgs\/S2S-HN\/hn17.png)\r\n  - \u0060Phase 1 Proposal (Encryption Algorithm)\u0060\r\n  \r\n    Encryption Algorithm:\r\n    - Algorithm Select **AES**\r\n    - Key length use **128bits**\r\n    - Hash use **SHA256**\r\n    - DH group **2** (1028bit)\r\n  - \u0060Expiration and Replacement\u0060\r\n    - The Expiration and Replacement section controls the timing and method by which phase 1 will be renegotiated.\r\n      - Life Time: The default \u006028800\u0060 is OK for this endpoint.\r\n      - The other lifetime-related values (Rekey Time, Reauth Time, Rand Time) should be left at their defaults on this endpoint as they are automatically calculated as the correct values.\r\n  - \u0060Advanced Options\u0060\r\n    - Child SA Close Action: Set this endpoint to **Default**. Moreover, have options **Restart\/Reconnect** so that the phase 2 entries will be reconnected if they get disconnected.\r\n    - Leave checked and at the default values.\r\n  ![pfsense](Imgs\/S2S-HN\/hn18.png)\r\n  - Click **Save** when complete\r\n\r\n***\u0060Phase 2\u0060***\r\n\r\nWith the phase 1 entry complete, now a new phase 2 definition to the VPN:\r\n\r\n- Click **Show Phase 2 Entries** to expand the phase 2 list for this VPN.\r\n\r\n- Click **Add P2** to add a new phase 2 entry.\r\n\r\nNow add settings for phase 2 on this VPN. The settings for phase 2:\r\n\r\n- \u0060General Information\u0060\r\n  - Description: A brief description of the network(s) involved in this phase 2 entry.\r\n  - Mode: Select ***Tunnel IPv4***\r\n- \u0060Networks\u0060\r\n  - Local Network: **WAN subnet** with interface WAN. **LAN Subnet** with interfaces: OutScope, CDE and NonCDE.\r\n- \u0060NAT\/BINAT\u0060\r\n  - Set to **None**.\r\n- \u0060Remote Network\u0060\r\n  - Set to the network at Site HN, in this case: \u0060172.24.49.0\/24\u0060\r\n\r\n![pfsense](Imgs\/S2S-HN\/hn19.png)\r\n\r\nThe next section of the phase 2 settings covers traffic encryption. Encryption algorithms and Hash algorithms can both be set to allow multiple options in phase 2, and both sides will negotiate and agree upon the settings so long as each side has at least one of each in common. In some cases that may be a good thing, but it is usually better to restrict this to the single specific options desired on both sides.\r\n\r\n- \u0060Phase 2 Proposal (SA\/Key Exchange)\u0060\r\n  - Protocol: Set to **ESP** for encryption.\r\n  - Encryption Algorithms: **AES (128bits)**\r\n  - Hash algorithm use **SHA1**\r\n  - PFS key group with **2(1024bit)**\r\n\r\n- \u0060Expiration and Replacement\u0060 and \u0060Keep Alive\u0060\r\n  - Keep default\r\n\r\n![pfsense](Imgs\/S2S-HN\/hn20.png)\r\n\r\n***NonCDE***\r\n\r\n![pfsense](Imgs\/S2S-HN\/hn21.png)![pfsense](Imgs\/S2S-HN\/hn22.png)\r\n\r\n***CDE***\r\n\r\n![pfsense](Imgs\/S2S-HN\/hn23.png)![pfsense](Imgs\/S2S-HN\/hn24.png)\r\n\r\n***OutScope***\r\n\r\n![pfsense](Imgs\/S2S-HN\/hn25.png)![pfsense](Imgs\/S2S-HN\/hn26.png)\r\n\r\n\u0060Result:\u0060\r\n\r\n![pfsense](Imgs\/S2S-HN\/hn28.png)\r\n\r\n##### Configure Firewall for local connections Site HN\r\n\r\nIn the program menu, select \u0060Firewall -\u003e Rules -\u003e WAN\u0060. Click the **Add** button.\r\n\r\n- Protocol: **TCP**, but you can also use Any.\r\n\r\n- Source: **Any**.\r\n\r\n- Destination: **Any**.\r\n\r\n![alt text](Imgs\/S2S-HN\/hn11.png)\r\n\r\nConfigure rule OutScope VPN: \u0060Firewall -\u003e Rules -\u003e OutScope\u0060\r\n\r\n- On the new page we check the parameters:\r\n\r\n  - Customizable interface: **OutScope**.\r\nImgs\/S2S-HN\/hn23.png\r\n  - Protocol: **TCP**, but you can also use Any.\r\n\r\n  - Source: **Any**.\r\n\r\n  - Destination: **Any**.\r\n- Save the settings by clicking on the Save button.\r\n\r\n![alt text](Imgs\/S2S-HN\/hn13.png)\r\n\r\nDo the same with CDE and Non CDE\r\n\r\n![alt text](Imgs\/S2S-HN\/hn12.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/hn11.png)\r\n\r\nConfigure rule IPSec VPN: \u0060Firewall -\u003e Rules -\u003e IPSec\u0060\r\n\r\n- Protocol: **TCP**, but you can also use **Any**.\r\n\r\n- Source: **Any**.\r\n\r\n- Destination: **Any**.\r\n\r\n![alt text](Imgs\/S2S-HN\/hn14.png)\r\n\r\nIt should be noted that the same settings must be made on all remote pfSense servers connected to a single network.\r\n\r\n##### Config Route table in CMC-Cloud on Site HN\r\n\r\nA route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_subnet.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route1.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route2.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route3.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route4.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route5.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route6.png)\r\n\r\n![alt text](Imgs\/S2S-HN\/s2s_hn_route7.png)\r\n\r\n### Build VPN Route Base (Using OSPF)\r\n\r\n#### Routed IPsec (VTI)\r\n\r\nRoute-based IPsec is an alternative method of managing IPsec traffic. It uses \u0060if_ipsec(4)\u0060 from FreeBSD for **Virtual Tunnel Interfaces (VTI)** and traffic is directed using the operating system routing table. It does not rely on strict kernel security association matching like policy-based (tunnel mode) IPsec.\r\n\r\nVirtual Tunnel Interface (VTI) tunnels in pfSense are used to create a more streamlined way to handle IPsec VPN configurations. VTI tunnels simplify the process of creating site-to-site VPNs by treating the tunnel as a network interface, allowing for easier management and the ability to use dynamic routing protocols like **\u0060OSPF\u0060** or **\u0060BGP\u0060**.\r\n\r\n![alt text](Imgs\/Route-base\/VTI_TUNNEL.svg)\r\n\r\n\u003e VPN Route-Based IPSEC\r\n\r\n##### HANOI - Khanh\u0027s zone (Vùng 1) - PHAN\r\n\r\n| FW - IP public   | Interface | IP address     | Subnet        |\r\n|------------------|-----------|---------------|---------------|\r\n| 42.98.43.148     | WAN       | 172.25.48.81  | 172.25.48.0\/24|\r\n|                  | LAN       | 172.25.68.10  | 172.25.84.0\/24|\r\n|                  | VTI       | 10.0.0.1      |               |\r\n| PC               | LAN       | 172.25.64.193 | 172.25.84.0\/24|\r\n\r\n##### HCM - Khanh\u0027s zone (Vùng 2) - GIANG\r\n\r\n| FW - IP public   | Interface | IP address     | Subnet        |\r\n|------------------|-----------|---------------|---------------|\r\n| 42.98.44.213     | WAN       | 172.21.2.154  | 172.21.0.0\/20 |\r\n|                  | VTI-toHN  | 10.0.0.2      |               |\r\n|                  | VTI-toTRAM| 10.0.0.3      |               |\r\n\r\n##### HCM - Tram\u0027s zone (Vùng 3) - TRI\r\n\r\n| FW - IP public   | Interface | IP address     | Subnet        |\r\n|------------------|-----------|---------------|---------------|\r\n| 203.171.92.107   | WAN       | 192.168.2.200 | 192.168.0.0\/24|\r\n|                  | LAN       | 192.168.0.211 | 192.168.0.0\/24|\r\n|                  | VTI       | 10.0.0.4      |               |\r\n| PC               | LAN       | 192.168.0.210 | 192.168.0.0\/24|\r\n\r\nConfig in Phase1: **\u0060AES128 - SHA1 - DH Group 2\u0060**\r\n\r\n- Key between zone 3 and zone 2:\r\n\r\n  \u0060\u0060\u0060key\r\n  4531f5a38fa3e74c8741c743aae8b7fd7ef4fec037f500d8ad1fa7e91\r\n  \u0060\u0060\u0060\r\n\r\n- Key between zone 1 and zone 2:\r\n\r\n  \u0060\u0060\u0060key\r\n   7751417e85b68855909314a7da81cbb2271efd65a801f4bc0118d8da\r\n  \u0060\u0060\u0060\r\n\r\n#### Step 1: Configure IPsec Tunnel on pfSense\r\n\r\n1. Go to \u0060VPN \u003e IPsec\u0060 in the pfSense web GUI.\r\n\r\n2. Click on the \u002b Add P1 button to create a new Phase 1 entry.\r\n\r\n3. Set the following parameters for the Phase 1 configuration:\r\n\r\n   - Key Exchange version: IKEv1\r\n   - Remote Gateway: IP address of the remote VPN endpoint\r\n   - Authentication Method: Mutual PSK (Pre-Shared Key)\r\n   - Pre-Shared Key: Enter a secure key\r\n   - Encryption Algorithm: Choose a strong encryption method (e.g., AES)\r\n   - Hash Algorithm: SHA-1 (or another secure hash)\r\n   - DH Group: Choose an appropriate Diffie-Hellman group\r\n\r\n\u003e HANOI - Khanh\u0027s zone (Vùng 1)\r\n\r\n![alt text](Imgs\/Route-base\/vti_zone_1.png)![alt text](Imgs\/Route-base\/vti_zone_1_1.png)![alt text](Imgs\/Route-base\/vti_zone_1_2.png)![alt text](Imgs\/Route-base\/vti_zone_1_3.png)\r\n\r\n\u003e HCM - Khanh\u0027s zone (Vùng 2)\r\n\r\n- toHCM-MrTram\r\n\r\n![vti](Imgs\/Route-base\/vti_1.png)![vti](Imgs\/Route-base\/vti_2.png)![vti](Imgs\/Route-base\/vti_3.png)![vti](Imgs\/Route-base\/vti_4.png)\r\n\r\n- HCM-to-HN\r\n\r\n![alt text](Imgs\/Route-base\/vti_1.1.png)![alt text](Imgs\/Route-base\/vti_2.2.png)![alt text](Imgs\/Route-base\/vti_3.3.png)![alt text](Imgs\/Route-base\/vti_4.4.png)\r\n\r\n\u003e HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_zone_3.png)![alt text](Imgs\/Route-base\/vti_zone_3_1.png)![alt text](Imgs\/Route-base\/vti_zone_3_2.png)![alt text](Imgs\/Route-base\/vti_zone_3_3.png)\r\n\r\n#### Step 2: Configure Phase 2 (Child SA) for VTI\r\n\r\n1. Click on \u002b Add P2 under the Phase 1 you just created.\r\n\r\n2. Set the following parameters for the Phase 2 configuration:\r\n\r\n   - Mode: Tunnel IPv4\r\n   - Local Network: Network Address, and enter an IP address in CIDR notation (e.g., 0.0.0.0\/0 for all traffic)\r\n   - Remote Network: Network Address, and enter 0.0.0.0\/0\r\n   - Protocol: ESP\r\n   - Encryption Algorithms: Choose strong encryption settings (e.g., AES)\r\n   - Hash Algorithms: Choose a secure hash (e.g., SHA-256)\r\n\r\n3. In the Phase 2 proposal (SA\/Key Exchange) section, set the following:\r\n\r\n   - Lifetime: Set a reasonable value (e.g., 3600 seconds)\r\n   - Enable Automatically ping host, if desired, to keep the tunnel alive.\r\n\r\n4. Save the Phase 2 settings.\r\n\r\n\u003e HANOI - Khanh\u0027s zone (Vùng 1)\r\n\r\n![alt text](Imgs\/Route-base\/vti_p2_1.png)![alt text](Imgs\/Route-base\/vti_p2_1_1.png)![alt text](Imgs\/Route-base\/vti_p2_1_2.png)![alt text](Imgs\/Route-base\/vti_p2_1_4.png)\r\n\r\n\u003e HCM - Khanh\u0027s zone (Vùng 2)\r\n\u003e\u003e HCM - Khanh\u0027s zone (Vùng 2) connect to HANOI - Khanh\u0027s zone (Vùng 1)\r\n\r\n![alt text](Imgs\/Route-base\/vti_p2_2.png)![alt text](Imgs\/Route-base\/vti_p2_2_1.png)![alt text](Imgs\/Route-base\/vti_p2_2_2.png)![alt text](Imgs\/Route-base\/vti_p2_2_3.png)\r\n\r\n\u003e\u003e HCM - Khanh\u0027s zone (Vùng 2) connect to HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_p2_2.2.png)![alt text](Imgs\/Route-base\/vti_p2_2.2_1.png)![alt text](Imgs\/Route-base\/vti_p2_2.2_2.png)![alt text](Imgs\/Route-base\/vti_p2_2.2_3.png)\r\n\r\n\u003e HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_p2_3_1.png)![alt text](Imgs\/Route-base\/vti_p2_3_2.png)![alt text](Imgs\/Route-base\/vti_p2_3_3.png)![alt text](Imgs\/Route-base\/vti_p2_3_4.png)\r\n\r\n#### Create the VTI Interface\r\n\r\n1. Go to Interfaces \u003e Assignments in the pfSense web GUI.\r\n2. You should see a new interface named IPsec VTI available in the list.\r\n3. Click Add to assign the IPsec VTI interface.\r\n4. Click on the newly created interface and configure it:\r\n   - Enable the interface\r\n   - Set the IP Address (e.g., 10.0.0.1\/30), where each end of the tunnel gets a unique IP in the subnet.\r\n5. Save and apply the changes.\r\n\r\n\u003e HANOI - Khanh\u0027s zone (Vùng 1)\r\n\r\n![alt text](Imgs\/Route-base\/vti_zo1_interface.png)![alt text](Imgs\/Route-base\/vti_zo1_interface1.png)![alt text](Imgs\/Route-base\/vti_zo1_interface2.png)\r\n\r\n\u003e HCM - Khanh\u0027s zone (Vùng 2)\r\n\r\n![alt text](Imgs\/Route-base\/vti_zo2_interface.png)![alt text](Imgs\/Route-base\/vti_zo2_interface1.png)![alt text](Imgs\/Route-base\/vti_zo2_interface2.png)![alt text](Imgs\/Route-base\/vti_zo2_interface3.png)![alt text](Imgs\/Route-base\/vti_zo2_interface4.png)\r\n\r\n\u003e HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_zo3_interface.png)![alt text](Imgs\/Route-base\/vti_zo3_interface1.png)![alt text](Imgs\/Route-base\/vti_zo3_interface2.png)\r\n\r\n#### Step 4: Firewall Rules for the VTI Interface\r\n\r\n1. Go to Firewall \u003e Rules and click on the newly created IPsec VTI interface.\r\n2. Add rules to allow traffic to flow through the tunnel as needed.\r\n   For example, add a rule to allow all traffic for testing purposes.\r\n3. Save and apply the firewall rules.\r\n\r\nExp: Add rules to allow traffic for 3 zone.\r\n\r\n![alt text](Imgs\/Route-base\/vti_rules.png)![alt text](Imgs\/Route-base\/vti_rules1.png)\r\n\r\n#### Testing the VTI Tunnel\r\n\r\n1. Ping the remote tunnel IP address to verify connectivity.\r\n2. Ensure that traffic is being properly routed through the VTI tunnel.\r\n\r\n\u003e HANOI - Khanh\u0027s zone (Vùng 1)\r\n\r\n![alt text](Imgs\/Route-base\/vti_tunnel_ping_z1.png)![alt text](Imgs\/Route-base\/vti_tunnel_ping_z1_2.png)\r\n\r\n\u003e HCM - Khanh\u0027s zone (Vùng 2)\r\n\r\n![alt text](Imgs\/Route-base\/vti_tunnel_ping_z2.png)![alt text](Imgs\/Route-base\/vti_tunnel_ping_z2_1.png)![alt text](Imgs\/Route-base\/vti_tunnel_ping_z2_2.png)\r\n\r\n\u003e HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_tunnel_ping_z3.png)![alt text](Imgs\/Route-base\/vti_tunnel_ping_z3_1.png)\r\n\r\n#### Step 5: Setup for OSPF on pfSense with VTI\r\n\r\n##### I. Install the FRR Package on pfSense\r\n\r\n1. Go to System \u003e Package Manager \u003e Available Packages.\r\n2. Search for the FRR (Free Range Routing) package.\r\n3. Click Install to add the package to your pfSense setup.\r\n4. Once the installation is complete, go to Services \u003e FRR Global\/Zebra.\r\n\r\n\u003e [!NOTE]\r\n\u003e Install FRR on all 3 zones\r\n\r\n![alt text](Imgs\/Route-base\/vti_pkg.png)![alt text](Imgs\/Route-base\/vti_pkg1.png)![alt text](Imgs\/Route-base\/vti_pkg2.png)\r\n\r\n##### II. Configure FRR Global Settings\r\n\r\n1. Enable the FRR daemon by checking the box at the top of the page.\r\n2. Make sure the Zebra routing manager is enabled.\r\n3. Save and apply the settings.\r\n\r\n\u003e [!NOTE]\r\n\u003e Enable FRR on all 3 zones\r\n\r\n![alt text](Imgs\/Route-base\/vti_frr_cfg1.png)![alt text](Imgs\/Route-base\/vti_frr_cfg2.png)\r\n\r\n##### III. Configure OSPF in FRR\r\n\r\n1. Navigate to \u0060Services \u003e FRR OSPF\u0060.\r\n2. Check the box to **Enable OSPF**.\r\n3. In the Router ID field keep default or enter a unique identifier for this pfSense router (typically the LAN IP address).\r\n4. Under Networks, add the network associated with the VTI interface. For example:\r\n   - Network: 10.10.10.0\/30 (replace this with your actual VTI network)\r\n   - Area: 0.0.0.0 (Area 0 is the backbone area for OSPF)\r\n5. Click Save to apply these settings.\r\n\r\n\u003e OSPF config\r\n\r\nOSPF setting\r\n![alt text](Imgs\/Route-base\/vti_ospf.png)![alt text](Imgs\/Route-base\/vti_ospf1.png)![alt text](Imgs\/Route-base\/vti_ospf2.png)![alt text](Imgs\/Route-base\/vti_ospf3.png)\r\n\r\nAreas setting\r\n\r\n![alt text](Imgs\/Route-base\/vti_area.png)![alt text](Imgs\/Route-base\/vti_area1.png)![alt text](Imgs\/Route-base\/vti_area2.png)\r\n\r\nInterface setting\r\n\r\n- HANOI - Khanh\u0027s zone (Vùng 1)\r\n  \r\n![alt text](Imgs\/Route-base\/vti_interface_hn.png)![alt text](Imgs\/Route-base\/vti_interface_hn1.png)![alt text](Imgs\/Route-base\/vti_interface_hn2.png)\r\n\r\n- HCM - Khanh\u0027s zone (Vùng 2)\r\n\r\n![alt text](Imgs\/Route-base\/vti_interface_z2.png)![alt text](Imgs\/Route-base\/vti_interface_z21.png)![alt text](Imgs\/Route-base\/vti_interface_z22.png)\r\n\r\n- HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_interface_z3.png)![alt text](Imgs\/Route-base\/vti_interface_z31.png)![alt text](Imgs\/Route-base\/vti_interface_z32.png)\r\n\r\n##### IV. Configure Static Routing in Pfsense\r\n\r\n1. Navigate to \u0060System \u003e Routing \u003e Static Routes\u0060.\r\n2. Select \u002b **Add** button to create a new static route.\r\n3. Configure the Static Route:\r\n   - Destination network: Enter the destination network (e.g., 192.168.2.0\/24).\r\n   - Gateway: Select the gateway that pfSense should use to reach the destination network. Ở đây chúng ta sử dụng gateway vti.\r\n   - Optionally, you can add a Description for the route.\r\n4. Click **Save** to **apply** activate the new route..\r\n\r\n\u003e HANOI - Khanh\u0027s zone (Vùng 1)\r\n\r\n![alt text](Imgs\/Route-base\/vti_routes_hn.png)![alt text](Imgs\/Route-base\/vti_routes_hn1.png)![alt text](Imgs\/Route-base\/vti_routes_hn2.png)\r\n\r\n\u003e HCM - Khanh\u0027s zone (Vùng 2)\r\n\r\n![alt text](Imgs\/Route-base\/vti_routes_z2.png)![alt text](Imgs\/Route-base\/vti_routes_z2_1.png)![alt text](Imgs\/Route-base\/vti_routes_z2_2.png)\r\n\r\n\u003e HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_routes_z3.png)![alt text](Imgs\/Route-base\/vti_routes_z3_1.png)![alt text](Imgs\/Route-base\/vti_routes_z3_2.png)\r\n\r\n##### V. Check status OSPF in FRR\r\n\r\n1. Navigate to \u0060Status \u003e FRR\u0060.\r\n2. Select  **OSPF** button to query status service ospf.\r\n\r\n\u003e HANOI - Khanh\u0027s zone (Vùng 1)\r\n\r\n![alt text](Imgs\/Route-base\/vti_ospf_stt_zone1.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone1.1.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone1.2.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone1.3.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone1.4.png)\r\n\u003e HCM - Khanh\u0027s zone (Vùng 2)\r\n\r\n![alt text](Imgs\/Route-base\/vti_ospf_stt_zone2.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone2.1.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone2.2.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone2.3.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone2.4.png)\r\n\r\n\u003e HCM - Tram\u0027s zone (Vùng 3)\r\n\r\n![alt text](Imgs\/Route-base\/vti_ospf_stt_zone3.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone3.1.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone3.2.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone3.3.png)![alt text](Imgs\/Route-base\/vti_ospf_stt_zone3.4.png)\r\n\r\n##### V. Check ping\r\n\r\n\u003e Access the PC on zone 1, add route and perform ping test.\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo1_to_zo3.png)\r\n\r\n- Show route before add new route\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo1_to_zo3_1.png)\r\n\r\n- Add route and ping to Lan\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo1_to_zo3_2.png)\r\n![alt text](Imgs\/Route-base\/ping_zo1_to_zo3_3.png)\r\n\r\n- Ping to PC\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo1_to_zo3_4.png)\r\n\r\n\u003e Access the PC on zone 3, add route and perform ping test.\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo3_to_zo1.png)\r\n\r\n- Show route before add new route\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo3_to_zo1_1.png)\r\n![alt text](Imgs\/Route-base\/ping_zo3_to_zo1_2.png)\r\n\r\n- Add route and ping to Lan\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo3_to_zo1_3.png)\r\n\r\n- Ping to PC\r\n\r\n![alt text](Imgs\/Route-base\/ping_zo3_to_zo1_5.png)\r\n\r\n### Build VPN With GRE-TUNNEL\r\n\r\nGeneric Routing Encapsulation (GRE) is a method of tunneling traffic between two endpoints without encryption. It can be used to route packets between two locations that are not directly connected, which do not require encryption. It can also be combined with a method of encryption that does not perform its own tunneling.\r\n\r\n\u003e [!NOTE]\r\n\u003e The GRE protocol was originally designed by Cisco, and it is the default tunneling mode on many of their devices.\r\n\r\nGRE tunnels can carry either IPv4, IPv6, or both types of traffic at the same time.\r\n\r\nEnd. --\u003e",
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/posts\/202504-implementing-devsecops-model-for-e-commerce-web-application\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Linh Tran-Nhut"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-09-16T20:28:53\u002b07:00",
+    "datePublished": "2024-09-16T20:28:53\u002b07:00",
+    
+    "dateModified": "2024-09-16T20:28:53\u002b07:00",
+    
+    "keywords": ["CICD","devops","Microservices"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "3"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Linh Tran-Nhut" />
+  
+  
+  
+  <link href="mailto:nhutlinh.work@gmail.com" rel="me" />
+  
+  
+  <link href="https://github.com/nhutlin" rel="me" />
+  
+  
+  <link href="https://gitlab.com/nhutlin" rel="me" />
+  
+  
+  <link href="https://linkedin.com/in/tran-nhut-linh-04635b213" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">LinhTran&rsquo;s</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="About">
+        About
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Posts">
+        Posts
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Projects">
+        Projects
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/resume/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Resume">
+        Resume
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class=" flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="About">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Posts">
+            Posts
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Projects">
+            Projects
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/resume/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Resume">
+            Resume
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+ 
+  
+   
+  
+ 
+
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/banner.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >LinhTran&#39;s</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/"
+      >Implementing DevSecOps model for E-Commerce Web Application</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Implementing DevSecOps model for E-Commerce Web Application
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-16T20:28:53&#43;07:00">16 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span><span class="px-2 text-primary-500">&middot;</span>
+
+
+  
+    
+  
+  
+
+<span class="mb-[2px]">
+  <a
+    href="#/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/index.md"
+    class="text-lg hover:text-primary-500"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Edit content"
+    ><span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M441 58.9L453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2L344 121.9 390.1 168 255.8 302.2c-2.9 2.9-6.5 5-10.4 6.1l-58.5 16.7 16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25L175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25C446.8-3.1 401.2-3.1 373.1 25zM88 64C39.4 64 0 103.4 0 152V424c0 48.6 39.4 88 88 88H360c48.6 0 88-39.4 88-88V312c0-13.3-10.7-24-24-24s-24 10.7-24 24V424c0 22.1-17.9 40-40 40H88c-22.1 0-40-17.9-40-40V152c0-22.1 17.9-40 40-40H200c13.3 0 24-10.7 24-24s-10.7-24-24-24H88z"/></svg>
+  </span>
+
+</span></a
+  >
+</span>
+  
+
+  
+  
+</div>
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/document/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Document
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/cicd/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    CICD
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/devops/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Devops
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/microservices/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Microservices
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+    
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          
+
+<h1 class="relative group">Comming soon&hellip; 
+    <div id="comming-soon" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#comming-soon" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
+<!-- ## Table of contents
+
+- [Pfsense, Client to Site \&  Site to site](#pfsense-client-to-site---site-to-site)
+  - [Table of contents](#table-of-contents)
+    - [What is Pfsense ?](#what-is-pfsense-)
+    - [Features in pfsense](#features-in-pfsense)
+    - [Setup firewall (Outscope)](#setup-firewall-outscope)
+      - [Initial setup](#initial-setup)
+        - [General Information](#general-information)
+        - [Time Server Configuration](#time-server-configuration)
+        - [WAN Interface Configuration](#wan-interface-configuration)
+      - [Configure LAN Interface](#configure-lan-interface)
+      - [Change the Admin password](#change-the-admin-password)
+      - [Save parameters](#save-parameters)
+      - [Configure Interface](#configure-interface)
+      - [Configure Rule and NAT(port-forward)](#configure-rule-and-natport-forward)
+        - [I. Rule WAN interface](#i-rule-wan-interface)
+        - [II. Rule LAN interface](#ii-rule-lan-interface)
+    - [Setup firewall (Inscope Non CDE)](#setup-firewall-inscope-non-cde)
+    - [Build VPN](#build-vpn)
+      - [Setup VPN Client to Site](#setup-vpn-client-to-site)
+        - [Step 1: Configure WAN interface](#step-1-configure-wan-interface)
+        - [Step 2: Create a Virtual IP](#step-2-create-a-virtual-ip)
+        - [Step 3: Create Certificate Authority – CA](#step-3-create-certificate-authority--ca)
+        - [Step 4: Create Server Certificate](#step-4-create-server-certificate)
+        - [Step 5: Create a VPN – OpenVPN Server](#step-5-create-a-vpn--openvpn-server)
+        - [Step 6: Create a VPN – OpenVPN Client](#step-6-create-a-vpn--openvpn-client)
+        - [Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client](#step-7-install-the-openvpn-client-export-utility-a-tool-that-helps-export-the-vpn-client)
+        - [Step 8 : Create user OpenVPN](#step-8--create-user-openvpn)
+        - [Step 9: Configure access permissions in the VPN](#step-9-configure-access-permissions-in-the-vpn)
+        - [Step 10: Configure access to the VPN](#step-10-configure-access-to-the-vpn)
+        - [Step 11: Configure NAT outbound](#step-11-configure-nat-outbound)
+        - [Step 12: Export the VPN Client installation package](#step-12-export-the-vpn-client-installation-package)
+        - [Step 13: Test the OpenVPN connection](#step-13-test-the-openvpn-connection)
+      - [Setup VPN Site to site](#setup-vpn-site-to-site)
+        - [Setup Network on CMC-Cloud Site HCM](#setup-network-on-cmc-cloud-site-hcm)
+        - [Configure Interface OutScope, NonCDE, CDE Site HCM](#configure-interface-outscope-noncde-cde-site-hcm)
+        - [Configure the IPSec tunnel Site HCM](#configure-the-ipsec-tunnel-site-hcm)
+        - [Configure Firewall for local connections Site HCM](#configure-firewall-for-local-connections-site-hcm)
+        - [Config Route table in CMC-Cloud on Site HCM](#config-route-table-in-cmc-cloud-on-site-hcm)
+        - [Setup Network on CMC-Cloud Site HN](#setup-network-on-cmc-cloud-site-hn)
+        - [Configure Interface OutScope, NonCDE, CDE Site HN](#configure-interface-outscope-noncde-cde-site-hn)
+        - [Configure the IPSec tunnel Site HN](#configure-the-ipsec-tunnel-site-hn)
+        - [Configure Firewall for local connections Site HN](#configure-firewall-for-local-connections-site-hn)
+        - [Config Route table in CMC-Cloud on Site HN](#config-route-table-in-cmc-cloud-on-site-hn)
+    - [Build VPN Route Base (Using OSPF)](#build-vpn-route-base-using-ospf)
+      - [Routed IPsec (VTI)](#routed-ipsec-vti)
+        - [HANOI - Khanh's zone (Vùng 1) - PHAN](#hanoi---khanhs-zone-vùng-1---phan)
+        - [HCM - Khanh's zone (Vùng 2) - GIANG](#hcm---khanhs-zone-vùng-2---giang)
+        - [HCM - Tram's zone (Vùng 3) - TRI](#hcm---trams-zone-vùng-3---tri)
+      - [Step 1: Configure IPsec Tunnel on pfSense](#step-1-configure-ipsec-tunnel-on-pfsense)
+      - [Step 2: Configure Phase 2 (Child SA) for VTI](#step-2-configure-phase-2-child-sa-for-vti)
+      - [Create the VTI Interface](#create-the-vti-interface)
+      - [Step 4: Firewall Rules for the VTI Interface](#step-4-firewall-rules-for-the-vti-interface)
+      - [Testing the VTI Tunnel](#testing-the-vti-tunnel)
+      - [Step 5: Setup for OSPF on pfSense with VTI](#step-5-setup-for-ospf-on-pfsense-with-vti)
+        - [I. Install the FRR Package on pfSense](#i-install-the-frr-package-on-pfsense)
+        - [II. Configure FRR Global Settings](#ii-configure-frr-global-settings)
+        - [III. Configure OSPF in FRR](#iii-configure-ospf-in-frr)
+        - [IV. Configure Static Routing in Pfsense](#iv-configure-static-routing-in-pfsense)
+        - [V. Check status OSPF in FRR](#v-check-status-ospf-in-frr)
+        - [V. Check ping](#v-check-ping)
+    - [Build VPN With GRE-TUNNEL](#build-vpn-with-gre-tunnel)
+
+### What is Pfsense ?
+
+**`Pfsense`**: is an application that functions as a network firewall router and is free based on `FreeBSD`. Pfsense is configured through a web GUI interface for easy management and customization. It supports filtering based on source address, destination, source port, destination port, supports routing, and can operate in bridge or transparent mode.
+
+![pfsense](Imgs/pfsense.png)
+
+Moreover, If using pfsense as a gateway, we can clearly see the support for NAT and port forwarding on pfsense as well as performing load balancing or failover on the network paths.
+
+### Features in pfsense
+
+1. *`Aliases`*: In pfsense, the firewall cannot have a rule consisting of multiple IP groups or a port group. Therefore, it is necessary to group IP, Port, or URL into one alias. An alias allows to substitute one host, one network range, multiple separate IPs, or a group of ports, URLs... Aliases help save time if used correctly.
+
+2. *`NAT`*: Pfsense supports Static NAT in the form of NAT 1:1. The condition to perform NAT 1:1 is to have a public IP. When performing NAT 1:1, the Private IP being NAT-ed will always go out with the corresponding Public IP, and the ports will also correspond on the Public IP.
+
+3. *`Powerful firewall`*: PFsense provides a strong firewall with the ability to filter packets based on IP address, port, protocol, application,... It also supports complex and flexible firewall rules. Rules must be created to manage the internal network.
+
+4. *`Analyze and manage traffic`*: PFsense provides network traffic analysis tools such as NetFlow and many other plugins to help you understand and manage Internet usage in your network.
+
+5. *`VPN (Virtual Private Network)`*: PFsense supports multiple VPN protocols such as *`IPsec`*, *`OpenVPN`*, *`L2TP`*, and *`PPTP`*, allowing secure VPN connections to be established between locations or remote users.
+
+6. *`Proxy Server`*: PFsense can act as a `proxy server`, allowing to control and filter web content, providing security and managing Internet traffic.
+
+7. *`Load balancing and failover`*: PFsense supports load balancing across multiple Internet connections to optimize network performance and availability. It also features redundancy to ensure service continuity.
+
+8. *`Manage access control lists (ACL)`*: By using access control lists, you can control the Internet access rights of users in the network, from blocking access to specific websites to managing access time.
+
+9. *`Security`*: PFsense supports many security features such as `IDS/IPS` (Intrusion Detection/Prevention System), `DPI` (Deep Packet Inspection), `DDoS` protection, to protect the network from various threats.
+
+10. *`Managing DHCP and DNS:`*: PFsense also provides DHCP and DNS management services to automatically assign IP addresses and manage domains within the network.
+
+![pfsense](Imgs/pfs.jpg)
+
+### Setup firewall (Outscope)
+
+The pfSense solution is an open-source firewall project originating from the Monowall firewall project from many years ago. According to pfsense.org, thousands of enterprises use pfSense. Essentially, pfSense will include a full-featured firewall/L3 routing suite with many other features such as proxy server, IDS/IPS, high availability, certificate management, and centralized VPN.
+
+![architecture](Imgs/fo.svg)
+
+#### Initial setup
+
+> [!CAUTION]
+> ***Error login HTTP_REFERER***
+> ![pfsense](Imgs/cts_error.png)
+
+Access **terminal console** of **pfsense -> select number `8`**.
+
+![pfsense](Imgs/cts_fix.png)
+
+```sh
+pfSsh.php playback disablereferercheck
+```
+
+> [!NOTE]
+> ***ERR_CONNECTION_TIMED_OUT***
+
+- Assignment Interface in pfSense:
+
+  After configuring VLANs, pfSense will prompt you to assign the WAN interface. Typically, pfSense will display a list of network interfaces connected to it, such as vtnet0 and vtnet1. These are common virtual network interface names in cloud environments.
+  - `Cloud Environment Consideration:`
+    - In a cloud environment, if you do not have a VPN setup, pfSense will require a public IP address on the WAN interface to allow access to the User Interface (UI). This is crucial because, without VPN, the only way to manage pfSense remotely is through this public IP.
+
+  - `WAN Configuration Before LAN:`
+    - It is essential to configure WAN access rules before setting up the LAN interface, especially for ports 443 (HTTPS) and 80 (HTTP). `This is because, once the LAN interface is assigned, pfSense’s "Default Rule" will automatically shift from the WAN to the LAN interface`.
+    - This behavior is part of pfSense’s security mechanism, where the default access rules will prioritize the LAN interface once it's assigned.
+
+If you assign the LAN interface before configuring the necessary WAN rules, you might lose access to pfSense through the WAN interface. This happens because the default allow rules will then apply to the LAN, `leaving the WAN interface without the required access permissions`.
+
+When accessing the Web UI interface, pfSense will automatically display the Setup Wizard page to set up the main parameters for the system.
+
+![pfsense](Imgs/pfsense-web-ui.png)
+
+Click **`Next`** to continue
+
+##### General Information
+
+![pfsense](Imgs/pfsense-web-ui-1.png)
+
+Set up `Hostname`, `Domain`, `DNS Server`, then click `Next`
+
+- Hostname: keep pfSense unchanged, you can change later.
+
+- Domain: keep the default home.arpa, you can change later.
+
+- Primary & Secondary DNS Server: Enter Cloudflare DNS (1.1.1.1 and 1.0.0.1) or Google DNS (8.8.8.8 and 8.8.4.4), or leave it blank.
+
+- Override DNS: Select this if you want to use the DNS provided by the DHCP Server sent to the WAN port.
+
+##### Time Server Configuration
+
+![pfsense](Imgs/pfsense-web-ui-2.png)
+
+Adjust time zone and Time Server. I use time server `1.vn.pool.ntp.org.`
+
+##### WAN Interface Configuration
+
+Configure the WAN Interface and LAN Interface according to the virtual network diagram designed in architecture.
+
+1. **Step 1:**
+
+   - Setup IP address of WAN and LAN in portal CMC-Cloud
+
+    ![pfsense](Imgs/pfs_oos.png)
+
+   - Setup security group in portal CMC-Cloud
+
+    ![pfsense](Imgs/pfs_oos_1.png)
+
+2. **Step 2:**
+
+   - Set the WAN Interface Type to Static with the following IP parameters:
+
+  ![pfsense](Imgs/sub_net.png)
+
+  **IP Address:** `172.24.48.8`
+
+  **Subnet Mask:** `24`
+
+  **Upstream Gateway:** `172.24.48.1` (IP of the Mikrotik Router)
+
+  In a real-world scenario, if you are using pfSense to connect to the ISP's optical modem, you will need to change the WAN Interface Type to PPPoE and enter the provided Username/Password for connection authentication.
+
+  ![pfsense](Imgs/pfs_oos_.png)
+
+  Set the `WAN` Interface to `DHCP` IP
+
+  ![pfsense](Imgs/pfs_oos_2.png)
+
+  Uncheck the option `Block RFC1918 Private Networks` and `Block bogon networks`
+
+  Block RFC1918 Private Networks: This option means that pfSense will block all access to the WAN port from internal IP ranges (`10/8, 172.16/12, 192.168/16`).
+
+  Since I'm using pfSense in a virtual network on CMC-Cloud, where all connections to the WAN port are internal IPs (`172.24.48.0/24`), it is necessary to uncheck Block RFC1918 Private Networks to allow the Host to access the pfSense management page.
+
+#### Configure LAN Interface
+
+Change LAN IP Address to `dhcp` and Subnet Mask `32`
+
+![pfsense](Imgs/pfs_oos_3.png)
+
+#### Change the Admin password
+
+![pfsense](Imgs/pfs_oos_4.png)
+
+Enter `new password` for Admin account
+
+#### Save parameters
+
+![pfsense](Imgs/pfs_oos_5.png)
+
+Click `Reload` to let pfSense save the parameters and restart the service.
+
+![pfsense](Imgs/pfs_oos_6.png)
+
+Click `Finish` to complete
+
+**`Result:`** Dashboard of pfsense
+
+![pfsense](Imgs/pfs_oos_7.png)
+
+#### Configure Interface
+
+Add interface `vtnet1`
+
+![pfsense](Imgs/pfs_oos_8.png)
+
+Config `WAN` interface
+
+![pfsense](Imgs/wan-oos.png)
+
+![pfsense](Imgs/wan-oos-1.png)
+
+Config `LAN` interface
+
+![pfsense](Imgs/lan-oos.png)
+
+![pfsense](Imgs/lan-oos-1.png)
+
+#### Configure Rule and NAT(port-forward)
+
+> **Rule**
+
+##### I. Rule WAN interface
+
+![pfsense](Imgs/rule-wan.png)
+
+- Allow Port access UI
+
+    > [!NOTE]
+    > If the service runs on two ports, `80 (HTTP)` and `443 (HTTPS)`, it should be configured to access the public IP address via a different port to avoid conflicts when configuring port forwarding.
+
+  - Go to: System -> Advanced -> Admin Access -> webConfigurator -> TCP Port: 'Port different: 80 and 443' -> Save -> Apply changes and wait 20 seconds for automatic redirection. (Remember to create an Allow Rule for WAN Access on the configured port).
+
+  ![pfsense](Imgs/rule-wan-1.png) ![pfsense](Imgs/rule-wan-2.png)
+
+- Virtual IP port-forward to 80 and 443
+
+  To set up port forwarding to ports 80 and 443 using a Virtual IP, you need to configure the following steps:
+  - Step 1. Create a Virtual IP on CMC-lor:
+    - Go to Dashboard CMC-Cloud ->`Virtual Private Cloud` -> `Subnets` -> `subnet-outscope-bvb` -> `IP address`.
+
+      ![pfsense](Imgs/vip.png)
+
+    - Select button `Assign Virtual IP address` -> `Automatic` -> `OK`.
+
+      ![pfsense](Imgs/vip_1.png)
+
+    - Continue select `Actions` -> `Bind to Server` -> `Select Server` -> `Select Port` -> `Bind Server`.
+
+      ![pfsense](Imgs/vip_2.png)
+
+      ![pfsense](Imgs/vip_3.png)
+
+##### II. Rule LAN interface
+
+![pfsense](Imgs/rule-lan.png)
+
+> **NAT**
+
+1. NAT Port-forward
+
+![pfsense](Imgs/nat-pf.png)
+
+- Go to Port Forwarding Settings:
+  - Navigate to Firewall -> NAT -> Port Forward.
+  - Click Add to create a new NAT rule for port forwarding.
+
+Configure port forwarding from the `WAN` interface to the internal `NAT IP` (`172.24.65.98`) on port `80` (`HTTP`)
+
+![pfsense](Imgs/nat-pf1.png)
+
+Configure port forwarding from the `WAN` interface to the internal `NAT IP` (172.24.65.98) on port `443` (`HTTPS`)
+
+![pfsense](Imgs/nat-pf2.png)
+
+1. NAT Outbound
+
+- Select `Hybrid Outbound NAT rule generation. (Automatic Outbound NAT + rules below)`
+- Add Mapping LAN address to subnet 172.24.64.0/20 (outscope)
+
+![pfsense](Imgs/Outbound.png)
+
+![pfsense](Imgs/Outbound1.png)
+
+### Setup firewall (Inscope Non CDE)
+
+### Build VPN
+
+`OpenVPN` is a virtual private network (VPN) system that implements techniques to create secure point-to-point or site-to-site connections. It allows parties to authenticate each other using `pre-shared keys`, `certificates`, or `usernames/passwords`. When used in a multi client-server configuration, it enables the server to issue an authentication certificate to each client. It uses the OpenSSL encryption library as well as the widely-used *TLS protocol*, with many control and security features.
+
+> [!NOTE]
+> ***The pfSense firewall is installed and working with interfaces including WAN and LAN***
+
+#### Setup VPN Client to Site
+
+##### Step 1: Configure WAN interface
+
+- Setup IP address of WAN in portal CMC-Cloud
+
+![pfsense](Imgs/cts.png)
+
+- Setup security group in portal CMC-Cloud
+
+![pfsense](Imgs/cts1.png)
+
+##### Step 2: Create a Virtual IP
+
+- Navigate to Firewall -> `Virtual IPs`.
+- Click `Add` to create a new Virtual IP.
+- Set the `Type` to `IP Alias`.
+- Assign the `Virtual IP Address` (42.96.47.201) that you want to use.
+- Set the Interface to `WAN` or whichever interface you want the Virtual IP to be associated with.
+- Save and apply the changes.
+
+![pfsense](Imgs/cts2.png)
+![pfsense](Imgs/cts3.png)
+
+##### Step 3: Create Certificate Authority – CA
+
+- Go to the menu `System > Cert. Manager`.
+
+- Click button `Add` to create a new CA.
+
+  ![pfsense](Imgs/cts_ca.png)
+
+- Enter an identifying name for the CA.
+
+- Set the `method` to **Create an internal Certificate Authority**.
+
+- Select **Key Type**. (RSA, ECDSA..)
+
+- Set the length of the key **Key length (2048, 4096, …)**.
+
+- Select **Digest Algorithm encryption algorithm (sha256, sha512, …)**.
+
+- Set a common name **Common Name (internal-ca, own-ca, ...)**.
+
+  ![pfsense](Imgs/cts_ca1.png)
+
+- Save to complete CA
+
+  ![pfsense](Imgs/cts_ca2.png)
+
+##### Step 4: Create Server Certificate
+
+- Go to the `System > Cert. Manager menu`.
+
+- Access the `Certificates` tab in the submenu.
+
+- Select `Add/Sign` at the bottom right.
+
+- Set the `Method` to `Create an internal Certificate Authority`.
+
+- Enter a Descriptive name.
+
+- Set the `Key length` and `Digest Algorithm` the same as the previously created `CA`.
+
+- Adjust the `Lifetime` to 3650 days or customize it, not exceeding 398 days.
+
+- Set the Common Name.
+
+- Set the `Certificate Type` to Server `Certificate`.
+
+  ![pfsense](Imgs/cts_ca3.png)
+
+- Save to complete `Server Certificate`.
+
+##### Step 5: Create a VPN – OpenVPN Server
+
+- Select the `VPN > OpenVPN`.
+
+  ![pfsense](Imgs/cts_vpn.png)
+
+- Select `Add`.
+  - General Information:
+    1. Set **Server mode** to **Remote Access (SSL/TLS + User Auth)**.
+    2. **Local port**, select the connection port, default port **1194**.
+    3. Enter a **description**.
+
+  ![pfsense](Imgs/cts_vpn1.png)
+
+  - `Cryptographic` Settings:
+
+    1. Select Use **TLS Key** and automatically enable **Automatically generate a TLS Key**.
+    2. In **Peer Certificate Authority**, select the CA that was previously created.
+    3. Select the **Server Certificate** created.
+    4. Choose 2048 for **DH Parameter Length**.
+    5. Set **Auth digest algorithm** to RSA-SHA256 (256-bit).
+
+    ![pfsense](Imgs/cts_vpn2.png)![pfsense](Imgs/cts_vpn3.png)
+
+  - `VPN Tunnel` Settings:
+    1. Create a subnet in **IPv4 Tunnel Network** as `10.20.10.0/24`.
+    2. Leave **IPv6 Tunnel Network** blank.
+    3. Enable **Redirect IPv4 Gateway**.
+    4. Specify the `maximum number(20)` of clients allowed to concurrently connect to this server.
+
+    ![pfsense](Imgs/cts_vpn4.png)
+
+  - `Client Settings` and `Ping settings`
+
+    Keep default setting
+
+    ![pfsense](Imgs/cts_vpn5.png)
+
+  - `Advanced Client Settings` and `Advanced Configuration`:
+
+    1. Enable DNS Server and add IP DNS Server `10.20.10.1`.
+    2. Choose IPv4 Only in Gateway creation; select Both if using IPv4 and IPv6.
+
+    ![pfsense](Imgs/cts_vpn6.png)
+
+- Press `Save` to update the configuration.
+
+  ![pfsense](Imgs/cts_vpn7.png)
+
+##### Step 6: Create a VPN – OpenVPN Client
+
+- Navigate to `VPN > OpenVPN > Clients`.
+
+![pfsense](Imgs/cts_c.png)
+
+- Click the `Add` button.
+
+  - General Information:
+    1. Enter a **description**.
+    2. **Disabled**: Leave this unchecked or your client connection will be disabled.
+    3. Set **Server mode** to **Peer to Peer (SSL/TLS)**.
+
+    ![pfsense](Imgs/cts_c1.png)
+
+  - `Endpoint Configuration` Setting:
+    1. **Protocol**:Have 2 option UDP and TCP. And we used *TCP only on IPv4*.
+    2. Set **Interface**: `42.96.47.201((VIP))`. The virtual IP (VIP) was created previously.
+    3. **Local port**: Leave blank unless specified by your VPN provider
+    4. **Server host or address**: The IP address(*`42.96.47.201`*) or hostname of the VPN server to which you will connect.
+    5. **Server port**: The port(*`1194`*) over which the VPN connection will be made.
+    6. **Proxy host or address**: Leave blank
+    7. **Proxy port**: Leave blank
+    8. **Proxy Authentication**: none
+    ![pfsense](Imgs/cts_c2.png)
+
+  - `User Authentication` Settings
+    1. Username: Your username, client identifier, account number, etc.
+    2. Password: Your password (if required)
+    3. Automatic Retry: Leave unchecked so that your client will attempt to reconnect when authentication fails.
+  
+    ![pfsense](Imgs/cts_c3.png)
+
+  - `Cryptographic` Settings
+    1. Select Use **TLS Key** and automatically enable **Automatically generate a TLS Key**.
+    2. In **Peer Certificate Authority**, select the CA that was previously created.
+    3. **Client Certificate**: Leave this set to None.
+    4. Set **Auth digest algorithm** to RSA-SHA256 (256-bit).
+
+    ![pfsense](Imgs/cts_c4.png)![pfsense](Imgs/cts_c5.png)
+
+  - `VPN Tunnel` Settings: Keep default in Tunnel Setting section.
+
+    ![pfsense](Imgs/cts_c6.png)
+
+  - `Ping settings`
+
+    Keep default setting
+
+    ![pfsense](Imgs/cts_c7.png)
+
+  - `Advanced Configuration`:
+    - Choose IPv4 Only in `Gateway creation`; select Both if using IPv4 and IPv6.
+
+    ![pfsense](Imgs/cts_c8.png)
+
+- Press `Save` to update the configuration.
+
+  ![pfsense](Imgs/cts_c9.png)
+
+##### Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client
+
+- Go to `System > Package Manager`.
+
+- Select **Available Packages** in the submenu.
+
+  ![pfsense](Imgs/cts_pkt.png)
+
+- Find the `openvpn-client-export utility` and select **install** to install it.
+
+  ![pfsense](Imgs/cts_pkt1.png)
+
+- Press **confirm** to install.
+  ![pfsense](Imgs/cts_pkt2.png)
+- Once installation is complete, **Success** will be displayed in the **Package Installer** interface.
+  ![pfsense](Imgs/cts_pkt3.png)![pfsense](Imgs/cts_pkt4.png)
+
+##### Step 8 : Create user OpenVPN
+
+- Go to the menu **System > User Manager**.
+
+  ![pfsense](Imgs/cts_user.png)
+
+- Select the **Add** button and enter a **Username** and **Password** for your user.
+
+- Press **Save**, and the **OpenVPN user** will be successfully created and then redirected to the initial interface.
+
+- Configure the authentication method as certificate and password.
+
+- Select **Add** -> **User Certificate** and enter additional information.
+
+- Set the method (**Method -> Create an internal Certificate**).
+
+- Choose **Key length, Type, and Digest Algorithm** to match the previously created **CA**.
+
+- Set the expiration time **Lifetime to 3650 days**.
+
+- Ensure that **Certificate Type** is selected as the user certificate just created **(User Certificate)**.
+
+- **Save** to complete linking the user certificate with the OpenVPN user **(User Certificate – OpenVPN user)**.
+
+  ![pfsense](Imgs/cts_user1.png)![pfsense](Imgs/cts_user2.png)
+
+- Press **Save** to complete the setup of creating the user account for OpenVPN.
+
+##### Step 9: Configure access permissions in the VPN
+
+- Go to the `Firewall > Rules` menu.
+- Select **OpenVPN**.
+- Select the first **Add** to add a new rule.
+  ![pfsense](Imgs/cts_rule_vpnn.png)
+- **Interface**: OpenVPN
+- **Address Family**, choose **IPv4** only.
+- **Protocol**, select **TCP**.
+  ![pfsense](Imgs/cts_rule_vpn.png)
+
+- `Source`, choose **any**.
+- Enter a **description**, press Save, and Apply Changes to save the configuration.
+
+  ![pfsense](Imgs/cts_rule_vpn1.png)
+
+##### Step 10: Configure access to the VPN
+
+- Go to the `Firewall > Rules` menu.
+- Select the **WAN** tab.
+- Click **Add** to add a new rule.
+
+  ![pfsense](Imgs/cts_rule_wan.png)
+
+- Set **Address Family** to **IPv4**.
+- **Protocol**, choose **TCP**.
+
+  ![pfsense](Imgs/cts_rule_wan1.png)
+
+- Set **Source** to **any**.
+- `Destination Port Range`, enter the OpenVPN port configured earlier, which is **`1194`**.
+- Enter a **description**, press **Save**, and Apply Changes to save the configuration.
+
+  ![pfsense](Imgs/cts_rule_wan2.png)
+
+##### Step 11: Configure NAT outbound
+
+- Navigate to `Firewall > NAT > Outbound`.
+  - Outbound NAT Mode: ***Hybrid Outbound NAT rule generation.
+(Automatic Outbound NAT + rules below)*** and then click **Save** and Apply Changes NAT rules.
+  ![pfsense](Imgs/cts_nat.png)
+  - Mappings Configure
+    - Click the green **Add** button with a downward pointing arrow, to create a new NAT rule.
+    - Set the **Interface** field to the VPN interface we created earlier.
+    - Set the **Address Family** to either IPv4 or IPv4+IPv6 if your VPN provider explicitly supports IPv6.
+    - Set the **Source** and **Destination** network with subnet address.
+    - Leave all the other settings untouched. Click **Save** and **Apply Changes**.
+
+    ![pfsense](Imgs/cts_nat1.png)! [pfsense](Imgs/cts_nat2.png)
+
+##### Step 12: Export the VPN Client installation package
+
+- Go to `VPN > OpenVPN`.
+- Select `Client Export` in the submenu.
+- Select the correct **OpenVPN** server next to **Remote Access Server**.
+- If using `Dynamic DNS` to access the pfSense **WAN** network, choose **Other** and select **Host Name Resolution** (This setting allows access to the pfSense WAN network using a name instead of an IP address, ensuring no loss of access to the OpenVPN server if the ISP changes the IP or WAN network). `Exp: 42.96.47.201`
+- If not using this, set **Host Name Resolution** to **Interface IP Address**.
+
+  ![pfsense](Imgs/cts_vpn_exp.png)![pfsense](Imgs/cts_vpn_exp1.png)
+
+- Scroll down to the user location to download the VPN Client installation file, and choose the appropriate installation file.
+  ![pfsense](Imgs/cts_vpn_exp2.png)
+
+##### Step 13: Test the OpenVPN connection
+
+- Run the installation file for the **VPN Client** that was downloaded.
+- Once successfully connected to **OpenVPN**,
+
+  ![pfsense](Imgs/vpn_test.png)
+
+- Network information – when connected to **OpenVPN**.
+  ![pfsense](Imgs/vpn_test1.png)
+
+  ![pfsense](Imgs/vpn_test2.png)
+
+  ![pfsense](Imgs/vpn_test3.png)
+
+#### Setup VPN Site to site
+
+> Site HCM
+
+Start with configuring the tunnel and related settings on the firewall at Site HCM.
+
+##### Setup Network on CMC-Cloud Site HCM
+
+1. Setup IP address of `WAN` and `LAN` in portal `CMC-Cloud`:
+
+    Add **IP private** and **IP public**
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc.png)
+2. Setup **security group** in portal CMC-Cloud
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc0.png)![pfsense](Imgs/S2S/vpn_s2s_cmc1.png)![pfsense](Imgs/S2S/vpn_s2s_cmc2.png)
+3. `Allowed address pairs`
+   - Double click to open tab `Update port` -> **Allowed address pairs**
+   - Add Security Group
+   - Add *`IP Address or CIDR *`* -> `Mac Address`
+   - Click Add to create a new **Allowed address pairs**.
+  
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc3.png)
+
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc4.png)
+
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc5.png)
+
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc6.png)
+
+##### Configure Interface OutScope, NonCDE, CDE Site HCM
+
+Let's start.
+
+First, configure the internal LAN and the gateway interface. To do this, in the browser, go to the server IP address or domain name if any. Enter the username and password and get to the Home screen (Dashboard). In the program menu, go to the interfaces section `Interfaces -> Assignments`. In our case, have 3 interfaces are already distributed - we leave it as it is. If you have several interfaces, you should select the necessary interface by mac-address and click the Add button.
+
+Assign an IP address to the interface **“looking”** to the local network.
+
+- Add interface vtnet1 (OutScope)
+- Add interface vtnet2 (NonCDE)
+- Add interface vtnet3 (CDE)
+
+![pfsense](Imgs/S2S/s2s2.png)
+![pfsense](Imgs/S2S/s2s.png)
+
+In the program menu, change interface name `interfaces section -> OutScope | NonCDE | CDE`. At the end of the setup, click the Save button.
+
+For all servers in the local network, as the default gateway, set the IP address specified in the LAN.
+
+- Assign `Interface > OutScope`
+  - Setting `General Configuration`
+    - Select **enable interface**
+    - IPv4 Type: **DHCP**
+  - DHCP Client Configuration
+    - Keep default
+  - Reserved Networks
+    - Untick **Block private networks and loopback addresses** and **Block bogon networks**
+
+  ![pfsense](Imgs/S2S/s2s9.png)![pfsense](Imgs/S2S/s2s10.png)
+
+- Do the same with CDE and Non CDE
+  ![pfsense](Imgs/S2S/s2s7.png)![pfsense](Imgs/S2S/s2s8.png)
+  ![pfsense](Imgs/S2S/s2s5.png)![pfsense](Imgs/S2S/s2s6.png)
+  
+`Important!` If you use cloud services, then you need to unite the network nodes from the administration panel of the cloud service through `“Virtual Networks”`.
+
+##### Configure the IPSec tunnel Site HCM
+
+***`Phase 1`***
+
+- Access the `VPN > IPSEC > Tunnel` section
+- Click on the **ADD P1** button![pfsense](Imgs/S2S/s2s16.png)
+- In the Phase 1 configuration page of the IPsec VPN on the pfsense server, fill in the information according to the configuration similar to IPSec VPN in site HN.
+  - `General Information` Setting
+    - Enter a **Description**
+    - Uncheck **Disabled** this box so that the tunnel will be operational.
+  - `IKE Endpoint Configuration`
+    - Key Exchange version: Specifies whether to use IKEv2 or IKEv1. IKEv2 is the best practice when supported by both endpoints. If one side does not support IKEv2, use **IKEv1** instead.
+    - Internet Protocol: **IPv4** in most cases unless both WANs have IPv6
+    - Interface: Most likely set to **WAN**
+    - Remote Gateway: The WAN address at Site HN, in this example: `42.96.40.240`.
+    ![pfsense](Imgs/S2S/s2s17.png)
+  - Setup `Phase 1 Proposal (Authentication)`
+  
+    The next section controls IPsec phase 1 proposals for encryption.
+    - Authentication Method:The default, **Mutual PSK**
+    - Negotiation mode: **Main**
+    - My Identifier: **My IP Address**
+    - Peer Identifier: **Any**
+    - Pre-Shared key: generate a key (we will also need this value on our end)![pfsense](Imgs/S2S/s2s18.png)
+  - `Phase 1 Proposal (Encryption Algorithm)`
+  
+    Encryption Algorithm:
+    - Algorithm Select **AES**
+    - Key length use **128bits**
+    - Hash use **SHA256**
+    - DH group **2** (1028bit)
+  - `Expiration and Replacement`
+    - The Expiration and Replacement section controls the timing and method by which phase 1 will be renegotiated.
+      - Life Time: The default `28800` is OK for this endpoint.
+      - The other lifetime-related values (Rekey Time, Reauth Time, Rand Time) should be left at their defaults on this endpoint as they are automatically calculated as the correct values.
+  - `Advanced Options`
+    - Child SA Close Action: Set this endpoint to **Default**. Moreover, have options **Restart/Reconnect** so that the phase 2 entries will be reconnected if they get disconnected.
+    - Leave checked and at the default values.
+  ![pfsense](Imgs/S2S/s2s19.png)
+  - Click **Save** when complete
+
+***`Phase 2`***
+
+With the phase 1 entry complete, now a new phase 2 definition to the VPN:
+
+- Click **Show Phase 2 Entries** to expand the phase 2 list for this VPN.
+
+- Click **Add P2** to add a new phase 2 entry.
+
+Now add settings for phase 2 on this VPN. The settings for phase 2:
+
+- `General Information`
+  - Description: A brief description of the network(s) involved in this phase 2 entry.
+  - Mode: Select ***Tunnel IPv4***
+- `Networks`
+  - Local Network: **WAN subnet** with interface WAN. **LAN Subnet** with interfaces: OutScope, CDE and NonCDE.
+- `NAT/BINAT`
+  - Set to **None**.
+- `Remote Network`
+  - Set to the network at Site HN, in this case: `172.25.49.0/24`
+
+![pfsense](Imgs/S2S/s2s20.png)
+
+The next section of the phase 2 settings covers traffic encryption. Encryption algorithms and Hash algorithms can both be set to allow multiple options in phase 2, and both sides will negotiate and agree upon the settings so long as each side has at least one of each in common. In some cases that may be a good thing, but it is usually better to restrict this to the single specific options desired on both sides.
+
+- `Phase 2 Proposal (SA/Key Exchange)`
+  - Protocol: Set to **ESP** for encryption.
+  - Encryption Algorithms: **AES (128bits)**
+  - Hash algorithm use **SHA1**
+  - PFS key group with **2(1024bit)**
+
+- `Expiration and Replacement` and `Keep Alive`
+  - Keep default
+
+![pfsense](Imgs/S2S/s2s22.png)
+
+***NonCDE***
+
+![pfsense](Imgs/S2S/s2s23.png)![pfsense](Imgs/S2S/s2s24.png)
+
+***CDE***
+
+![pfsense](Imgs/S2S/s2s25.png)![pfsense](Imgs/S2S/s2s26.png)![pfsense](Imgs/S2S/s2s27.png)
+
+***OutScope***
+
+![pfsense](Imgs/S2S/s2s28.png)![pfsense](Imgs/S2S/s2s29.png)
+
+`Result:`
+
+![pfsense](Imgs/S2S/s2s30.png)
+
+##### Configure Firewall for local connections Site HCM
+
+In the program menu, select `Firewall -> Rules -> WAN`. Click the **Add** button.
+
+- Protocol: **TCP**, but you can also use Any.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S/s2s11.png)
+
+Configure rule OutScope VPN: `Firewall -> Rules -> OutScope`
+
+- On the new page we check the parameters:
+
+  - Customizable interface: **OutScope**.
+
+  - Protocol: **TCP**, but you can also use Any.
+
+  - Source: **Any**.
+
+  - Destination: **Any**.
+- Save the settings by clicking on the Save button.
+
+![alt text](Imgs/S2S/s2s14.png)
+
+Do the same with CDE and Non CDE
+
+![alt text](Imgs/S2S/s2s13.png)
+
+![alt text](Imgs/S2S/s2s12.png)
+
+Configure rule IPSec VPN: `Firewall -> Rules -> IPSec`
+
+- Protocol: **TCP**, but you can also use **Any**.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S/s2s15.png)
+
+It should be noted that the same settings must be made on all remote pfSense servers connected to a single network.
+
+##### Config Route table in CMC-Cloud on Site HCM
+
+A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.
+
+![alt text](Imgs/S2S/route_hcm.png)
+
+![alt text](Imgs/S2S/route_hcm_1.png)
+
+![alt text](Imgs/S2S/route_hcm_1.1.png)
+
+![alt text](Imgs/S2S/route_hcm_1.2.png)
+
+![alt text](Imgs/S2S/route_hcm_2.png)
+
+![alt text](Imgs/S2S/route_hcm_2.1.png)
+
+![alt text](Imgs/S2S/route_hcm_3.png)
+
+![alt text](Imgs/S2S/route_hcm_3.1.png)
+
+![alt text](Imgs/S2S/route_hcm_3.2.png)
+
+![alt text](Imgs/S2S/route_hcm_5.png)
+
+![alt text](Imgs/S2S/route_hcm_5.1.png)
+
+===================================================
+
+> Site HN
+
+Now that Site HCM is configured, it is time to tackle Site HN. Repeat the process on the Site HN endpoint to add a tunnel.
+
+##### Setup Network on CMC-Cloud Site HN
+
+1. Setup IP address of `WAN` and `LAN` in portal `CMC-Cloud`:
+
+    Add **IP private** and **IP public**
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn.png)
+2. Setup **security group** in portal CMC-Cloud
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn1.png)![pfsense](Imgs/S2S-HN/s2s_cmc_hn2.png)
+3. `Allowed address pairs`
+   - Double click to open tab `Update port` -> **Allowed address pairs**
+   - Add Security Group
+   - Add *`IP Address or CIDR *`* -> `Mac Address`
+   - Click Add to create a new **Allowed address pairs**.
+  
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn3.png)
+
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn4.png)
+
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn5.png)
+
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn6.png)
+
+##### Configure Interface OutScope, NonCDE, CDE Site HN
+
+Let's start.
+
+First, configure the internal LAN and the gateway interface. To do this, in the browser, go to the server IP address or domain name if any. Enter the username and password and get to the Home screen (Dashboard). In the program menu, go to the interfaces section `Interfaces -> Assignments`. In our case, have 3 interfaces are already distributed - we leave it as it is. If you have several interfaces, you should select the necessary interface by mac-address and click the Add button.
+
+Assign an IP address to the interface **“looking”** to the local network.
+
+- Add interface vtnet1 (OutScope)
+- Add interface vtnet2 (NonCDE)
+- Add interface vtnet3 (CDE)
+
+![pfsense](Imgs/S2S-HN/hn.png)
+![pfsense](Imgs/S2S-HN/hn0.png)
+
+In the program menu, change interface name `interfaces section -> OutScope | NonCDE | CDE`. At the end of the setup, click the Save button.
+
+For all servers in the local network, as the default gateway, set the IP address specified in the LAN.
+
+- Assign `Interface > OutScope`
+  - Setting `General Configuration`
+    - Select **enable interface**
+    - IPv4 Type: **DHCP**
+  - DHCP Client Configuration
+    - Keep default
+  - Reserved Networks
+    - Untick **Block private networks and loopback addresses** and **Block bogon networks**
+
+  ![pfsense](Imgs/S2S-HN/hn7.png)![pfsense](Imgs/S2S-HN/hn8.png)
+
+- Do the same with CDE and Non CDE
+  ![pfsense](Imgs/S2S-HN/hn6.png)![pfsense](Imgs/S2S-HN/hn6a.png)
+  ![pfsense](Imgs/S2S-HN/hn4.png)![pfsense](Imgs/S2S-HN/hn5.png)
+  
+`Important!` If you use cloud services, then you need to unite the network nodes from the administration panel of the cloud service through `“Virtual Networks”`.
+
+##### Configure the IPSec tunnel Site HN
+
+***`Phase 1`***
+
+- Access the `VPN > IPSEC > Tunnel` section
+- Click on the **ADD P1** button![pfsense](Imgs/S2S-HN/hn15.png)
+- In the Phase 1 configuration page of the IPsec VPN on the pfsense server, fill in the information according to the configuration similar to IPSec VPN in site HN.
+  - `General Information` Setting
+    - Enter a **Description**
+    - Uncheck **Disabled** this box so that the tunnel will be operational.
+  - `IKE Endpoint Configuration`
+    - Key Exchange version: Specifies whether to use IKEv2 or IKEv1. IKEv2 is the best practice when supported by both endpoints. If one side does not support IKEv2, use **IKEv1** instead.
+    - Internet Protocol: **IPv4** in most cases unless both WANs have IPv6
+    - Interface: Most likely set to **WAN**
+    - Remote Gateway: The WAN address at Site HN, in this example: `42.96.45.27`.
+    ![pfsense](Imgs/S2S-HN/hn16.png)
+  - Setup `Phase 1 Proposal (Authentication)`
+  
+    The next section controls IPsec phase 1 proposals for encryption.
+    - Authentication Method:The default, **Mutual PSK**
+    - Negotiation mode: **Main**
+    - My Identifier: **My IP Address**
+    - Peer Identifier: **Any**
+    - Pre-Shared key: generate a key (we will also need this value on our end)![pfsense](Imgs/S2S-HN/hn17.png)
+  - `Phase 1 Proposal (Encryption Algorithm)`
+  
+    Encryption Algorithm:
+    - Algorithm Select **AES**
+    - Key length use **128bits**
+    - Hash use **SHA256**
+    - DH group **2** (1028bit)
+  - `Expiration and Replacement`
+    - The Expiration and Replacement section controls the timing and method by which phase 1 will be renegotiated.
+      - Life Time: The default `28800` is OK for this endpoint.
+      - The other lifetime-related values (Rekey Time, Reauth Time, Rand Time) should be left at their defaults on this endpoint as they are automatically calculated as the correct values.
+  - `Advanced Options`
+    - Child SA Close Action: Set this endpoint to **Default**. Moreover, have options **Restart/Reconnect** so that the phase 2 entries will be reconnected if they get disconnected.
+    - Leave checked and at the default values.
+  ![pfsense](Imgs/S2S-HN/hn18.png)
+  - Click **Save** when complete
+
+***`Phase 2`***
+
+With the phase 1 entry complete, now a new phase 2 definition to the VPN:
+
+- Click **Show Phase 2 Entries** to expand the phase 2 list for this VPN.
+
+- Click **Add P2** to add a new phase 2 entry.
+
+Now add settings for phase 2 on this VPN. The settings for phase 2:
+
+- `General Information`
+  - Description: A brief description of the network(s) involved in this phase 2 entry.
+  - Mode: Select ***Tunnel IPv4***
+- `Networks`
+  - Local Network: **WAN subnet** with interface WAN. **LAN Subnet** with interfaces: OutScope, CDE and NonCDE.
+- `NAT/BINAT`
+  - Set to **None**.
+- `Remote Network`
+  - Set to the network at Site HN, in this case: `172.24.49.0/24`
+
+![pfsense](Imgs/S2S-HN/hn19.png)
+
+The next section of the phase 2 settings covers traffic encryption. Encryption algorithms and Hash algorithms can both be set to allow multiple options in phase 2, and both sides will negotiate and agree upon the settings so long as each side has at least one of each in common. In some cases that may be a good thing, but it is usually better to restrict this to the single specific options desired on both sides.
+
+- `Phase 2 Proposal (SA/Key Exchange)`
+  - Protocol: Set to **ESP** for encryption.
+  - Encryption Algorithms: **AES (128bits)**
+  - Hash algorithm use **SHA1**
+  - PFS key group with **2(1024bit)**
+
+- `Expiration and Replacement` and `Keep Alive`
+  - Keep default
+
+![pfsense](Imgs/S2S-HN/hn20.png)
+
+***NonCDE***
+
+![pfsense](Imgs/S2S-HN/hn21.png)![pfsense](Imgs/S2S-HN/hn22.png)
+
+***CDE***
+
+![pfsense](Imgs/S2S-HN/hn23.png)![pfsense](Imgs/S2S-HN/hn24.png)
+
+***OutScope***
+
+![pfsense](Imgs/S2S-HN/hn25.png)![pfsense](Imgs/S2S-HN/hn26.png)
+
+`Result:`
+
+![pfsense](Imgs/S2S-HN/hn28.png)
+
+##### Configure Firewall for local connections Site HN
+
+In the program menu, select `Firewall -> Rules -> WAN`. Click the **Add** button.
+
+- Protocol: **TCP**, but you can also use Any.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S-HN/hn11.png)
+
+Configure rule OutScope VPN: `Firewall -> Rules -> OutScope`
+
+- On the new page we check the parameters:
+
+  - Customizable interface: **OutScope**.
+Imgs/S2S-HN/hn23.png
+  - Protocol: **TCP**, but you can also use Any.
+
+  - Source: **Any**.
+
+  - Destination: **Any**.
+- Save the settings by clicking on the Save button.
+
+![alt text](Imgs/S2S-HN/hn13.png)
+
+Do the same with CDE and Non CDE
+
+![alt text](Imgs/S2S-HN/hn12.png)
+
+![alt text](Imgs/S2S-HN/hn11.png)
+
+Configure rule IPSec VPN: `Firewall -> Rules -> IPSec`
+
+- Protocol: **TCP**, but you can also use **Any**.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S-HN/hn14.png)
+
+It should be noted that the same settings must be made on all remote pfSense servers connected to a single network.
+
+##### Config Route table in CMC-Cloud on Site HN
+
+A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.
+
+![alt text](Imgs/S2S-HN/s2s_hn_subnet.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route1.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route2.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route3.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route4.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route5.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route6.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route7.png)
+
+### Build VPN Route Base (Using OSPF)
+
+#### Routed IPsec (VTI)
+
+Route-based IPsec is an alternative method of managing IPsec traffic. It uses `if_ipsec(4)` from FreeBSD for **Virtual Tunnel Interfaces (VTI)** and traffic is directed using the operating system routing table. It does not rely on strict kernel security association matching like policy-based (tunnel mode) IPsec.
+
+Virtual Tunnel Interface (VTI) tunnels in pfSense are used to create a more streamlined way to handle IPsec VPN configurations. VTI tunnels simplify the process of creating site-to-site VPNs by treating the tunnel as a network interface, allowing for easier management and the ability to use dynamic routing protocols like **`OSPF`** or **`BGP`**.
+
+![alt text](Imgs/Route-base/VTI_TUNNEL.svg)
+
+> VPN Route-Based IPSEC
+
+##### HANOI - Khanh's zone (Vùng 1) - PHAN
+
+| FW - IP public   | Interface | IP address     | Subnet        |
+|------------------|-----------|---------------|---------------|
+| 42.98.43.148     | WAN       | 172.25.48.81  | 172.25.48.0/24|
+|                  | LAN       | 172.25.68.10  | 172.25.84.0/24|
+|                  | VTI       | 10.0.0.1      |               |
+| PC               | LAN       | 172.25.64.193 | 172.25.84.0/24|
+
+##### HCM - Khanh's zone (Vùng 2) - GIANG
+
+| FW - IP public   | Interface | IP address     | Subnet        |
+|------------------|-----------|---------------|---------------|
+| 42.98.44.213     | WAN       | 172.21.2.154  | 172.21.0.0/20 |
+|                  | VTI-toHN  | 10.0.0.2      |               |
+|                  | VTI-toTRAM| 10.0.0.3      |               |
+
+##### HCM - Tram's zone (Vùng 3) - TRI
+
+| FW - IP public   | Interface | IP address     | Subnet        |
+|------------------|-----------|---------------|---------------|
+| 203.171.92.107   | WAN       | 192.168.2.200 | 192.168.0.0/24|
+|                  | LAN       | 192.168.0.211 | 192.168.0.0/24|
+|                  | VTI       | 10.0.0.4      |               |
+| PC               | LAN       | 192.168.0.210 | 192.168.0.0/24|
+
+Config in Phase1: **`AES128 - SHA1 - DH Group 2`**
+
+- Key between zone 3 and zone 2:
+
+  ```key
+  4531f5a38fa3e74c8741c743aae8b7fd7ef4fec037f500d8ad1fa7e91
+  ```
+
+- Key between zone 1 and zone 2:
+
+  ```key
+   7751417e85b68855909314a7da81cbb2271efd65a801f4bc0118d8da
+  ```
+
+#### Step 1: Configure IPsec Tunnel on pfSense
+
+1. Go to `VPN > IPsec` in the pfSense web GUI.
+
+2. Click on the + Add P1 button to create a new Phase 1 entry.
+
+3. Set the following parameters for the Phase 1 configuration:
+
+   - Key Exchange version: IKEv1
+   - Remote Gateway: IP address of the remote VPN endpoint
+   - Authentication Method: Mutual PSK (Pre-Shared Key)
+   - Pre-Shared Key: Enter a secure key
+   - Encryption Algorithm: Choose a strong encryption method (e.g., AES)
+   - Hash Algorithm: SHA-1 (or another secure hash)
+   - DH Group: Choose an appropriate Diffie-Hellman group
+
+> HANOI - Khanh's zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_zone_1.png)![alt text](Imgs/Route-base/vti_zone_1_1.png)![alt text](Imgs/Route-base/vti_zone_1_2.png)![alt text](Imgs/Route-base/vti_zone_1_3.png)
+
+> HCM - Khanh's zone (Vùng 2)
+
+- toHCM-MrTram
+
+![vti](Imgs/Route-base/vti_1.png)![vti](Imgs/Route-base/vti_2.png)![vti](Imgs/Route-base/vti_3.png)![vti](Imgs/Route-base/vti_4.png)
+
+- HCM-to-HN
+
+![alt text](Imgs/Route-base/vti_1.1.png)![alt text](Imgs/Route-base/vti_2.2.png)![alt text](Imgs/Route-base/vti_3.3.png)![alt text](Imgs/Route-base/vti_4.4.png)
+
+> HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_zone_3.png)![alt text](Imgs/Route-base/vti_zone_3_1.png)![alt text](Imgs/Route-base/vti_zone_3_2.png)![alt text](Imgs/Route-base/vti_zone_3_3.png)
+
+#### Step 2: Configure Phase 2 (Child SA) for VTI
+
+1. Click on + Add P2 under the Phase 1 you just created.
+
+2. Set the following parameters for the Phase 2 configuration:
+
+   - Mode: Tunnel IPv4
+   - Local Network: Network Address, and enter an IP address in CIDR notation (e.g., 0.0.0.0/0 for all traffic)
+   - Remote Network: Network Address, and enter 0.0.0.0/0
+   - Protocol: ESP
+   - Encryption Algorithms: Choose strong encryption settings (e.g., AES)
+   - Hash Algorithms: Choose a secure hash (e.g., SHA-256)
+
+3. In the Phase 2 proposal (SA/Key Exchange) section, set the following:
+
+   - Lifetime: Set a reasonable value (e.g., 3600 seconds)
+   - Enable Automatically ping host, if desired, to keep the tunnel alive.
+
+4. Save the Phase 2 settings.
+
+> HANOI - Khanh's zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_p2_1.png)![alt text](Imgs/Route-base/vti_p2_1_1.png)![alt text](Imgs/Route-base/vti_p2_1_2.png)![alt text](Imgs/Route-base/vti_p2_1_4.png)
+
+> HCM - Khanh's zone (Vùng 2)
+>> HCM - Khanh's zone (Vùng 2) connect to HANOI - Khanh's zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_p2_2.png)![alt text](Imgs/Route-base/vti_p2_2_1.png)![alt text](Imgs/Route-base/vti_p2_2_2.png)![alt text](Imgs/Route-base/vti_p2_2_3.png)
+
+>> HCM - Khanh's zone (Vùng 2) connect to HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_p2_2.2.png)![alt text](Imgs/Route-base/vti_p2_2.2_1.png)![alt text](Imgs/Route-base/vti_p2_2.2_2.png)![alt text](Imgs/Route-base/vti_p2_2.2_3.png)
+
+> HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_p2_3_1.png)![alt text](Imgs/Route-base/vti_p2_3_2.png)![alt text](Imgs/Route-base/vti_p2_3_3.png)![alt text](Imgs/Route-base/vti_p2_3_4.png)
+
+#### Create the VTI Interface
+
+1. Go to Interfaces > Assignments in the pfSense web GUI.
+2. You should see a new interface named IPsec VTI available in the list.
+3. Click Add to assign the IPsec VTI interface.
+4. Click on the newly created interface and configure it:
+   - Enable the interface
+   - Set the IP Address (e.g., 10.0.0.1/30), where each end of the tunnel gets a unique IP in the subnet.
+5. Save and apply the changes.
+
+> HANOI - Khanh's zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_zo1_interface.png)![alt text](Imgs/Route-base/vti_zo1_interface1.png)![alt text](Imgs/Route-base/vti_zo1_interface2.png)
+
+> HCM - Khanh's zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_zo2_interface.png)![alt text](Imgs/Route-base/vti_zo2_interface1.png)![alt text](Imgs/Route-base/vti_zo2_interface2.png)![alt text](Imgs/Route-base/vti_zo2_interface3.png)![alt text](Imgs/Route-base/vti_zo2_interface4.png)
+
+> HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_zo3_interface.png)![alt text](Imgs/Route-base/vti_zo3_interface1.png)![alt text](Imgs/Route-base/vti_zo3_interface2.png)
+
+#### Step 4: Firewall Rules for the VTI Interface
+
+1. Go to Firewall > Rules and click on the newly created IPsec VTI interface.
+2. Add rules to allow traffic to flow through the tunnel as needed.
+   For example, add a rule to allow all traffic for testing purposes.
+3. Save and apply the firewall rules.
+
+Exp: Add rules to allow traffic for 3 zone.
+
+![alt text](Imgs/Route-base/vti_rules.png)![alt text](Imgs/Route-base/vti_rules1.png)
+
+#### Testing the VTI Tunnel
+
+1. Ping the remote tunnel IP address to verify connectivity.
+2. Ensure that traffic is being properly routed through the VTI tunnel.
+
+> HANOI - Khanh's zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_tunnel_ping_z1.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z1_2.png)
+
+> HCM - Khanh's zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_tunnel_ping_z2.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z2_1.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z2_2.png)
+
+> HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_tunnel_ping_z3.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z3_1.png)
+
+#### Step 5: Setup for OSPF on pfSense with VTI
+
+##### I. Install the FRR Package on pfSense
+
+1. Go to System > Package Manager > Available Packages.
+2. Search for the FRR (Free Range Routing) package.
+3. Click Install to add the package to your pfSense setup.
+4. Once the installation is complete, go to Services > FRR Global/Zebra.
+
+> [!NOTE]
+> Install FRR on all 3 zones
+
+![alt text](Imgs/Route-base/vti_pkg.png)![alt text](Imgs/Route-base/vti_pkg1.png)![alt text](Imgs/Route-base/vti_pkg2.png)
+
+##### II. Configure FRR Global Settings
+
+1. Enable the FRR daemon by checking the box at the top of the page.
+2. Make sure the Zebra routing manager is enabled.
+3. Save and apply the settings.
+
+> [!NOTE]
+> Enable FRR on all 3 zones
+
+![alt text](Imgs/Route-base/vti_frr_cfg1.png)![alt text](Imgs/Route-base/vti_frr_cfg2.png)
+
+##### III. Configure OSPF in FRR
+
+1. Navigate to `Services > FRR OSPF`.
+2. Check the box to **Enable OSPF**.
+3. In the Router ID field keep default or enter a unique identifier for this pfSense router (typically the LAN IP address).
+4. Under Networks, add the network associated with the VTI interface. For example:
+   - Network: 10.10.10.0/30 (replace this with your actual VTI network)
+   - Area: 0.0.0.0 (Area 0 is the backbone area for OSPF)
+5. Click Save to apply these settings.
+
+> OSPF config
+
+OSPF setting
+![alt text](Imgs/Route-base/vti_ospf.png)![alt text](Imgs/Route-base/vti_ospf1.png)![alt text](Imgs/Route-base/vti_ospf2.png)![alt text](Imgs/Route-base/vti_ospf3.png)
+
+Areas setting
+
+![alt text](Imgs/Route-base/vti_area.png)![alt text](Imgs/Route-base/vti_area1.png)![alt text](Imgs/Route-base/vti_area2.png)
+
+Interface setting
+
+- HANOI - Khanh's zone (Vùng 1)
+  
+![alt text](Imgs/Route-base/vti_interface_hn.png)![alt text](Imgs/Route-base/vti_interface_hn1.png)![alt text](Imgs/Route-base/vti_interface_hn2.png)
+
+- HCM - Khanh's zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_interface_z2.png)![alt text](Imgs/Route-base/vti_interface_z21.png)![alt text](Imgs/Route-base/vti_interface_z22.png)
+
+- HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_interface_z3.png)![alt text](Imgs/Route-base/vti_interface_z31.png)![alt text](Imgs/Route-base/vti_interface_z32.png)
+
+##### IV. Configure Static Routing in Pfsense
+
+1. Navigate to `System > Routing > Static Routes`.
+2. Select + **Add** button to create a new static route.
+3. Configure the Static Route:
+   - Destination network: Enter the destination network (e.g., 192.168.2.0/24).
+   - Gateway: Select the gateway that pfSense should use to reach the destination network. Ở đây chúng ta sử dụng gateway vti.
+   - Optionally, you can add a Description for the route.
+4. Click **Save** to **apply** activate the new route..
+
+> HANOI - Khanh's zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_routes_hn.png)![alt text](Imgs/Route-base/vti_routes_hn1.png)![alt text](Imgs/Route-base/vti_routes_hn2.png)
+
+> HCM - Khanh's zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_routes_z2.png)![alt text](Imgs/Route-base/vti_routes_z2_1.png)![alt text](Imgs/Route-base/vti_routes_z2_2.png)
+
+> HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_routes_z3.png)![alt text](Imgs/Route-base/vti_routes_z3_1.png)![alt text](Imgs/Route-base/vti_routes_z3_2.png)
+
+##### V. Check status OSPF in FRR
+
+1. Navigate to `Status > FRR`.
+2. Select  **OSPF** button to query status service ospf.
+
+> HANOI - Khanh's zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_ospf_stt_zone1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.4.png)
+> HCM - Khanh's zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_ospf_stt_zone2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.4.png)
+
+> HCM - Tram's zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_ospf_stt_zone3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.4.png)
+
+##### V. Check ping
+
+> Access the PC on zone 1, add route and perform ping test.
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3.png)
+
+- Show route before add new route
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_1.png)
+
+- Add route and ping to Lan
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_2.png)
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_3.png)
+
+- Ping to PC
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_4.png)
+
+> Access the PC on zone 3, add route and perform ping test.
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1.png)
+
+- Show route before add new route
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_1.png)
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_2.png)
+
+- Add route and ping to Lan
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_3.png)
+
+- Ping to PC
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_5.png)
+
+### Build VPN With GRE-TUNNEL
+
+Generic Routing Encapsulation (GRE) is a method of tunneling traffic between two endpoints without encryption. It can be used to route packets between two locations that are not directly connected, which do not require encryption. It can also be combined with a method of encryption that does not perform its own tunneling.
+
+> [!NOTE]
+> The GRE protocol was originally designed by Cisco, and it is the default tunneling mode on many of their devices.
+
+GRE tunnels can carry either IPv4, IPv6, or both types of traffic at the same time.
+
+End. -->
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+        
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Share on LinkedIn"
+      aria-label="Share on LinkedIn"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://twitter.com/intent/tweet/?url=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;text=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Tweet on Twitter"
+      aria-label="Tweet on Twitter"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://api.whatsapp.com/send?text=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;resubmit=true&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Share via WhatsApp"
+      aria-label="Share via WhatsApp"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://t.me/share/url?url=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;resubmit=true&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Share via Telegram"
+      aria-label="Share via Telegram"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://pinterest.com/pin/create/bookmarklet/?url=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;description=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Pin on Pinterest"
+      aria-label="Pin on Pinterest"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://reddit.com/submit/?url=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;resubmit=true&amp;title=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Submit to Reddit"
+      aria-label="Submit to Reddit"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;quote=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Share on Facebook"
+      aria-label="Share on Facebook"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="mailto:?body=http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/&amp;subject=Implementing%20DevSecOps%20model%20for%20E-Commerce%20Web%20Application"
+      title="Send via email"
+      aria-label="Send via email"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+  </section>
+
+
+        
+
+
+  
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\\202504-implementing-devsecops-model-for-e-commerce-web-application\\index.md"
+        var oid_likes = "likes_posts\\202504-implementing-devsecops-model-for-e-commerce-web-application\\index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/202504-install/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Install Wazuh and Wazuh Agent by Ansible</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-10-31T20:28:53&#43;07:00">31 October 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex flex-col list-none sm:flex-row">
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/tags/"
+            title="Tags">
+            
+            Tags
+          </a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/categories/"
+            title="Categories">
+            
+            Categories
+          </a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/authors/"
+            title="Authors">
+            
+            Authors
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2025
+      Linh Tran-Nhut
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="gangi" data-description="Support me on Buy me a coffee!" data-message=""
+  data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+</html>

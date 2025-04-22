@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on LinhTran&#39;s</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on LinhTran&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>nhutlinh.work@gmail.com (Linh Tran-Nhut)</managingEditor>
+    <webMaster>nhutlinh.work@gmail.com (Linh Tran-Nhut)</webMaster>
+    <copyright>© 2025 Linh Tran-Nhut</copyright>
+    <lastBuildDate>Thu, 31 Oct 2024 20:28:53 +0700</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installing Kafka Exporter, Postgres Exporter, Redis Exporter, HAProxy Exporter</title>
+      <link>http://localhost:1313/posts/202109-the-future-of-nintendo/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:1313/posts/202109-the-future-of-nintendo/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Comming soon&amp;hellip; 
+    &lt;div id=&#34;comming-soon&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#comming-soon&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;!-- ![Super Nintendo](supernintendo.jpg)
+
+Nintendo is a Japanese multinational consumer electronics and video game company with headquarters in Kyoto, Japan. In its annual report for 2021, the company reported a revenue of $16 billion (¥1,759 trillion) and it currently employs around six thousand people around the world across several different business units. 
+
+Nintendo was founded in 1889 as a company that produced and distributed hanafuda, a traditional Japanese card game. During the first half of the 1900s, the company tried to diversify into several different markets with little to no success (e.g. instant rice, love hotels, and a taxi service). During the 60s to 80s, Nintendo started investing in games, electronic toys, and gaming entertainment.
+
+All of these investments culminated in the 90s with the launch of the Super Nintendo Entertainment System which sold around 50 million units worldwide and helped the company enter the US market. By then Nintendo had built several valuable assets in hardware, software, and intellectual property (including the most famous plumber that ever lived, Mario).
+
+After the Super Nintendo, the company continued to release new games and gaming devices throughout the 90s and into the 00s, including the Gameboy, Nintendo 64, GameCube, and the Wii in 2006, which contributed to make Nintendo a force to be reckoned in the gaming industry with net sales that peaked at $18 billion in 2009.
+
+![Nintendo Net Sales](netsales.png)
+
+In 2010, the previous generation of hardware Wii was approaching the end of its life cycle and coincidentally the company’s annual net sales started dropping. At the end of 2012 the company launched its next-generation gaming console that would replace the Wii, the Wii U. However, the Wii U was a commercial failure and never got a real foothold in the console market selling less than 15 million units worldwide. The platform was described as expensive, confusing and was never able to attract support from either hardcore nor casual customers leading to Nintendo&#39;s sales eventually plummeting to just $4 billion in 2017. 
+
+2017 was also the same year the company was able to disrupt itself and the entire gaming industry with the launch of the Nintendo Switch which until today sold more than 89 million units worldwide, led to a reported $16 billion net sales in 2021, and ultimately contributed to save Nintendo and establish it once again as one of the biggest players in the game industry.
+
+## The Switch&#39;s Disruption
+
+![Nintendo Switch](console.jpeg)
+
+The Switch entered the market as the first console that was built from the ground up to provide a hybrid experience between mobile and living room gaming (or at least the first one that was actually able to deliver that experience). This hybrid setup allowed Nintendo to create different gaming modes from connecting the Switch to a TV using a dock, to connecting the controls to the main unit and taking it to play on the go. Additionally, the actual remote of the console can be used as two separate controlling devices which allows two players to enjoy a game at once. All these different modes and combinations made the switch a super attractive console for families and casual gamers since it was an affordable and flexible option when compared to the rest of the hardware available.
+
+A problem that Nintendo had to solve was the fact that launching a gaming console entails an interdependency between the actual hardware and its games. Or in other words, a console is only as valuable as the catalog of games available for it. To solve this problem, Nintendo adopted an integrated strategy in order to launch the Switch with a great catalog of games focusing on the same segment that the hardware features of the console were targeting. Nintendo developed several of the initial games and leveraged its valuable intellectual property of characters and stories to sell the Switch i.e. Mario, Zelda, etc. 
+
+The Switch is a traditional example of a new-market disruption. Nintendo was targeting casual gamers (non-consumption for the traditional gaming industry) by offering a product that was inferior when compared to the other consoles in the market using the metrics from that time (graphics power, storage, etc) but superior when using the new set of metrics important to the new segment (fun, flexible, casual, affordable, etc). The fact that the Switch was not a super powerful device led to Sony and Microsoft not seeing Nintendo as a real competitor since their performance metrics were focused on high-end gamers and AAA titles. This created an asymmetric motivation, meaning that the incumbent companies simply conceded that market to Nintendo as it was not interesting for them. Ultimately, Nintendo gained market share with the Switch selling over 80 million units worldwide. At the moment other players still do not have the incentives to compete in that market and even if they did, they would not be able to because neither of them is competing on the same performance metrics as the Switch nor with the same organization and business structure that would allow them to succeed.
+
+![Nintendo Switch Lite](lite.png)
+
+In July 2019, Nintendo decided to launch a cheaper version of the product called the Switch Lite, this was a clear example of the company disrupting itself. Namely, Nintendo created a low-end disruption over its own product by creating a cheaper “good enough” product that targets over-served customers of the original Switch. This created a strong foothold on the low-end market for video games which is hard to compete against.
+
+Currently, Nintendo and the Switch are in a phase of sustaining innovation where incremental performance improvements in attributes are provided to the more valuable/demanding customers in the market. The proof of this is the next version of the console, due to launch in October 2021, the Nintendo Switch OLED, which is basically the same as the current Switch with a bigger screen, bigger battery, and more internal storage. This makes complete sense from a strategic point of view, after defining and deploying such a successful product, Nintendo is focusing on a deliberate strategy to grow its market share and meet the needs of its best customers in order to beat the competition, not that there is actually one at the time.
+
+## What&#39;s Next for Nintendo and the Switch?
+
+![Nintendo Switch OLED](olde.jpeg)
+
+Currently, the Switch is already the 7th best selling console of all time and the 2nd best selling handheld gaming device of all time with 89 million units sold worldwide. Considering just the consoles still in the market, the Switch has already become the number 2 device in just 4 years. 
+
+![Best Selling Consoles](chart.png)
+
+It is expected that, for the time being, Nintendo will retain its position in the market and keep evolving the Switch and its ecosystem with new incremental improvements. Companies like Sony and Microsoft which are targeting the high-end gamer segment will not be able to compete with Nintendo due to the humongous differences in the structures of their businesses and organization. Moreover, the other organizations also do not have any incentive to try to compete in the same market as Nintendo because, from their point of view, it is a lower margin market than the one they already have which creates an asymmetric motivation for them to flee up, conceding the low-end without fighting over it. Finally, Nintendo will have a huge advantage over new competitors that tackle its segment and it has every motivation to fight the entrance of new players into its space.
+
+However, there are still points that might require course correction to avoid potential future problems. The first one is the lack of traction from other game developers and publishers in respect to the Switch. Looking at the list of the top 10 best-selling games for the platform only 2 were not developed by Nintendo or one of its subsidiaries. The Switch developer experience has a low barrier to entry (each dev kit costing around $450) but there is a 30% “tax” on each game sold taken from the developers/publishers by Nintendo. The company could potentially look at their developer relationships and explore ways to improve the business model to get a bigger catalog of games faster. A couple of examples would be to help promote games via their channels, or the creation of an indie games program to help and promote smaller companies. Ultimately, this means that in order to grow Nintendo needs to move away from its integrated strategy into a specialized one where it focuses on the most important pieces of the system and in delivering it perfectly i.e. the console, the store, and its IP. But for that, it needs to ensure the right level of modularity so that other developers and publishers can thrive in that space.
+
+Another issue with the Switch is the lack of non-gaming applications available in the device that leads to a clash with the main Job-To-Be-Done for the product, “I want entertainment for me and my family”. The Switch has the potential to be the central hub for family entertainment, however, only three video streaming applications are available on the platform: Hulu, Youtube, and Funimation. Working with companies that provide other types of entertainment like Netflix and Disney and helping them launch those services on the Switch would be a great opportunity for Nintendo to improve the feature set of the device and better serve its users. 
+
+![Netflix on Switch](netflix.jpeg)
+
+Regarding the future, Nintendo is clearly betting on game streaming as a way to move up in the market and disrupt yet again the other players. This would be a great technology to drive the next round of low-end disruption by offering a cheaper way to play AAA games without having to own expensive hardware and upgrade it every one or two years. However, creating its own streaming service might not be the best strategy, Nintendo should look into making its system more modular and potentially partnering with other companies like Google Stadia to get access to streaming capabilities and an existing catalog of games right away. 
+
+Ultimately, the common factor across all of Nintendo’s decisions and actions has been the ability to focus on understanding and delivering against the underlying Job-To-Be-Done for its customers. The company was able to understand that the gaming experience could solve the problem (or “job”) of family or party entertainment as well as the standard problems customers hire a gaming device to solve (i.e. play games). By organizing the entire company around these jobs, Nintendo created the ability to target non-consumption and attract a completely different segment of users to its products. Moreover, by implementing an integrated strategy that delivered new hardware, developed new games, and leveraged family-friendly characters known around the world, Nintendo was able to deliver a perfect solution for the job and completely disrupt the gaming industry. In my view, this relentless focus on the customer and how to best solve its problem is why Nintendo has become a Purpose Brand that focuses on providing great family fun and entertainment using technology.
+
+![The End](end.jpeg)
+
+## References
+
+[Henderson, Rik. “What is Nintendo Switch Cloud Streaming, how does it work and what Cloud Version games are there?” Pocket-Lint](https://www.pocket-lint.com/games/news/nintendo/155391-nintendo-switch-cloud-version-streaming-explained-games-list)
+
+[Herold, Charles. “10 Reasons the Wii U Was a Failure.” Lifewire.](https://www.lifewire.com/reasons-the-wii-u-is-a-failure-2498588)
+
+[Nintendo. “Nintendo Annual Report FY 2021.”](https://www.nintendo.co.jp/ir/pdf/2021/annual2103e.pdf)
+
+[Orland, Kyle. “What the “OLED Model” means for the future of Nintendo Switch.” ARS Technica.](https://arstechnica.com/gaming/2021/07/what-the-oled-model-means-for-the-future-of-nintendo-switch/)
+
+[Peckham, Matt. “19 Things Nintendo&#39;s President Told Us About Switch and More.” Time.](https://time.com/4662446/nintendo-president-switch-interview/)
+
+[Statista. “Nintendo&#39;s net sales from fiscal 2008 to 2021.”](https://www.statista.com/statistics/216622/net-sales-of-nintendo-since-2008/)
+
+[Wikipedia. “List of best-selling game consoles.”](https://en.wikipedia.org/wiki/List_of_best-selling_game_consoles)
+
+[Wikipedia. “List of best-selling Nintendo Switch video games.”](https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_Switch_video_games) --&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/202109-the-future-of-nintendo/feature.png" />
+    </item>
+    
+    <item>
+      <title>Install Wazuh and Wazuh Agent by Ansible</title>
+      <link>http://localhost:1313/posts/202504-install/</link>
+      <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:1313/posts/202504-install/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Comming soon&amp;hellip; 
+    &lt;div id=&#34;comming-soon&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#comming-soon&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;!-- - ArXiv: https://arxiv.org/abs/2310.09291
+- GitHub: https://github.com/ExplainableML/Vision_by_Language
+
+**TL;DR**: A training-free, modular, and interpretable approach that leverages LLMs to enhance text-based queries for compositional image retrieval.
+
+&gt; **Note:** This is my personal learning note, so **some points may not be entirely accurate**. I strive to improve my understanding and will correct any errors I find. If you spot any inaccuracies, please feel free to share your insights to help enhance the content 😊.
+
+## Summary
+
+The paper introduces **CIReVL** (Compositional Image Retrieval through Vision-by-Language), a novel zero-shot compositional image retrieval (ZS-CIR) method. CIReVL leverages existing pre-trained vision-language models (VLMs) and large language models (LLMs) to **perform CIR without any additional training**.
+
+
+## Motivation
+
+Traditional CIR approaches rely on **supervised training** with annotated triplets (query image, modifying text, target image), which are **expensive and time-consuming** to obtain. Existing ZS-CIR methods often still require training task-specific modules on large image-caption datasets. **CIReVL** addresses these limitations by using **only pre-trained models** in a **modular, interpretable** fashion, offering a more accessible alternative.
+
+
+## Methodology
+
+![CIReVL Workflow](./cirevl.png)
+
+CIReVL operates through three main steps:
+
+1. **Captioning:** A pre-trained VLM (e.g., BLIP-2) generates a detailed caption for the query image.
+2. **Reasoning:** An LLM (e.g., GPT-3.5-turbo) processes the generated caption and modification instruction to produce a target caption that reflects the intended changes.
+3. **Retrieval:** A second VLM (e.g., CLIP) encodes the target caption and the database images to retrieve the image most similar to the target description.
+
+
+## Why CIReVL Stands Out
+
+- **Training-Free:** CIReVL doesn’t require any additional training, relying entirely on off-the-shelf pre-trained models, which enhances efficiency and scalability.
+- **Modular Design:** This modular approach allows easy replacement or scaling of individual components, enabling exploration of different VLMs and LLMs.
+- **Human-Interpretable:** Most of the compositional processing occurs in the language domain, making it interpretable and allowing for human intervention in case of potential errors.
+- **State-of-the-Art Performance:** CIReVL matches or surpasses existing training-based and zero-shot methods on several CIR benchmarks, including CIRCO, CIRR, FashionIQ, and GeneCIS.
+
+
+## Conclusion
+
+CIReVL presents a promising new direction for zero-shot CIR research. Its training-free, modular, and interpretable design, along with its high performance, makes it a compelling approach for future work in ZS-CIR.
+
+
+## Reference
+- [Vision-by-Language for Training-Free Compositional Image Retrieval | ICLR 2024](https://arxiv.org/abs/2310.09291) --&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/202504-install/feature.jpg" />
+    </item>
+    
+    <item>
+      <title>Implementing DevSecOps model for E-Commerce Web Application</title>
+      <link>http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/</link>
+      <pubDate>Mon, 16 Sep 2024 20:28:53 +0700</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:1313/posts/202504-implementing-devsecops-model-for-e-commerce-web-application/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Comming soon&amp;hellip; 
+    &lt;div id=&#34;comming-soon&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#comming-soon&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;!-- ## Table of contents
+
+- [Pfsense, Client to Site \&amp;  Site to site](#pfsense-client-to-site---site-to-site)
+  - [Table of contents](#table-of-contents)
+    - [What is Pfsense ?](#what-is-pfsense-)
+    - [Features in pfsense](#features-in-pfsense)
+    - [Setup firewall (Outscope)](#setup-firewall-outscope)
+      - [Initial setup](#initial-setup)
+        - [General Information](#general-information)
+        - [Time Server Configuration](#time-server-configuration)
+        - [WAN Interface Configuration](#wan-interface-configuration)
+      - [Configure LAN Interface](#configure-lan-interface)
+      - [Change the Admin password](#change-the-admin-password)
+      - [Save parameters](#save-parameters)
+      - [Configure Interface](#configure-interface)
+      - [Configure Rule and NAT(port-forward)](#configure-rule-and-natport-forward)
+        - [I. Rule WAN interface](#i-rule-wan-interface)
+        - [II. Rule LAN interface](#ii-rule-lan-interface)
+    - [Setup firewall (Inscope Non CDE)](#setup-firewall-inscope-non-cde)
+    - [Build VPN](#build-vpn)
+      - [Setup VPN Client to Site](#setup-vpn-client-to-site)
+        - [Step 1: Configure WAN interface](#step-1-configure-wan-interface)
+        - [Step 2: Create a Virtual IP](#step-2-create-a-virtual-ip)
+        - [Step 3: Create Certificate Authority – CA](#step-3-create-certificate-authority--ca)
+        - [Step 4: Create Server Certificate](#step-4-create-server-certificate)
+        - [Step 5: Create a VPN – OpenVPN Server](#step-5-create-a-vpn--openvpn-server)
+        - [Step 6: Create a VPN – OpenVPN Client](#step-6-create-a-vpn--openvpn-client)
+        - [Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client](#step-7-install-the-openvpn-client-export-utility-a-tool-that-helps-export-the-vpn-client)
+        - [Step 8 : Create user OpenVPN](#step-8--create-user-openvpn)
+        - [Step 9: Configure access permissions in the VPN](#step-9-configure-access-permissions-in-the-vpn)
+        - [Step 10: Configure access to the VPN](#step-10-configure-access-to-the-vpn)
+        - [Step 11: Configure NAT outbound](#step-11-configure-nat-outbound)
+        - [Step 12: Export the VPN Client installation package](#step-12-export-the-vpn-client-installation-package)
+        - [Step 13: Test the OpenVPN connection](#step-13-test-the-openvpn-connection)
+      - [Setup VPN Site to site](#setup-vpn-site-to-site)
+        - [Setup Network on CMC-Cloud Site HCM](#setup-network-on-cmc-cloud-site-hcm)
+        - [Configure Interface OutScope, NonCDE, CDE Site HCM](#configure-interface-outscope-noncde-cde-site-hcm)
+        - [Configure the IPSec tunnel Site HCM](#configure-the-ipsec-tunnel-site-hcm)
+        - [Configure Firewall for local connections Site HCM](#configure-firewall-for-local-connections-site-hcm)
+        - [Config Route table in CMC-Cloud on Site HCM](#config-route-table-in-cmc-cloud-on-site-hcm)
+        - [Setup Network on CMC-Cloud Site HN](#setup-network-on-cmc-cloud-site-hn)
+        - [Configure Interface OutScope, NonCDE, CDE Site HN](#configure-interface-outscope-noncde-cde-site-hn)
+        - [Configure the IPSec tunnel Site HN](#configure-the-ipsec-tunnel-site-hn)
+        - [Configure Firewall for local connections Site HN](#configure-firewall-for-local-connections-site-hn)
+        - [Config Route table in CMC-Cloud on Site HN](#config-route-table-in-cmc-cloud-on-site-hn)
+    - [Build VPN Route Base (Using OSPF)](#build-vpn-route-base-using-ospf)
+      - [Routed IPsec (VTI)](#routed-ipsec-vti)
+        - [HANOI - Khanh&#39;s zone (Vùng 1) - PHAN](#hanoi---khanhs-zone-vùng-1---phan)
+        - [HCM - Khanh&#39;s zone (Vùng 2) - GIANG](#hcm---khanhs-zone-vùng-2---giang)
+        - [HCM - Tram&#39;s zone (Vùng 3) - TRI](#hcm---trams-zone-vùng-3---tri)
+      - [Step 1: Configure IPsec Tunnel on pfSense](#step-1-configure-ipsec-tunnel-on-pfsense)
+      - [Step 2: Configure Phase 2 (Child SA) for VTI](#step-2-configure-phase-2-child-sa-for-vti)
+      - [Create the VTI Interface](#create-the-vti-interface)
+      - [Step 4: Firewall Rules for the VTI Interface](#step-4-firewall-rules-for-the-vti-interface)
+      - [Testing the VTI Tunnel](#testing-the-vti-tunnel)
+      - [Step 5: Setup for OSPF on pfSense with VTI](#step-5-setup-for-ospf-on-pfsense-with-vti)
+        - [I. Install the FRR Package on pfSense](#i-install-the-frr-package-on-pfsense)
+        - [II. Configure FRR Global Settings](#ii-configure-frr-global-settings)
+        - [III. Configure OSPF in FRR](#iii-configure-ospf-in-frr)
+        - [IV. Configure Static Routing in Pfsense](#iv-configure-static-routing-in-pfsense)
+        - [V. Check status OSPF in FRR](#v-check-status-ospf-in-frr)
+        - [V. Check ping](#v-check-ping)
+    - [Build VPN With GRE-TUNNEL](#build-vpn-with-gre-tunnel)
+
+### What is Pfsense ?
+
+**`Pfsense`**: is an application that functions as a network firewall router and is free based on `FreeBSD`. Pfsense is configured through a web GUI interface for easy management and customization. It supports filtering based on source address, destination, source port, destination port, supports routing, and can operate in bridge or transparent mode.
+
+![pfsense](Imgs/pfsense.png)
+
+Moreover, If using pfsense as a gateway, we can clearly see the support for NAT and port forwarding on pfsense as well as performing load balancing or failover on the network paths.
+
+### Features in pfsense
+
+1. *`Aliases`*: In pfsense, the firewall cannot have a rule consisting of multiple IP groups or a port group. Therefore, it is necessary to group IP, Port, or URL into one alias. An alias allows to substitute one host, one network range, multiple separate IPs, or a group of ports, URLs... Aliases help save time if used correctly.
+
+2. *`NAT`*: Pfsense supports Static NAT in the form of NAT 1:1. The condition to perform NAT 1:1 is to have a public IP. When performing NAT 1:1, the Private IP being NAT-ed will always go out with the corresponding Public IP, and the ports will also correspond on the Public IP.
+
+3. *`Powerful firewall`*: PFsense provides a strong firewall with the ability to filter packets based on IP address, port, protocol, application,... It also supports complex and flexible firewall rules. Rules must be created to manage the internal network.
+
+4. *`Analyze and manage traffic`*: PFsense provides network traffic analysis tools such as NetFlow and many other plugins to help you understand and manage Internet usage in your network.
+
+5. *`VPN (Virtual Private Network)`*: PFsense supports multiple VPN protocols such as *`IPsec`*, *`OpenVPN`*, *`L2TP`*, and *`PPTP`*, allowing secure VPN connections to be established between locations or remote users.
+
+6. *`Proxy Server`*: PFsense can act as a `proxy server`, allowing to control and filter web content, providing security and managing Internet traffic.
+
+7. *`Load balancing and failover`*: PFsense supports load balancing across multiple Internet connections to optimize network performance and availability. It also features redundancy to ensure service continuity.
+
+8. *`Manage access control lists (ACL)`*: By using access control lists, you can control the Internet access rights of users in the network, from blocking access to specific websites to managing access time.
+
+9. *`Security`*: PFsense supports many security features such as `IDS/IPS` (Intrusion Detection/Prevention System), `DPI` (Deep Packet Inspection), `DDoS` protection, to protect the network from various threats.
+
+10. *`Managing DHCP and DNS:`*: PFsense also provides DHCP and DNS management services to automatically assign IP addresses and manage domains within the network.
+
+![pfsense](Imgs/pfs.jpg)
+
+### Setup firewall (Outscope)
+
+The pfSense solution is an open-source firewall project originating from the Monowall firewall project from many years ago. According to pfsense.org, thousands of enterprises use pfSense. Essentially, pfSense will include a full-featured firewall/L3 routing suite with many other features such as proxy server, IDS/IPS, high availability, certificate management, and centralized VPN.
+
+![architecture](Imgs/fo.svg)
+
+#### Initial setup
+
+&gt; [!CAUTION]
+&gt; ***Error login HTTP_REFERER***
+&gt; ![pfsense](Imgs/cts_error.png)
+
+Access **terminal console** of **pfsense -&gt; select number `8`**.
+
+![pfsense](Imgs/cts_fix.png)
+
+```sh
+pfSsh.php playback disablereferercheck
+```
+
+&gt; [!NOTE]
+&gt; ***ERR_CONNECTION_TIMED_OUT***
+
+- Assignment Interface in pfSense:
+
+  After configuring VLANs, pfSense will prompt you to assign the WAN interface. Typically, pfSense will display a list of network interfaces connected to it, such as vtnet0 and vtnet1. These are common virtual network interface names in cloud environments.
+  - `Cloud Environment Consideration:`
+    - In a cloud environment, if you do not have a VPN setup, pfSense will require a public IP address on the WAN interface to allow access to the User Interface (UI). This is crucial because, without VPN, the only way to manage pfSense remotely is through this public IP.
+
+  - `WAN Configuration Before LAN:`
+    - It is essential to configure WAN access rules before setting up the LAN interface, especially for ports 443 (HTTPS) and 80 (HTTP). `This is because, once the LAN interface is assigned, pfSense’s &#34;Default Rule&#34; will automatically shift from the WAN to the LAN interface`.
+    - This behavior is part of pfSense’s security mechanism, where the default access rules will prioritize the LAN interface once it&#39;s assigned.
+
+If you assign the LAN interface before configuring the necessary WAN rules, you might lose access to pfSense through the WAN interface. This happens because the default allow rules will then apply to the LAN, `leaving the WAN interface without the required access permissions`.
+
+When accessing the Web UI interface, pfSense will automatically display the Setup Wizard page to set up the main parameters for the system.
+
+![pfsense](Imgs/pfsense-web-ui.png)
+
+Click **`Next`** to continue
+
+##### General Information
+
+![pfsense](Imgs/pfsense-web-ui-1.png)
+
+Set up `Hostname`, `Domain`, `DNS Server`, then click `Next`
+
+- Hostname: keep pfSense unchanged, you can change later.
+
+- Domain: keep the default home.arpa, you can change later.
+
+- Primary &amp; Secondary DNS Server: Enter Cloudflare DNS (1.1.1.1 and 1.0.0.1) or Google DNS (8.8.8.8 and 8.8.4.4), or leave it blank.
+
+- Override DNS: Select this if you want to use the DNS provided by the DHCP Server sent to the WAN port.
+
+##### Time Server Configuration
+
+![pfsense](Imgs/pfsense-web-ui-2.png)
+
+Adjust time zone and Time Server. I use time server `1.vn.pool.ntp.org.`
+
+##### WAN Interface Configuration
+
+Configure the WAN Interface and LAN Interface according to the virtual network diagram designed in architecture.
+
+1. **Step 1:**
+
+   - Setup IP address of WAN and LAN in portal CMC-Cloud
+
+    ![pfsense](Imgs/pfs_oos.png)
+
+   - Setup security group in portal CMC-Cloud
+
+    ![pfsense](Imgs/pfs_oos_1.png)
+
+2. **Step 2:**
+
+   - Set the WAN Interface Type to Static with the following IP parameters:
+
+  ![pfsense](Imgs/sub_net.png)
+
+  **IP Address:** `172.24.48.8`
+
+  **Subnet Mask:** `24`
+
+  **Upstream Gateway:** `172.24.48.1` (IP of the Mikrotik Router)
+
+  In a real-world scenario, if you are using pfSense to connect to the ISP&#39;s optical modem, you will need to change the WAN Interface Type to PPPoE and enter the provided Username/Password for connection authentication.
+
+  ![pfsense](Imgs/pfs_oos_.png)
+
+  Set the `WAN` Interface to `DHCP` IP
+
+  ![pfsense](Imgs/pfs_oos_2.png)
+
+  Uncheck the option `Block RFC1918 Private Networks` and `Block bogon networks`
+
+  Block RFC1918 Private Networks: This option means that pfSense will block all access to the WAN port from internal IP ranges (`10/8, 172.16/12, 192.168/16`).
+
+  Since I&#39;m using pfSense in a virtual network on CMC-Cloud, where all connections to the WAN port are internal IPs (`172.24.48.0/24`), it is necessary to uncheck Block RFC1918 Private Networks to allow the Host to access the pfSense management page.
+
+#### Configure LAN Interface
+
+Change LAN IP Address to `dhcp` and Subnet Mask `32`
+
+![pfsense](Imgs/pfs_oos_3.png)
+
+#### Change the Admin password
+
+![pfsense](Imgs/pfs_oos_4.png)
+
+Enter `new password` for Admin account
+
+#### Save parameters
+
+![pfsense](Imgs/pfs_oos_5.png)
+
+Click `Reload` to let pfSense save the parameters and restart the service.
+
+![pfsense](Imgs/pfs_oos_6.png)
+
+Click `Finish` to complete
+
+**`Result:`** Dashboard of pfsense
+
+![pfsense](Imgs/pfs_oos_7.png)
+
+#### Configure Interface
+
+Add interface `vtnet1`
+
+![pfsense](Imgs/pfs_oos_8.png)
+
+Config `WAN` interface
+
+![pfsense](Imgs/wan-oos.png)
+
+![pfsense](Imgs/wan-oos-1.png)
+
+Config `LAN` interface
+
+![pfsense](Imgs/lan-oos.png)
+
+![pfsense](Imgs/lan-oos-1.png)
+
+#### Configure Rule and NAT(port-forward)
+
+&gt; **Rule**
+
+##### I. Rule WAN interface
+
+![pfsense](Imgs/rule-wan.png)
+
+- Allow Port access UI
+
+    &gt; [!NOTE]
+    &gt; If the service runs on two ports, `80 (HTTP)` and `443 (HTTPS)`, it should be configured to access the public IP address via a different port to avoid conflicts when configuring port forwarding.
+
+  - Go to: System -&gt; Advanced -&gt; Admin Access -&gt; webConfigurator -&gt; TCP Port: &#39;Port different: 80 and 443&#39; -&gt; Save -&gt; Apply changes and wait 20 seconds for automatic redirection. (Remember to create an Allow Rule for WAN Access on the configured port).
+
+  ![pfsense](Imgs/rule-wan-1.png) ![pfsense](Imgs/rule-wan-2.png)
+
+- Virtual IP port-forward to 80 and 443
+
+  To set up port forwarding to ports 80 and 443 using a Virtual IP, you need to configure the following steps:
+  - Step 1. Create a Virtual IP on CMC-lor:
+    - Go to Dashboard CMC-Cloud -&gt;`Virtual Private Cloud` -&gt; `Subnets` -&gt; `subnet-outscope-bvb` -&gt; `IP address`.
+
+      ![pfsense](Imgs/vip.png)
+
+    - Select button `Assign Virtual IP address` -&gt; `Automatic` -&gt; `OK`.
+
+      ![pfsense](Imgs/vip_1.png)
+
+    - Continue select `Actions` -&gt; `Bind to Server` -&gt; `Select Server` -&gt; `Select Port` -&gt; `Bind Server`.
+
+      ![pfsense](Imgs/vip_2.png)
+
+      ![pfsense](Imgs/vip_3.png)
+
+##### II. Rule LAN interface
+
+![pfsense](Imgs/rule-lan.png)
+
+&gt; **NAT**
+
+1. NAT Port-forward
+
+![pfsense](Imgs/nat-pf.png)
+
+- Go to Port Forwarding Settings:
+  - Navigate to Firewall -&gt; NAT -&gt; Port Forward.
+  - Click Add to create a new NAT rule for port forwarding.
+
+Configure port forwarding from the `WAN` interface to the internal `NAT IP` (`172.24.65.98`) on port `80` (`HTTP`)
+
+![pfsense](Imgs/nat-pf1.png)
+
+Configure port forwarding from the `WAN` interface to the internal `NAT IP` (172.24.65.98) on port `443` (`HTTPS`)
+
+![pfsense](Imgs/nat-pf2.png)
+
+1. NAT Outbound
+
+- Select `Hybrid Outbound NAT rule generation. (Automatic Outbound NAT + rules below)`
+- Add Mapping LAN address to subnet 172.24.64.0/20 (outscope)
+
+![pfsense](Imgs/Outbound.png)
+
+![pfsense](Imgs/Outbound1.png)
+
+### Setup firewall (Inscope Non CDE)
+
+### Build VPN
+
+`OpenVPN` is a virtual private network (VPN) system that implements techniques to create secure point-to-point or site-to-site connections. It allows parties to authenticate each other using `pre-shared keys`, `certificates`, or `usernames/passwords`. When used in a multi client-server configuration, it enables the server to issue an authentication certificate to each client. It uses the OpenSSL encryption library as well as the widely-used *TLS protocol*, with many control and security features.
+
+&gt; [!NOTE]
+&gt; ***The pfSense firewall is installed and working with interfaces including WAN and LAN***
+
+#### Setup VPN Client to Site
+
+##### Step 1: Configure WAN interface
+
+- Setup IP address of WAN in portal CMC-Cloud
+
+![pfsense](Imgs/cts.png)
+
+- Setup security group in portal CMC-Cloud
+
+![pfsense](Imgs/cts1.png)
+
+##### Step 2: Create a Virtual IP
+
+- Navigate to Firewall -&gt; `Virtual IPs`.
+- Click `Add` to create a new Virtual IP.
+- Set the `Type` to `IP Alias`.
+- Assign the `Virtual IP Address` (42.96.47.201) that you want to use.
+- Set the Interface to `WAN` or whichever interface you want the Virtual IP to be associated with.
+- Save and apply the changes.
+
+![pfsense](Imgs/cts2.png)
+![pfsense](Imgs/cts3.png)
+
+##### Step 3: Create Certificate Authority – CA
+
+- Go to the menu `System &gt; Cert. Manager`.
+
+- Click button `Add` to create a new CA.
+
+  ![pfsense](Imgs/cts_ca.png)
+
+- Enter an identifying name for the CA.
+
+- Set the `method` to **Create an internal Certificate Authority**.
+
+- Select **Key Type**. (RSA, ECDSA..)
+
+- Set the length of the key **Key length (2048, 4096, …)**.
+
+- Select **Digest Algorithm encryption algorithm (sha256, sha512, …)**.
+
+- Set a common name **Common Name (internal-ca, own-ca, ...)**.
+
+  ![pfsense](Imgs/cts_ca1.png)
+
+- Save to complete CA
+
+  ![pfsense](Imgs/cts_ca2.png)
+
+##### Step 4: Create Server Certificate
+
+- Go to the `System &gt; Cert. Manager menu`.
+
+- Access the `Certificates` tab in the submenu.
+
+- Select `Add/Sign` at the bottom right.
+
+- Set the `Method` to `Create an internal Certificate Authority`.
+
+- Enter a Descriptive name.
+
+- Set the `Key length` and `Digest Algorithm` the same as the previously created `CA`.
+
+- Adjust the `Lifetime` to 3650 days or customize it, not exceeding 398 days.
+
+- Set the Common Name.
+
+- Set the `Certificate Type` to Server `Certificate`.
+
+  ![pfsense](Imgs/cts_ca3.png)
+
+- Save to complete `Server Certificate`.
+
+##### Step 5: Create a VPN – OpenVPN Server
+
+- Select the `VPN &gt; OpenVPN`.
+
+  ![pfsense](Imgs/cts_vpn.png)
+
+- Select `Add`.
+  - General Information:
+    1. Set **Server mode** to **Remote Access (SSL/TLS + User Auth)**.
+    2. **Local port**, select the connection port, default port **1194**.
+    3. Enter a **description**.
+
+  ![pfsense](Imgs/cts_vpn1.png)
+
+  - `Cryptographic` Settings:
+
+    1. Select Use **TLS Key** and automatically enable **Automatically generate a TLS Key**.
+    2. In **Peer Certificate Authority**, select the CA that was previously created.
+    3. Select the **Server Certificate** created.
+    4. Choose 2048 for **DH Parameter Length**.
+    5. Set **Auth digest algorithm** to RSA-SHA256 (256-bit).
+
+    ![pfsense](Imgs/cts_vpn2.png)![pfsense](Imgs/cts_vpn3.png)
+
+  - `VPN Tunnel` Settings:
+    1. Create a subnet in **IPv4 Tunnel Network** as `10.20.10.0/24`.
+    2. Leave **IPv6 Tunnel Network** blank.
+    3. Enable **Redirect IPv4 Gateway**.
+    4. Specify the `maximum number(20)` of clients allowed to concurrently connect to this server.
+
+    ![pfsense](Imgs/cts_vpn4.png)
+
+  - `Client Settings` and `Ping settings`
+
+    Keep default setting
+
+    ![pfsense](Imgs/cts_vpn5.png)
+
+  - `Advanced Client Settings` and `Advanced Configuration`:
+
+    1. Enable DNS Server and add IP DNS Server `10.20.10.1`.
+    2. Choose IPv4 Only in Gateway creation; select Both if using IPv4 and IPv6.
+
+    ![pfsense](Imgs/cts_vpn6.png)
+
+- Press `Save` to update the configuration.
+
+  ![pfsense](Imgs/cts_vpn7.png)
+
+##### Step 6: Create a VPN – OpenVPN Client
+
+- Navigate to `VPN &gt; OpenVPN &gt; Clients`.
+
+![pfsense](Imgs/cts_c.png)
+
+- Click the `Add` button.
+
+  - General Information:
+    1. Enter a **description**.
+    2. **Disabled**: Leave this unchecked or your client connection will be disabled.
+    3. Set **Server mode** to **Peer to Peer (SSL/TLS)**.
+
+    ![pfsense](Imgs/cts_c1.png)
+
+  - `Endpoint Configuration` Setting:
+    1. **Protocol**:Have 2 option UDP and TCP. And we used *TCP only on IPv4*.
+    2. Set **Interface**: `42.96.47.201((VIP))`. The virtual IP (VIP) was created previously.
+    3. **Local port**: Leave blank unless specified by your VPN provider
+    4. **Server host or address**: The IP address(*`42.96.47.201`*) or hostname of the VPN server to which you will connect.
+    5. **Server port**: The port(*`1194`*) over which the VPN connection will be made.
+    6. **Proxy host or address**: Leave blank
+    7. **Proxy port**: Leave blank
+    8. **Proxy Authentication**: none
+    ![pfsense](Imgs/cts_c2.png)
+
+  - `User Authentication` Settings
+    1. Username: Your username, client identifier, account number, etc.
+    2. Password: Your password (if required)
+    3. Automatic Retry: Leave unchecked so that your client will attempt to reconnect when authentication fails.
+  
+    ![pfsense](Imgs/cts_c3.png)
+
+  - `Cryptographic` Settings
+    1. Select Use **TLS Key** and automatically enable **Automatically generate a TLS Key**.
+    2. In **Peer Certificate Authority**, select the CA that was previously created.
+    3. **Client Certificate**: Leave this set to None.
+    4. Set **Auth digest algorithm** to RSA-SHA256 (256-bit).
+
+    ![pfsense](Imgs/cts_c4.png)![pfsense](Imgs/cts_c5.png)
+
+  - `VPN Tunnel` Settings: Keep default in Tunnel Setting section.
+
+    ![pfsense](Imgs/cts_c6.png)
+
+  - `Ping settings`
+
+    Keep default setting
+
+    ![pfsense](Imgs/cts_c7.png)
+
+  - `Advanced Configuration`:
+    - Choose IPv4 Only in `Gateway creation`; select Both if using IPv4 and IPv6.
+
+    ![pfsense](Imgs/cts_c8.png)
+
+- Press `Save` to update the configuration.
+
+  ![pfsense](Imgs/cts_c9.png)
+
+##### Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client
+
+- Go to `System &gt; Package Manager`.
+
+- Select **Available Packages** in the submenu.
+
+  ![pfsense](Imgs/cts_pkt.png)
+
+- Find the `openvpn-client-export utility` and select **install** to install it.
+
+  ![pfsense](Imgs/cts_pkt1.png)
+
+- Press **confirm** to install.
+  ![pfsense](Imgs/cts_pkt2.png)
+- Once installation is complete, **Success** will be displayed in the **Package Installer** interface.
+  ![pfsense](Imgs/cts_pkt3.png)![pfsense](Imgs/cts_pkt4.png)
+
+##### Step 8 : Create user OpenVPN
+
+- Go to the menu **System &gt; User Manager**.
+
+  ![pfsense](Imgs/cts_user.png)
+
+- Select the **Add** button and enter a **Username** and **Password** for your user.
+
+- Press **Save**, and the **OpenVPN user** will be successfully created and then redirected to the initial interface.
+
+- Configure the authentication method as certificate and password.
+
+- Select **Add** -&gt; **User Certificate** and enter additional information.
+
+- Set the method (**Method -&gt; Create an internal Certificate**).
+
+- Choose **Key length, Type, and Digest Algorithm** to match the previously created **CA**.
+
+- Set the expiration time **Lifetime to 3650 days**.
+
+- Ensure that **Certificate Type** is selected as the user certificate just created **(User Certificate)**.
+
+- **Save** to complete linking the user certificate with the OpenVPN user **(User Certificate – OpenVPN user)**.
+
+  ![pfsense](Imgs/cts_user1.png)![pfsense](Imgs/cts_user2.png)
+
+- Press **Save** to complete the setup of creating the user account for OpenVPN.
+
+##### Step 9: Configure access permissions in the VPN
+
+- Go to the `Firewall &gt; Rules` menu.
+- Select **OpenVPN**.
+- Select the first **Add** to add a new rule.
+  ![pfsense](Imgs/cts_rule_vpnn.png)
+- **Interface**: OpenVPN
+- **Address Family**, choose **IPv4** only.
+- **Protocol**, select **TCP**.
+  ![pfsense](Imgs/cts_rule_vpn.png)
+
+- `Source`, choose **any**.
+- Enter a **description**, press Save, and Apply Changes to save the configuration.
+
+  ![pfsense](Imgs/cts_rule_vpn1.png)
+
+##### Step 10: Configure access to the VPN
+
+- Go to the `Firewall &gt; Rules` menu.
+- Select the **WAN** tab.
+- Click **Add** to add a new rule.
+
+  ![pfsense](Imgs/cts_rule_wan.png)
+
+- Set **Address Family** to **IPv4**.
+- **Protocol**, choose **TCP**.
+
+  ![pfsense](Imgs/cts_rule_wan1.png)
+
+- Set **Source** to **any**.
+- `Destination Port Range`, enter the OpenVPN port configured earlier, which is **`1194`**.
+- Enter a **description**, press **Save**, and Apply Changes to save the configuration.
+
+  ![pfsense](Imgs/cts_rule_wan2.png)
+
+##### Step 11: Configure NAT outbound
+
+- Navigate to `Firewall &gt; NAT &gt; Outbound`.
+  - Outbound NAT Mode: ***Hybrid Outbound NAT rule generation.
+(Automatic Outbound NAT + rules below)*** and then click **Save** and Apply Changes NAT rules.
+  ![pfsense](Imgs/cts_nat.png)
+  - Mappings Configure
+    - Click the green **Add** button with a downward pointing arrow, to create a new NAT rule.
+    - Set the **Interface** field to the VPN interface we created earlier.
+    - Set the **Address Family** to either IPv4 or IPv4+IPv6 if your VPN provider explicitly supports IPv6.
+    - Set the **Source** and **Destination** network with subnet address.
+    - Leave all the other settings untouched. Click **Save** and **Apply Changes**.
+
+    ![pfsense](Imgs/cts_nat1.png)! [pfsense](Imgs/cts_nat2.png)
+
+##### Step 12: Export the VPN Client installation package
+
+- Go to `VPN &gt; OpenVPN`.
+- Select `Client Export` in the submenu.
+- Select the correct **OpenVPN** server next to **Remote Access Server**.
+- If using `Dynamic DNS` to access the pfSense **WAN** network, choose **Other** and select **Host Name Resolution** (This setting allows access to the pfSense WAN network using a name instead of an IP address, ensuring no loss of access to the OpenVPN server if the ISP changes the IP or WAN network). `Exp: 42.96.47.201`
+- If not using this, set **Host Name Resolution** to **Interface IP Address**.
+
+  ![pfsense](Imgs/cts_vpn_exp.png)![pfsense](Imgs/cts_vpn_exp1.png)
+
+- Scroll down to the user location to download the VPN Client installation file, and choose the appropriate installation file.
+  ![pfsense](Imgs/cts_vpn_exp2.png)
+
+##### Step 13: Test the OpenVPN connection
+
+- Run the installation file for the **VPN Client** that was downloaded.
+- Once successfully connected to **OpenVPN**,
+
+  ![pfsense](Imgs/vpn_test.png)
+
+- Network information – when connected to **OpenVPN**.
+  ![pfsense](Imgs/vpn_test1.png)
+
+  ![pfsense](Imgs/vpn_test2.png)
+
+  ![pfsense](Imgs/vpn_test3.png)
+
+#### Setup VPN Site to site
+
+&gt; Site HCM
+
+Start with configuring the tunnel and related settings on the firewall at Site HCM.
+
+##### Setup Network on CMC-Cloud Site HCM
+
+1. Setup IP address of `WAN` and `LAN` in portal `CMC-Cloud`:
+
+    Add **IP private** and **IP public**
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc.png)
+2. Setup **security group** in portal CMC-Cloud
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc0.png)![pfsense](Imgs/S2S/vpn_s2s_cmc1.png)![pfsense](Imgs/S2S/vpn_s2s_cmc2.png)
+3. `Allowed address pairs`
+   - Double click to open tab `Update port` -&gt; **Allowed address pairs**
+   - Add Security Group
+   - Add *`IP Address or CIDR *`* -&gt; `Mac Address`
+   - Click Add to create a new **Allowed address pairs**.
+  
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc3.png)
+
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc4.png)
+
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc5.png)
+
+    ![pfsense](Imgs/S2S/vpn_s2s_cmc6.png)
+
+##### Configure Interface OutScope, NonCDE, CDE Site HCM
+
+Let&#39;s start.
+
+First, configure the internal LAN and the gateway interface. To do this, in the browser, go to the server IP address or domain name if any. Enter the username and password and get to the Home screen (Dashboard). In the program menu, go to the interfaces section `Interfaces -&gt; Assignments`. In our case, have 3 interfaces are already distributed - we leave it as it is. If you have several interfaces, you should select the necessary interface by mac-address and click the Add button.
+
+Assign an IP address to the interface **“looking”** to the local network.
+
+- Add interface vtnet1 (OutScope)
+- Add interface vtnet2 (NonCDE)
+- Add interface vtnet3 (CDE)
+
+![pfsense](Imgs/S2S/s2s2.png)
+![pfsense](Imgs/S2S/s2s.png)
+
+In the program menu, change interface name `interfaces section -&gt; OutScope | NonCDE | CDE`. At the end of the setup, click the Save button.
+
+For all servers in the local network, as the default gateway, set the IP address specified in the LAN.
+
+- Assign `Interface &gt; OutScope`
+  - Setting `General Configuration`
+    - Select **enable interface**
+    - IPv4 Type: **DHCP**
+  - DHCP Client Configuration
+    - Keep default
+  - Reserved Networks
+    - Untick **Block private networks and loopback addresses** and **Block bogon networks**
+
+  ![pfsense](Imgs/S2S/s2s9.png)![pfsense](Imgs/S2S/s2s10.png)
+
+- Do the same with CDE and Non CDE
+  ![pfsense](Imgs/S2S/s2s7.png)![pfsense](Imgs/S2S/s2s8.png)
+  ![pfsense](Imgs/S2S/s2s5.png)![pfsense](Imgs/S2S/s2s6.png)
+  
+`Important!` If you use cloud services, then you need to unite the network nodes from the administration panel of the cloud service through `“Virtual Networks”`.
+
+##### Configure the IPSec tunnel Site HCM
+
+***`Phase 1`***
+
+- Access the `VPN &gt; IPSEC &gt; Tunnel` section
+- Click on the **ADD P1** button![pfsense](Imgs/S2S/s2s16.png)
+- In the Phase 1 configuration page of the IPsec VPN on the pfsense server, fill in the information according to the configuration similar to IPSec VPN in site HN.
+  - `General Information` Setting
+    - Enter a **Description**
+    - Uncheck **Disabled** this box so that the tunnel will be operational.
+  - `IKE Endpoint Configuration`
+    - Key Exchange version: Specifies whether to use IKEv2 or IKEv1. IKEv2 is the best practice when supported by both endpoints. If one side does not support IKEv2, use **IKEv1** instead.
+    - Internet Protocol: **IPv4** in most cases unless both WANs have IPv6
+    - Interface: Most likely set to **WAN**
+    - Remote Gateway: The WAN address at Site HN, in this example: `42.96.40.240`.
+    ![pfsense](Imgs/S2S/s2s17.png)
+  - Setup `Phase 1 Proposal (Authentication)`
+  
+    The next section controls IPsec phase 1 proposals for encryption.
+    - Authentication Method:The default, **Mutual PSK**
+    - Negotiation mode: **Main**
+    - My Identifier: **My IP Address**
+    - Peer Identifier: **Any**
+    - Pre-Shared key: generate a key (we will also need this value on our end)![pfsense](Imgs/S2S/s2s18.png)
+  - `Phase 1 Proposal (Encryption Algorithm)`
+  
+    Encryption Algorithm:
+    - Algorithm Select **AES**
+    - Key length use **128bits**
+    - Hash use **SHA256**
+    - DH group **2** (1028bit)
+  - `Expiration and Replacement`
+    - The Expiration and Replacement section controls the timing and method by which phase 1 will be renegotiated.
+      - Life Time: The default `28800` is OK for this endpoint.
+      - The other lifetime-related values (Rekey Time, Reauth Time, Rand Time) should be left at their defaults on this endpoint as they are automatically calculated as the correct values.
+  - `Advanced Options`
+    - Child SA Close Action: Set this endpoint to **Default**. Moreover, have options **Restart/Reconnect** so that the phase 2 entries will be reconnected if they get disconnected.
+    - Leave checked and at the default values.
+  ![pfsense](Imgs/S2S/s2s19.png)
+  - Click **Save** when complete
+
+***`Phase 2`***
+
+With the phase 1 entry complete, now a new phase 2 definition to the VPN:
+
+- Click **Show Phase 2 Entries** to expand the phase 2 list for this VPN.
+
+- Click **Add P2** to add a new phase 2 entry.
+
+Now add settings for phase 2 on this VPN. The settings for phase 2:
+
+- `General Information`
+  - Description: A brief description of the network(s) involved in this phase 2 entry.
+  - Mode: Select ***Tunnel IPv4***
+- `Networks`
+  - Local Network: **WAN subnet** with interface WAN. **LAN Subnet** with interfaces: OutScope, CDE and NonCDE.
+- `NAT/BINAT`
+  - Set to **None**.
+- `Remote Network`
+  - Set to the network at Site HN, in this case: `172.25.49.0/24`
+
+![pfsense](Imgs/S2S/s2s20.png)
+
+The next section of the phase 2 settings covers traffic encryption. Encryption algorithms and Hash algorithms can both be set to allow multiple options in phase 2, and both sides will negotiate and agree upon the settings so long as each side has at least one of each in common. In some cases that may be a good thing, but it is usually better to restrict this to the single specific options desired on both sides.
+
+- `Phase 2 Proposal (SA/Key Exchange)`
+  - Protocol: Set to **ESP** for encryption.
+  - Encryption Algorithms: **AES (128bits)**
+  - Hash algorithm use **SHA1**
+  - PFS key group with **2(1024bit)**
+
+- `Expiration and Replacement` and `Keep Alive`
+  - Keep default
+
+![pfsense](Imgs/S2S/s2s22.png)
+
+***NonCDE***
+
+![pfsense](Imgs/S2S/s2s23.png)![pfsense](Imgs/S2S/s2s24.png)
+
+***CDE***
+
+![pfsense](Imgs/S2S/s2s25.png)![pfsense](Imgs/S2S/s2s26.png)![pfsense](Imgs/S2S/s2s27.png)
+
+***OutScope***
+
+![pfsense](Imgs/S2S/s2s28.png)![pfsense](Imgs/S2S/s2s29.png)
+
+`Result:`
+
+![pfsense](Imgs/S2S/s2s30.png)
+
+##### Configure Firewall for local connections Site HCM
+
+In the program menu, select `Firewall -&gt; Rules -&gt; WAN`. Click the **Add** button.
+
+- Protocol: **TCP**, but you can also use Any.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S/s2s11.png)
+
+Configure rule OutScope VPN: `Firewall -&gt; Rules -&gt; OutScope`
+
+- On the new page we check the parameters:
+
+  - Customizable interface: **OutScope**.
+
+  - Protocol: **TCP**, but you can also use Any.
+
+  - Source: **Any**.
+
+  - Destination: **Any**.
+- Save the settings by clicking on the Save button.
+
+![alt text](Imgs/S2S/s2s14.png)
+
+Do the same with CDE and Non CDE
+
+![alt text](Imgs/S2S/s2s13.png)
+
+![alt text](Imgs/S2S/s2s12.png)
+
+Configure rule IPSec VPN: `Firewall -&gt; Rules -&gt; IPSec`
+
+- Protocol: **TCP**, but you can also use **Any**.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S/s2s15.png)
+
+It should be noted that the same settings must be made on all remote pfSense servers connected to a single network.
+
+##### Config Route table in CMC-Cloud on Site HCM
+
+A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.
+
+![alt text](Imgs/S2S/route_hcm.png)
+
+![alt text](Imgs/S2S/route_hcm_1.png)
+
+![alt text](Imgs/S2S/route_hcm_1.1.png)
+
+![alt text](Imgs/S2S/route_hcm_1.2.png)
+
+![alt text](Imgs/S2S/route_hcm_2.png)
+
+![alt text](Imgs/S2S/route_hcm_2.1.png)
+
+![alt text](Imgs/S2S/route_hcm_3.png)
+
+![alt text](Imgs/S2S/route_hcm_3.1.png)
+
+![alt text](Imgs/S2S/route_hcm_3.2.png)
+
+![alt text](Imgs/S2S/route_hcm_5.png)
+
+![alt text](Imgs/S2S/route_hcm_5.1.png)
+
+===================================================
+
+&gt; Site HN
+
+Now that Site HCM is configured, it is time to tackle Site HN. Repeat the process on the Site HN endpoint to add a tunnel.
+
+##### Setup Network on CMC-Cloud Site HN
+
+1. Setup IP address of `WAN` and `LAN` in portal `CMC-Cloud`:
+
+    Add **IP private** and **IP public**
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn.png)
+2. Setup **security group** in portal CMC-Cloud
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn1.png)![pfsense](Imgs/S2S-HN/s2s_cmc_hn2.png)
+3. `Allowed address pairs`
+   - Double click to open tab `Update port` -&gt; **Allowed address pairs**
+   - Add Security Group
+   - Add *`IP Address or CIDR *`* -&gt; `Mac Address`
+   - Click Add to create a new **Allowed address pairs**.
+  
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn3.png)
+
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn4.png)
+
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn5.png)
+
+    ![pfsense](Imgs/S2S-HN/s2s_cmc_hn6.png)
+
+##### Configure Interface OutScope, NonCDE, CDE Site HN
+
+Let&#39;s start.
+
+First, configure the internal LAN and the gateway interface. To do this, in the browser, go to the server IP address or domain name if any. Enter the username and password and get to the Home screen (Dashboard). In the program menu, go to the interfaces section `Interfaces -&gt; Assignments`. In our case, have 3 interfaces are already distributed - we leave it as it is. If you have several interfaces, you should select the necessary interface by mac-address and click the Add button.
+
+Assign an IP address to the interface **“looking”** to the local network.
+
+- Add interface vtnet1 (OutScope)
+- Add interface vtnet2 (NonCDE)
+- Add interface vtnet3 (CDE)
+
+![pfsense](Imgs/S2S-HN/hn.png)
+![pfsense](Imgs/S2S-HN/hn0.png)
+
+In the program menu, change interface name `interfaces section -&gt; OutScope | NonCDE | CDE`. At the end of the setup, click the Save button.
+
+For all servers in the local network, as the default gateway, set the IP address specified in the LAN.
+
+- Assign `Interface &gt; OutScope`
+  - Setting `General Configuration`
+    - Select **enable interface**
+    - IPv4 Type: **DHCP**
+  - DHCP Client Configuration
+    - Keep default
+  - Reserved Networks
+    - Untick **Block private networks and loopback addresses** and **Block bogon networks**
+
+  ![pfsense](Imgs/S2S-HN/hn7.png)![pfsense](Imgs/S2S-HN/hn8.png)
+
+- Do the same with CDE and Non CDE
+  ![pfsense](Imgs/S2S-HN/hn6.png)![pfsense](Imgs/S2S-HN/hn6a.png)
+  ![pfsense](Imgs/S2S-HN/hn4.png)![pfsense](Imgs/S2S-HN/hn5.png)
+  
+`Important!` If you use cloud services, then you need to unite the network nodes from the administration panel of the cloud service through `“Virtual Networks”`.
+
+##### Configure the IPSec tunnel Site HN
+
+***`Phase 1`***
+
+- Access the `VPN &gt; IPSEC &gt; Tunnel` section
+- Click on the **ADD P1** button![pfsense](Imgs/S2S-HN/hn15.png)
+- In the Phase 1 configuration page of the IPsec VPN on the pfsense server, fill in the information according to the configuration similar to IPSec VPN in site HN.
+  - `General Information` Setting
+    - Enter a **Description**
+    - Uncheck **Disabled** this box so that the tunnel will be operational.
+  - `IKE Endpoint Configuration`
+    - Key Exchange version: Specifies whether to use IKEv2 or IKEv1. IKEv2 is the best practice when supported by both endpoints. If one side does not support IKEv2, use **IKEv1** instead.
+    - Internet Protocol: **IPv4** in most cases unless both WANs have IPv6
+    - Interface: Most likely set to **WAN**
+    - Remote Gateway: The WAN address at Site HN, in this example: `42.96.45.27`.
+    ![pfsense](Imgs/S2S-HN/hn16.png)
+  - Setup `Phase 1 Proposal (Authentication)`
+  
+    The next section controls IPsec phase 1 proposals for encryption.
+    - Authentication Method:The default, **Mutual PSK**
+    - Negotiation mode: **Main**
+    - My Identifier: **My IP Address**
+    - Peer Identifier: **Any**
+    - Pre-Shared key: generate a key (we will also need this value on our end)![pfsense](Imgs/S2S-HN/hn17.png)
+  - `Phase 1 Proposal (Encryption Algorithm)`
+  
+    Encryption Algorithm:
+    - Algorithm Select **AES**
+    - Key length use **128bits**
+    - Hash use **SHA256**
+    - DH group **2** (1028bit)
+  - `Expiration and Replacement`
+    - The Expiration and Replacement section controls the timing and method by which phase 1 will be renegotiated.
+      - Life Time: The default `28800` is OK for this endpoint.
+      - The other lifetime-related values (Rekey Time, Reauth Time, Rand Time) should be left at their defaults on this endpoint as they are automatically calculated as the correct values.
+  - `Advanced Options`
+    - Child SA Close Action: Set this endpoint to **Default**. Moreover, have options **Restart/Reconnect** so that the phase 2 entries will be reconnected if they get disconnected.
+    - Leave checked and at the default values.
+  ![pfsense](Imgs/S2S-HN/hn18.png)
+  - Click **Save** when complete
+
+***`Phase 2`***
+
+With the phase 1 entry complete, now a new phase 2 definition to the VPN:
+
+- Click **Show Phase 2 Entries** to expand the phase 2 list for this VPN.
+
+- Click **Add P2** to add a new phase 2 entry.
+
+Now add settings for phase 2 on this VPN. The settings for phase 2:
+
+- `General Information`
+  - Description: A brief description of the network(s) involved in this phase 2 entry.
+  - Mode: Select ***Tunnel IPv4***
+- `Networks`
+  - Local Network: **WAN subnet** with interface WAN. **LAN Subnet** with interfaces: OutScope, CDE and NonCDE.
+- `NAT/BINAT`
+  - Set to **None**.
+- `Remote Network`
+  - Set to the network at Site HN, in this case: `172.24.49.0/24`
+
+![pfsense](Imgs/S2S-HN/hn19.png)
+
+The next section of the phase 2 settings covers traffic encryption. Encryption algorithms and Hash algorithms can both be set to allow multiple options in phase 2, and both sides will negotiate and agree upon the settings so long as each side has at least one of each in common. In some cases that may be a good thing, but it is usually better to restrict this to the single specific options desired on both sides.
+
+- `Phase 2 Proposal (SA/Key Exchange)`
+  - Protocol: Set to **ESP** for encryption.
+  - Encryption Algorithms: **AES (128bits)**
+  - Hash algorithm use **SHA1**
+  - PFS key group with **2(1024bit)**
+
+- `Expiration and Replacement` and `Keep Alive`
+  - Keep default
+
+![pfsense](Imgs/S2S-HN/hn20.png)
+
+***NonCDE***
+
+![pfsense](Imgs/S2S-HN/hn21.png)![pfsense](Imgs/S2S-HN/hn22.png)
+
+***CDE***
+
+![pfsense](Imgs/S2S-HN/hn23.png)![pfsense](Imgs/S2S-HN/hn24.png)
+
+***OutScope***
+
+![pfsense](Imgs/S2S-HN/hn25.png)![pfsense](Imgs/S2S-HN/hn26.png)
+
+`Result:`
+
+![pfsense](Imgs/S2S-HN/hn28.png)
+
+##### Configure Firewall for local connections Site HN
+
+In the program menu, select `Firewall -&gt; Rules -&gt; WAN`. Click the **Add** button.
+
+- Protocol: **TCP**, but you can also use Any.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S-HN/hn11.png)
+
+Configure rule OutScope VPN: `Firewall -&gt; Rules -&gt; OutScope`
+
+- On the new page we check the parameters:
+
+  - Customizable interface: **OutScope**.
+Imgs/S2S-HN/hn23.png
+  - Protocol: **TCP**, but you can also use Any.
+
+  - Source: **Any**.
+
+  - Destination: **Any**.
+- Save the settings by clicking on the Save button.
+
+![alt text](Imgs/S2S-HN/hn13.png)
+
+Do the same with CDE and Non CDE
+
+![alt text](Imgs/S2S-HN/hn12.png)
+
+![alt text](Imgs/S2S-HN/hn11.png)
+
+Configure rule IPSec VPN: `Firewall -&gt; Rules -&gt; IPSec`
+
+- Protocol: **TCP**, but you can also use **Any**.
+
+- Source: **Any**.
+
+- Destination: **Any**.
+
+![alt text](Imgs/S2S-HN/hn14.png)
+
+It should be noted that the same settings must be made on all remote pfSense servers connected to a single network.
+
+##### Config Route table in CMC-Cloud on Site HN
+
+A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed.
+
+![alt text](Imgs/S2S-HN/s2s_hn_subnet.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route1.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route2.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route3.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route4.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route5.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route6.png)
+
+![alt text](Imgs/S2S-HN/s2s_hn_route7.png)
+
+### Build VPN Route Base (Using OSPF)
+
+#### Routed IPsec (VTI)
+
+Route-based IPsec is an alternative method of managing IPsec traffic. It uses `if_ipsec(4)` from FreeBSD for **Virtual Tunnel Interfaces (VTI)** and traffic is directed using the operating system routing table. It does not rely on strict kernel security association matching like policy-based (tunnel mode) IPsec.
+
+Virtual Tunnel Interface (VTI) tunnels in pfSense are used to create a more streamlined way to handle IPsec VPN configurations. VTI tunnels simplify the process of creating site-to-site VPNs by treating the tunnel as a network interface, allowing for easier management and the ability to use dynamic routing protocols like **`OSPF`** or **`BGP`**.
+
+![alt text](Imgs/Route-base/VTI_TUNNEL.svg)
+
+&gt; VPN Route-Based IPSEC
+
+##### HANOI - Khanh&#39;s zone (Vùng 1) - PHAN
+
+| FW - IP public   | Interface | IP address     | Subnet        |
+|------------------|-----------|---------------|---------------|
+| 42.98.43.148     | WAN       | 172.25.48.81  | 172.25.48.0/24|
+|                  | LAN       | 172.25.68.10  | 172.25.84.0/24|
+|                  | VTI       | 10.0.0.1      |               |
+| PC               | LAN       | 172.25.64.193 | 172.25.84.0/24|
+
+##### HCM - Khanh&#39;s zone (Vùng 2) - GIANG
+
+| FW - IP public   | Interface | IP address     | Subnet        |
+|------------------|-----------|---------------|---------------|
+| 42.98.44.213     | WAN       | 172.21.2.154  | 172.21.0.0/20 |
+|                  | VTI-toHN  | 10.0.0.2      |               |
+|                  | VTI-toTRAM| 10.0.0.3      |               |
+
+##### HCM - Tram&#39;s zone (Vùng 3) - TRI
+
+| FW - IP public   | Interface | IP address     | Subnet        |
+|------------------|-----------|---------------|---------------|
+| 203.171.92.107   | WAN       | 192.168.2.200 | 192.168.0.0/24|
+|                  | LAN       | 192.168.0.211 | 192.168.0.0/24|
+|                  | VTI       | 10.0.0.4      |               |
+| PC               | LAN       | 192.168.0.210 | 192.168.0.0/24|
+
+Config in Phase1: **`AES128 - SHA1 - DH Group 2`**
+
+- Key between zone 3 and zone 2:
+
+  ```key
+  4531f5a38fa3e74c8741c743aae8b7fd7ef4fec037f500d8ad1fa7e91
+  ```
+
+- Key between zone 1 and zone 2:
+
+  ```key
+   7751417e85b68855909314a7da81cbb2271efd65a801f4bc0118d8da
+  ```
+
+#### Step 1: Configure IPsec Tunnel on pfSense
+
+1. Go to `VPN &gt; IPsec` in the pfSense web GUI.
+
+2. Click on the + Add P1 button to create a new Phase 1 entry.
+
+3. Set the following parameters for the Phase 1 configuration:
+
+   - Key Exchange version: IKEv1
+   - Remote Gateway: IP address of the remote VPN endpoint
+   - Authentication Method: Mutual PSK (Pre-Shared Key)
+   - Pre-Shared Key: Enter a secure key
+   - Encryption Algorithm: Choose a strong encryption method (e.g., AES)
+   - Hash Algorithm: SHA-1 (or another secure hash)
+   - DH Group: Choose an appropriate Diffie-Hellman group
+
+&gt; HANOI - Khanh&#39;s zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_zone_1.png)![alt text](Imgs/Route-base/vti_zone_1_1.png)![alt text](Imgs/Route-base/vti_zone_1_2.png)![alt text](Imgs/Route-base/vti_zone_1_3.png)
+
+&gt; HCM - Khanh&#39;s zone (Vùng 2)
+
+- toHCM-MrTram
+
+![vti](Imgs/Route-base/vti_1.png)![vti](Imgs/Route-base/vti_2.png)![vti](Imgs/Route-base/vti_3.png)![vti](Imgs/Route-base/vti_4.png)
+
+- HCM-to-HN
+
+![alt text](Imgs/Route-base/vti_1.1.png)![alt text](Imgs/Route-base/vti_2.2.png)![alt text](Imgs/Route-base/vti_3.3.png)![alt text](Imgs/Route-base/vti_4.4.png)
+
+&gt; HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_zone_3.png)![alt text](Imgs/Route-base/vti_zone_3_1.png)![alt text](Imgs/Route-base/vti_zone_3_2.png)![alt text](Imgs/Route-base/vti_zone_3_3.png)
+
+#### Step 2: Configure Phase 2 (Child SA) for VTI
+
+1. Click on + Add P2 under the Phase 1 you just created.
+
+2. Set the following parameters for the Phase 2 configuration:
+
+   - Mode: Tunnel IPv4
+   - Local Network: Network Address, and enter an IP address in CIDR notation (e.g., 0.0.0.0/0 for all traffic)
+   - Remote Network: Network Address, and enter 0.0.0.0/0
+   - Protocol: ESP
+   - Encryption Algorithms: Choose strong encryption settings (e.g., AES)
+   - Hash Algorithms: Choose a secure hash (e.g., SHA-256)
+
+3. In the Phase 2 proposal (SA/Key Exchange) section, set the following:
+
+   - Lifetime: Set a reasonable value (e.g., 3600 seconds)
+   - Enable Automatically ping host, if desired, to keep the tunnel alive.
+
+4. Save the Phase 2 settings.
+
+&gt; HANOI - Khanh&#39;s zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_p2_1.png)![alt text](Imgs/Route-base/vti_p2_1_1.png)![alt text](Imgs/Route-base/vti_p2_1_2.png)![alt text](Imgs/Route-base/vti_p2_1_4.png)
+
+&gt; HCM - Khanh&#39;s zone (Vùng 2)
+&gt;&gt; HCM - Khanh&#39;s zone (Vùng 2) connect to HANOI - Khanh&#39;s zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_p2_2.png)![alt text](Imgs/Route-base/vti_p2_2_1.png)![alt text](Imgs/Route-base/vti_p2_2_2.png)![alt text](Imgs/Route-base/vti_p2_2_3.png)
+
+&gt;&gt; HCM - Khanh&#39;s zone (Vùng 2) connect to HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_p2_2.2.png)![alt text](Imgs/Route-base/vti_p2_2.2_1.png)![alt text](Imgs/Route-base/vti_p2_2.2_2.png)![alt text](Imgs/Route-base/vti_p2_2.2_3.png)
+
+&gt; HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_p2_3_1.png)![alt text](Imgs/Route-base/vti_p2_3_2.png)![alt text](Imgs/Route-base/vti_p2_3_3.png)![alt text](Imgs/Route-base/vti_p2_3_4.png)
+
+#### Create the VTI Interface
+
+1. Go to Interfaces &gt; Assignments in the pfSense web GUI.
+2. You should see a new interface named IPsec VTI available in the list.
+3. Click Add to assign the IPsec VTI interface.
+4. Click on the newly created interface and configure it:
+   - Enable the interface
+   - Set the IP Address (e.g., 10.0.0.1/30), where each end of the tunnel gets a unique IP in the subnet.
+5. Save and apply the changes.
+
+&gt; HANOI - Khanh&#39;s zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_zo1_interface.png)![alt text](Imgs/Route-base/vti_zo1_interface1.png)![alt text](Imgs/Route-base/vti_zo1_interface2.png)
+
+&gt; HCM - Khanh&#39;s zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_zo2_interface.png)![alt text](Imgs/Route-base/vti_zo2_interface1.png)![alt text](Imgs/Route-base/vti_zo2_interface2.png)![alt text](Imgs/Route-base/vti_zo2_interface3.png)![alt text](Imgs/Route-base/vti_zo2_interface4.png)
+
+&gt; HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_zo3_interface.png)![alt text](Imgs/Route-base/vti_zo3_interface1.png)![alt text](Imgs/Route-base/vti_zo3_interface2.png)
+
+#### Step 4: Firewall Rules for the VTI Interface
+
+1. Go to Firewall &gt; Rules and click on the newly created IPsec VTI interface.
+2. Add rules to allow traffic to flow through the tunnel as needed.
+   For example, add a rule to allow all traffic for testing purposes.
+3. Save and apply the firewall rules.
+
+Exp: Add rules to allow traffic for 3 zone.
+
+![alt text](Imgs/Route-base/vti_rules.png)![alt text](Imgs/Route-base/vti_rules1.png)
+
+#### Testing the VTI Tunnel
+
+1. Ping the remote tunnel IP address to verify connectivity.
+2. Ensure that traffic is being properly routed through the VTI tunnel.
+
+&gt; HANOI - Khanh&#39;s zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_tunnel_ping_z1.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z1_2.png)
+
+&gt; HCM - Khanh&#39;s zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_tunnel_ping_z2.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z2_1.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z2_2.png)
+
+&gt; HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_tunnel_ping_z3.png)![alt text](Imgs/Route-base/vti_tunnel_ping_z3_1.png)
+
+#### Step 5: Setup for OSPF on pfSense with VTI
+
+##### I. Install the FRR Package on pfSense
+
+1. Go to System &gt; Package Manager &gt; Available Packages.
+2. Search for the FRR (Free Range Routing) package.
+3. Click Install to add the package to your pfSense setup.
+4. Once the installation is complete, go to Services &gt; FRR Global/Zebra.
+
+&gt; [!NOTE]
+&gt; Install FRR on all 3 zones
+
+![alt text](Imgs/Route-base/vti_pkg.png)![alt text](Imgs/Route-base/vti_pkg1.png)![alt text](Imgs/Route-base/vti_pkg2.png)
+
+##### II. Configure FRR Global Settings
+
+1. Enable the FRR daemon by checking the box at the top of the page.
+2. Make sure the Zebra routing manager is enabled.
+3. Save and apply the settings.
+
+&gt; [!NOTE]
+&gt; Enable FRR on all 3 zones
+
+![alt text](Imgs/Route-base/vti_frr_cfg1.png)![alt text](Imgs/Route-base/vti_frr_cfg2.png)
+
+##### III. Configure OSPF in FRR
+
+1. Navigate to `Services &gt; FRR OSPF`.
+2. Check the box to **Enable OSPF**.
+3. In the Router ID field keep default or enter a unique identifier for this pfSense router (typically the LAN IP address).
+4. Under Networks, add the network associated with the VTI interface. For example:
+   - Network: 10.10.10.0/30 (replace this with your actual VTI network)
+   - Area: 0.0.0.0 (Area 0 is the backbone area for OSPF)
+5. Click Save to apply these settings.
+
+&gt; OSPF config
+
+OSPF setting
+![alt text](Imgs/Route-base/vti_ospf.png)![alt text](Imgs/Route-base/vti_ospf1.png)![alt text](Imgs/Route-base/vti_ospf2.png)![alt text](Imgs/Route-base/vti_ospf3.png)
+
+Areas setting
+
+![alt text](Imgs/Route-base/vti_area.png)![alt text](Imgs/Route-base/vti_area1.png)![alt text](Imgs/Route-base/vti_area2.png)
+
+Interface setting
+
+- HANOI - Khanh&#39;s zone (Vùng 1)
+  
+![alt text](Imgs/Route-base/vti_interface_hn.png)![alt text](Imgs/Route-base/vti_interface_hn1.png)![alt text](Imgs/Route-base/vti_interface_hn2.png)
+
+- HCM - Khanh&#39;s zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_interface_z2.png)![alt text](Imgs/Route-base/vti_interface_z21.png)![alt text](Imgs/Route-base/vti_interface_z22.png)
+
+- HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_interface_z3.png)![alt text](Imgs/Route-base/vti_interface_z31.png)![alt text](Imgs/Route-base/vti_interface_z32.png)
+
+##### IV. Configure Static Routing in Pfsense
+
+1. Navigate to `System &gt; Routing &gt; Static Routes`.
+2. Select + **Add** button to create a new static route.
+3. Configure the Static Route:
+   - Destination network: Enter the destination network (e.g., 192.168.2.0/24).
+   - Gateway: Select the gateway that pfSense should use to reach the destination network. Ở đây chúng ta sử dụng gateway vti.
+   - Optionally, you can add a Description for the route.
+4. Click **Save** to **apply** activate the new route..
+
+&gt; HANOI - Khanh&#39;s zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_routes_hn.png)![alt text](Imgs/Route-base/vti_routes_hn1.png)![alt text](Imgs/Route-base/vti_routes_hn2.png)
+
+&gt; HCM - Khanh&#39;s zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_routes_z2.png)![alt text](Imgs/Route-base/vti_routes_z2_1.png)![alt text](Imgs/Route-base/vti_routes_z2_2.png)
+
+&gt; HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_routes_z3.png)![alt text](Imgs/Route-base/vti_routes_z3_1.png)![alt text](Imgs/Route-base/vti_routes_z3_2.png)
+
+##### V. Check status OSPF in FRR
+
+1. Navigate to `Status &gt; FRR`.
+2. Select  **OSPF** button to query status service ospf.
+
+&gt; HANOI - Khanh&#39;s zone (Vùng 1)
+
+![alt text](Imgs/Route-base/vti_ospf_stt_zone1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone1.4.png)
+&gt; HCM - Khanh&#39;s zone (Vùng 2)
+
+![alt text](Imgs/Route-base/vti_ospf_stt_zone2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone2.4.png)
+
+&gt; HCM - Tram&#39;s zone (Vùng 3)
+
+![alt text](Imgs/Route-base/vti_ospf_stt_zone3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.1.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.2.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.3.png)![alt text](Imgs/Route-base/vti_ospf_stt_zone3.4.png)
+
+##### V. Check ping
+
+&gt; Access the PC on zone 1, add route and perform ping test.
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3.png)
+
+- Show route before add new route
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_1.png)
+
+- Add route and ping to Lan
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_2.png)
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_3.png)
+
+- Ping to PC
+
+![alt text](Imgs/Route-base/ping_zo1_to_zo3_4.png)
+
+&gt; Access the PC on zone 3, add route and perform ping test.
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1.png)
+
+- Show route before add new route
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_1.png)
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_2.png)
+
+- Add route and ping to Lan
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_3.png)
+
+- Ping to PC
+
+![alt text](Imgs/Route-base/ping_zo3_to_zo1_5.png)
+
+### Build VPN With GRE-TUNNEL
+
+Generic Routing Encapsulation (GRE) is a method of tunneling traffic between two endpoints without encryption. It can be used to route packets between two locations that are not directly connected, which do not require encryption. It can also be combined with a method of encryption that does not perform its own tunneling.
+
+&gt; [!NOTE]
+&gt; The GRE protocol was originally designed by Cisco, and it is the default tunneling mode on many of their devices.
+
+GRE tunnels can carry either IPv4, IPv6, or both types of traffic at the same time.
+
+End. --&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

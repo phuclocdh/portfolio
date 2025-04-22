@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading Papers on Linh Tran</title>
+    <link>http://localhost:1313/categories/reading-papers/</link>
+    <description>Recent content in Reading Papers on Linh Tran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>nhutlinh.work@gmail.com (Linh Tran-Nhut)</managingEditor>
+    <webMaster>nhutlinh.work@gmail.com (Linh Tran-Nhut)</webMaster>
+    <copyright>© 2025 Linh Tran-Nhut</copyright>
+    <lastBuildDate>Thu, 31 Oct 2024 20:28:53 +0700</lastBuildDate><atom:link href="http://localhost:1313/categories/reading-papers/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reading Papers: CIReVL (ICLR 2024)</title>
+      <link>http://localhost:1313/posts/202504-install/</link>
+      <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:1313/posts/202504-install/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Vision-by-Language for Training-Free Compositional Image Retrieval 
+    &lt;div id=&#34;vision-by-language-for-training-free-compositional-image-retrieval&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#vision-by-language-for-training-free-compositional-image-retrieval&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ArXiv: &lt;a href=&#34;https://arxiv.org/abs/2310.09291&#34; target=&#34;_blank&#34;&gt;https://arxiv.org/abs/2310.09291&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/ExplainableML/Vision_by_Language&#34; target=&#34;_blank&#34;&gt;https://github.com/ExplainableML/Vision_by_Language&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: A training-free, modular, and interpretable approach that leverages LLMs to enhance text-based queries for compositional image retrieval.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/202504-install/feature.jpg" />
+    </item>
+    
+  </channel>
+</rss>

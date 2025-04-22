@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product on Linh Tran</title>
+    <link>http://localhost:1313/categories/product/</link>
+    <description>Recent content in Product on Linh Tran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>nhutlinh.work@gmail.com (Linh Tran-Nhut)</managingEditor>
+    <webMaster>nhutlinh.work@gmail.com (Linh Tran-Nhut)</webMaster>
+    <copyright>© 2025 Linh Tran-Nhut</copyright>
+    <atom:link href="http://localhost:1313/categories/product/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>

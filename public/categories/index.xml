@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on LinhTran&#39;s</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on LinhTran&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>nhutlinh.work@gmail.com (Linh Tran-Nhut)</managingEditor>
+    <webMaster>nhutlinh.work@gmail.com (Linh Tran-Nhut)</webMaster>
+    <copyright>© 2025 Linh Tran-Nhut</copyright>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/categories/automation/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:1313/categories/automation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Document</title>
+      <link>http://localhost:1313/categories/document/</link>
+      <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:1313/categories/document/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firewall on Linh Tran</title>
+    <link>http://localhost:45077/tags/firewall/</link>
+    <description>Recent content in Firewall on Linh Tran</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>nhutlinh.work@gmail.com (Linh Tran-Nhut)</managingEditor>
+    <webMaster>nhutlinh.work@gmail.com (Linh Tran-Nhut)</webMaster>
+    <copyright>© 2025 Linh Tran-Nhut</copyright>
+    <lastBuildDate>Thu, 31 Oct 2024 20:28:53 +0700</lastBuildDate><atom:link href="http://localhost:45077/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Install and config: Pfsense</title>
+      <link>http://localhost:45077/posts/pfsense/</link>
+      <pubDate>Thu, 31 Oct 2024 20:28:53 +0700</pubDate>
+      <author>nhutlinh.work@gmail.com (Linh Tran-Nhut)</author>
+      <guid>http://localhost:45077/posts/pfsense/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;Pfsense, Client to Site &amp;amp;  Site to site 
+    &lt;div id=&#34;pfsense-client-to-site---site-to-site&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#pfsense-client-to-site---site-to-site&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;h2 class=&#34;relative group&#34;&gt;Table of contents 
+    &lt;div id=&#34;table-of-contents&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#table-of-contents&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#pfsense-client-to-site---site-to-site&#34;&gt;Pfsense, Client to Site &amp;amp;  Site to site&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-pfsense-&#34;&gt;What is Pfsense ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#features-in-pfsense&#34;&gt;Features in pfsense&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#setup-firewall-outscope&#34;&gt;Setup firewall (Outscope)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#initial-setup&#34;&gt;Initial setup&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#general-information&#34;&gt;General Information&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#time-server-configuration&#34;&gt;Time Server Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#wan-interface-configuration&#34;&gt;WAN Interface Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-lan-interface&#34;&gt;Configure LAN Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#change-the-admin-password&#34;&gt;Change the Admin password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#save-parameters&#34;&gt;Save parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-interface&#34;&gt;Configure Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-rule-and-natport-forward&#34;&gt;Configure Rule and NAT(port-forward)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#i-rule-wan-interface&#34;&gt;I. Rule WAN interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ii-rule-lan-interface&#34;&gt;II. Rule LAN interface&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#setup-firewall-inscope-non-cde&#34;&gt;Setup firewall (Inscope Non CDE)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#build-vpn&#34;&gt;Build VPN&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#setup-vpn-client-to-site&#34;&gt;Setup VPN Client to Site&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#step-1-configure-wan-interface&#34;&gt;Step 1: Configure WAN interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-2-create-a-virtual-ip&#34;&gt;Step 2: Create a Virtual IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-3-create-certificate-authority--ca&#34;&gt;Step 3: Create Certificate Authority – CA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-4-create-server-certificate&#34;&gt;Step 4: Create Server Certificate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-5-create-a-vpn--openvpn-server&#34;&gt;Step 5: Create a VPN – OpenVPN Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-6-create-a-vpn--openvpn-client&#34;&gt;Step 6: Create a VPN – OpenVPN Client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-7-install-the-openvpn-client-export-utility-a-tool-that-helps-export-the-vpn-client&#34;&gt;Step 7: Install the OpenVPN Client Export Utility, a tool that helps export the VPN client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-8--create-user-openvpn&#34;&gt;Step 8 : Create user OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-9-configure-access-permissions-in-the-vpn&#34;&gt;Step 9: Configure access permissions in the VPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-10-configure-access-to-the-vpn&#34;&gt;Step 10: Configure access to the VPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-11-configure-nat-outbound&#34;&gt;Step 11: Configure NAT outbound&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-12-export-the-vpn-client-installation-package&#34;&gt;Step 12: Export the VPN Client installation package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-13-test-the-openvpn-connection&#34;&gt;Step 13: Test the OpenVPN connection&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#setup-vpn-site-to-site&#34;&gt;Setup VPN Site to site&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#setup-network-on-cmc-cloud-site-hcm&#34;&gt;Setup Network on CMC-Cloud Site HCM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-interface-outscope-noncde-cde-site-hcm&#34;&gt;Configure Interface OutScope, NonCDE, CDE Site HCM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-the-ipsec-tunnel-site-hcm&#34;&gt;Configure the IPSec tunnel Site HCM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-firewall-for-local-connections-site-hcm&#34;&gt;Configure Firewall for local connections Site HCM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#config-route-table-in-cmc-cloud-on-site-hcm&#34;&gt;Config Route table in CMC-Cloud on Site HCM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#setup-network-on-cmc-cloud-site-hn&#34;&gt;Setup Network on CMC-Cloud Site HN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-interface-outscope-noncde-cde-site-hn&#34;&gt;Configure Interface OutScope, NonCDE, CDE Site HN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-the-ipsec-tunnel-site-hn&#34;&gt;Configure the IPSec tunnel Site HN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configure-firewall-for-local-connections-site-hn&#34;&gt;Configure Firewall for local connections Site HN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#config-route-table-in-cmc-cloud-on-site-hn&#34;&gt;Config Route table in CMC-Cloud on Site HN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#build-vpn-route-base-using-ospf&#34;&gt;Build VPN Route Base (Using OSPF)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#routed-ipsec-vti&#34;&gt;Routed IPsec (VTI)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#hanoi---khanhs-zone-v%c3%b9ng-1---phan&#34;&gt;HANOI - Khanh&amp;rsquo;s zone (Vùng 1) - PHAN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#hcm---khanhs-zone-v%c3%b9ng-2---giang&#34;&gt;HCM - Khanh&amp;rsquo;s zone (Vùng 2) - GIANG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#hcm---trams-zone-v%c3%b9ng-3---tri&#34;&gt;HCM - Tram&amp;rsquo;s zone (Vùng 3) - TRI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-1-configure-ipsec-tunnel-on-pfsense&#34;&gt;Step 1: Configure IPsec Tunnel on pfSense&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-2-configure-phase-2-child-sa-for-vti&#34;&gt;Step 2: Configure Phase 2 (Child SA) for VTI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#create-the-vti-interface&#34;&gt;Create the VTI Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-4-firewall-rules-for-the-vti-interface&#34;&gt;Step 4: Firewall Rules for the VTI Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#testing-the-vti-tunnel&#34;&gt;Testing the VTI Tunnel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#step-5-setup-for-ospf-on-pfsense-with-vti&#34;&gt;Step 5: Setup for OSPF on pfSense with VTI&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#i-install-the-frr-package-on-pfsense&#34;&gt;I. Install the FRR Package on pfSense&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ii-configure-frr-global-settings&#34;&gt;II. Configure FRR Global Settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#iii-configure-ospf-in-frr&#34;&gt;III. Configure OSPF in FRR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#iv-configure-static-routing-in-pfsense&#34;&gt;IV. Configure Static Routing in Pfsense&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#v-check-status-ospf-in-frr&#34;&gt;V. Check status OSPF in FRR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#v-check-ping&#34;&gt;V. Check ping&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#build-vpn-with-gre-tunnel&#34;&gt;Build VPN With GRE-TUNNEL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;What is Pfsense ? 
+    &lt;div id=&#34;what-is-pfsense-&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#what-is-pfsense-&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Pfsense&lt;/code&gt;&lt;/strong&gt;: is an application that functions as a network firewall router and is free based on &lt;code&gt;FreeBSD&lt;/code&gt;. Pfsense is configured through a web GUI interface for easy management and customization. It supports filtering based on source address, destination, source port, destination port, supports routing, and can operate in bridge or transparent mode.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
