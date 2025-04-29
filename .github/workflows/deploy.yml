@@ -7,7 +7,6 @@ on:
 
 jobs:
   deploy:
-    needs: build-and-push     
     name: Pull image from ECR & deploy with Docker Compose
     runs-on: [self-hosted, linux]
 
