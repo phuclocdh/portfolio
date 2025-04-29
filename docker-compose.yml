@@ -8,4 +8,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8888:80"
-    container_name: hugo_nginx_site
+    container_name: hugo_nginx_site_loc
