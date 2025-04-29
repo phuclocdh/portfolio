@@ -16,7 +16,7 @@ The system leverages a mix of **serverless services** (Lambda, DynamoDB, API Gat
 
 ### 🖼️ Architecture Diagram
 
-![Architecture Diagram](Tictactoe-project-design-[Locle].png)
+![Architecture Diagram](feature.png)
 
 ---
 

@@ -19,7 +19,7 @@ The application architecture is designed to be **scalable**, **resilient**, and 
 
 ### 🖼️ Architecture Diagram
 
-![Architecture Diagram]([LeNguyenPhucLoc]Copilot-project-design.png)
+![Architecture Diagram](feature.png)
 
 ---
 
