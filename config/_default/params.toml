@@ -233,6 +233,8 @@ smartTOCHideUnfocusedChildren = true
 [homepage]
   layout = "background" # valid options: page, profile, custom
   homepageImage = "img/background.svg"
+  showResume = true     
+  showProjects = true       
   showRecent = true
   showRecentItems = 12
   showMoreLink = true

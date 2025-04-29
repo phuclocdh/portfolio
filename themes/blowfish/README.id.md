@@ -3,7 +3,7 @@
 # Blowfish  
 [![Deploy Produksi ke Firebase](https://github.com/nunocoracao/blowfish/actions/workflows/firebase-production.yml/badge.svg)](https://github.com/nunocoracao/blowfish/actions/workflows/firebase-production.yml)
 [![Deploy Produksi ke GitHub Pages](https://github.com/nunocoracao/blowfish/actions/workflows/pages.yml/badge.svg)](https://github.com/nunocoracao/blowfish/actions/workflows/pages.yml)
-[![Versi Minimum Hugo](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.87.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.87.0)
+[![Versi Minimum Hugo](https://img.shields.io/static/v1?label=min-HUGO-version&message=0.147.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.147.0)
 [![GitHub](https://img.shields.io/github/license/nunocoracao/blowfish)](https://github.com/nunocoracao/blowfish/blob/main/LICENSE)
 [![Blowfish](https://img.shields.io/badge/Hugo--Themes-@Blowfish-blue)](https://themes.gohugo.io/themes/blowfish/)
 ![Ukuran Kode](https://img.shields.io/github/languages/code-size/nunocoracao/blowfish)  

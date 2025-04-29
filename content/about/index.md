@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2022-06-13T20:55:37+07:00
+date: 2024-06-13T20:55:37+07:00
 draft: false
 # background: "img/background.svg"
 showDate : true
@@ -26,16 +26,24 @@ layoutBackgroundHeaderSpace: false
 
 <div style="flex: 2;">
 
-With one year of experience in DevOps, I have been involved in deploying and managing infrastructure for banking projects at Ban Viet Bank and OCB Bank. I am passionate about automating workflows, optimizing system performance, and ensuring stability and security in production environments.
+Hello! My name is Le Nguyen Phuc Loc, and I am a Junior DevOps Engineer with experience working at ATOM Solution, where I contributed to key projects in Payment and Cloud Computing.
 
-My work includes provisioning and maintaining cloud-native infrastructure, managing Kubernetes clusters, implementing CI/CD pipelines using GitLab with Flux CD, Helm, and setting up centralized logging and monitoring with tools like Prometheus, Grafana, Loki and Wazuh. I have experience working with infrastructure-as-code (IaC) using Terraform and I collaborate closely with development and security teams to ensure scalable and secure system design.
+During my time at ATOM Solution (from June 2024 to April 2025), I was involved in important production projects such as Atom Processor x BVBank, Merchant Platform x OCB, ViTrust, and WESAP. I gained a deep understanding of Payment systems, including Core Card, Core Banking, and the development and maintenance of secure payment system infrastructure, ensuring PCI-DSS compliance.
 
-I'm currently expanding my skills in cloud security and infrastructure design, with a career goal of moving toward DevSecOps and solution architecture. I aim to build end-to-end systems that are not only reliable and automated, but also secure by design. I'm continuously learning and enjoy sharing knowledge around modern infrastructure, cloud-native patterns, and DevOps best practices. I'm always open to connecting and exchanging ideas with professionals in the field.
+One of my key contributions was leading a campaign to optimize the company's cloud resources, resulting in a 40% reduction in infrastructure costs while maintaining performance and reliability. I also built and deployed CI/CD pipelines, managing scalable microservices on Kubernetes for Payment, ERP, and Web3 systems, improving the flexibility and efficiency of the software development process.
+
+With expertise in tools like Jenkins, GitLab CI, and Terraform, as well as experience with containerized applications using Docker and Kubernetes, I played a pivotal role in migrating environments from AWS to CMC and FPT Cloud, optimizing performance and scalability.
+
+In addition, I ensured high availability for critical systems such as PostgreSQL, Redis, MongoDB, Kafka, EMQX, and Minio, implementing replica and cluster configurations to guarantee fault tolerance and system resilience. I also automated system monitoring and logging using Grafana Stack and Elastic Stack, enhancing the ability to track and analyze system performance.
+
+Beyond technical skills, I am a strong communicator and team player, always eager to learn and think creatively to find the best solutions for technological challenges.
+
+I look forward to the opportunity to further discuss how I can contribute to future projects and the growth of the team!
 
 </div>
 
 <div style="flex: 1;">
-  <img src="pic_ai.jpg" alt="My Photo" class="customProfilePicture">
+  <img src="loc_ai.jpg" alt="My Photo" class="customProfilePicture">
 </div>
 
 </div>

@@ -37,27 +37,19 @@ These are personal projects I’ve built based on concepts, tools, or practices 
     <tbody>
         <tr>
             <td>
-              OpenSCAP Tool
+              Building and monitoring automated CI/CD pipeline for Microservices with AWS Copilot
             </td>
-            <td>Integrating and evaluating OpenSCAP in CI/CD models - Graduation Thesis Project</td>
-            <td><a target="_blank" href="https://gitlab.com/nt505">GitLab</a></td>
-            <td>Jan 2025 - Present</td>
+            <td>In this project, I implemented a task management application deployed as applications using AWS Copilot CLI to create CI/CD pipelines for both frontend and backend. The CI/CD pipelines utilized services like AWS CodePipeline, CodeCommit, CloudFormation, and Amazon ECS to automate the process from code commit to deployment of container services. </td>
+            <td><a target="_blank" href="https://github.com/phuclocdh/aws-cicd-copilot">GitHub</a></td>
+            <td>February 2024 - April 2024</td>
         </tr>
          <tr>
             <td>
-              DevSecOps for Web Application
+              Developing and Deploying a scalable TicTacToe website using Serverless AWS Architecture 
             </td>
-            <td>Implementing DevSecOps model for E-Commerce Web Application using MERN Stack and Microservices Architecture</td>
-            <td><a target="_blank" href="https://gitlab.com/devops_project3453439">GitLab</a></td>
-            <td>Sep 2024 - Dec 2025</td>
-        </tr>
-         <tr>
-            <td>
-              CI/CD models
-            </td>
-            <td>Researching and evaluating CI/CD models using Instagram Clone source code</td>
-            <td><a target="_blank" href="https://github.com/nhutlin/Instagram-mern-CICD">GitHub</a></td>
-            <td>Jan 2024 - May 2024</td>
+            <td>In this project, I use serverless architecture on AWS with services: Gateway API using WebSocket, DynamoDB, Lambda. In addition to online application on IPv4, I also use EC2, Nginx, technologies. Besides that, you can also use high availability through services: VPC, ALB, ASG..</td>
+            <td><a target="_blank" href="https://github.com/phuclocdh/tic-tac-toe">GitHub</a></td>
+            <td>December 2023 - February 2024</td>
         </tr>
     </tbody>
 </table>

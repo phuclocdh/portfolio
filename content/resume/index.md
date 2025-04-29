@@ -20,6 +20,34 @@ showLikes: false
 layoutBackgroundHeaderSpace: false
 
 ---
+## CV
+
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Preview</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CV&nbsp;DevOps&nbsp;Engineer&nbsp;LocLe&nbsp;(PDF)</td>
+      <td>
+        <a href="cv.pdf" target="_blank" rel="noopener noreferrer">
+          See now
+        </a>
+      </td>
+      <td>
+        <a href="cv.pdf" download>
+          Download
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
 ## Experience
 
 <table>
@@ -29,17 +57,26 @@ layoutBackgroundHeaderSpace: false
       <th>Link</th>
       <th>Role</th>
       <th>Dates</th>
+      <th>Main Project</th>
       <th>Location</th>
     </tr>
   </thead>
   <tbody>
     <!-- ATOM SOLUTION -->
     <tr>
-      <td rowspan="2"><img class="customEntitityLogo" src="atom.svg" /></td>
-      <td rowspan="2"><a href="https://atomsolution.vn/" target="_blank">Atom Solution</a></td>
-      <td>DevOps Software Developer</td>
-      <td>2024 - Present</td>
-      <td>Hybrid <br> Ho Chi Minh, VN</td>
+      <td><img class="customEntitityLogo" src="atom.svg" /></td>
+      <td style="white-space:nowrap;word-break:keep-all;">
+      <a href="https://atomsolution.vn/" target="_blank">ATOM Solution</a>
+      </td>
+      <td>Junior DevOps Engineer</td>
+      <td>Jun 2024 - Present</td>
+      <td>
+        <ul>
+          <li>Atom Processor x BVBank</li>
+          <li>Merchant Platform x OCB</li>
+        </ul>
+      </td>
+      <td>Vietnam Business Center Building, 57-59 Ho Tung Mau, Ben Nghe Ward, District 1, HCMC</td>
     </tr>
 
   </tbody>
@@ -61,15 +98,55 @@ layoutBackgroundHeaderSpace: false
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4><img class="customEntitityLogo" src="uit.png"/></td>
-            <td rowspan=4><a href="https://uit.edu.vn/" target="_blank">University of Information Technology - VNUHCM</a></td>
-        </tr>
-        <tr>
-            <td>BSc, Computer Networking and Data Communication</td>
-            <td>2025</td>
+            <td><img class="customEntitityLogo" src="sgu.png" alt="SGU logo"></td>
+            <td>
+                <a href="https://www.sgu.edu.vn/" target="_blank">
+                    Saigon&nbsp;University&nbsp;-&nbsp;SGU
+                </a>
+            </td>
+            <td>Software&nbsp;Engineering</td>
+            <td>2024</td>
         </tr>
     </tbody>
 </table>
+
+
+---
+## Certificates
+
+<table>
+  <thead>
+    <tr>
+      <th>Certificate</th>
+      <th>Issued By</th>
+      <th>Year</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Devops on AWS</td>
+      <td>CodeStar Academy</td>
+      <td>2023</td>
+      <td>
+        <a href="https://www.cncf.io/certification/cka/" target="_blank" rel="noopener noreferrer">
+          View Certificate
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Cloud Computing AWS</td>
+      <td>FUNiX</td>
+      <td>2024</td>
+      <td>
+        <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank" rel="noopener noreferrer">
+          View Certificate
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ---
 
@@ -78,14 +155,32 @@ layoutBackgroundHeaderSpace: false
 <table>
   <thead>
     <tr>
-      <th>Conference</th>
-      <th>Link</th>
+      <th>Honors & Awards</th>
       <th>Title</th>
       <th>Date</th>
     </tr>
   </thead>
   <tbody>
-    <!-- ICOIN Entry -->
-
+    <tr>
+      <td>English Olympic</td>
+      <td>Consolation Prize at City Level</td>
+      <td>2013</td>
+    </tr>
+    <tr>
+      <td>Math Violympic</td>
+      <td>Consolation Prize for City Level</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <td>Young Informatics</td>
+      <td>City-level Consolation Prize</td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td>Chess</td>
+      <td>Gold Medal</td>
+      <td>2011 - 2013 - 2015 - 2017</td>
+    </tr>
   </tbody>
 </table>
+
