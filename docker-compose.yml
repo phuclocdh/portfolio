@@ -9,4 +9,4 @@ services:
     ports:
       - "8888:80"
     container_name: hugo_nginx_site_loc
-    restart: unless    
+    restart: unless-stopped    
