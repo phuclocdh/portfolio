@@ -10,6 +10,10 @@
         max-width: 150ch;
     }
     
+    .full-width-prose {
+        max-width: none; /* Loại bỏ giới hạn chiều rộng */
+    }
+
     h1 {
     text-align: center;
     }

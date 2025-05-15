@@ -26,19 +26,19 @@ layoutBackgroundHeaderSpace: false
 
 <div style="flex: 2;">
 
-Hello! My name is Le Nguyen Phuc Loc, and I am a Junior DevOps Engineer with experience working at ATOM Solution, where I contributed to key projects in Payment and Cloud Computing.
+Greetings! I’m Le Nguyen Phuc Loc, a Junior DevOps Engineer with a proven track record at ATOM Solution, where I drove impactful projects in Payment Systems and Cloud Computing from June 2024 to April 2025.
 
-During my time at ATOM Solution (from June 2024 to April 2025), I was involved in important production projects such as Atom Processor x BVBank, Merchant Platform x OCB, ViTrust, and WESAP. I gained a deep understanding of Payment systems, including Core Card, Core Banking, and the development and maintenance of secure payment system infrastructure, ensuring PCI-DSS compliance.
+During my tenure, I contributed to critical production initiatives, including Atom Processor x BVBank, Merchant Platform x OCB, ViTrust, and WESAP. These experiences deepened my expertise in Payment ecosystems, encompassing Core Card, Core Banking, and secure infrastructure aligned with PCI-DSS standards.
 
-One of my key contributions was leading a campaign to optimize the company's cloud resources, resulting in a 40% reduction in infrastructure costs while maintaining performance and reliability. I also built and deployed CI/CD pipelines, managing scalable microservices on Kubernetes for Payment, ERP, and Web3 systems, improving the flexibility and efficiency of the software development process.
+A standout achievement was spearheading a cloud optimization campaign, slashing infrastructure costs by 40% while upholding performance and reliability. I also designed and implemented CI/CD pipelines, orchestrating scalable microservices on Kubernetes for Payment, ERP, and Web3 systems, significantly boosting development agility and efficiency.
 
-With expertise in tools like Jenkins, GitLab CI, and Terraform, as well as experience with containerized applications using Docker and Kubernetes, I played a pivotal role in migrating environments from AWS to CMC and FPT Cloud, optimizing performance and scalability.
+Proficient in tools like Jenkins, GitLab CI, and Terraform, and skilled in containerization with Docker and Kubernetes, I played a key role in migrating environments from AWS to CMC and FPT Cloud, enhancing scalability and performance.
 
-In addition, I ensured high availability for critical systems such as PostgreSQL, Redis, MongoDB, Kafka, EMQX, and Minio, implementing replica and cluster configurations to guarantee fault tolerance and system resilience. I also automated system monitoring and logging using Grafana Stack and Elastic Stack, enhancing the ability to track and analyze system performance.
+I ensured robust system availability for critical technologies—PostgreSQL, Redis, MongoDB, Kafka, EMQX, and Minio—through replica and cluster setups, bolstering fault tolerance. Additionally, I automated monitoring and logging with Grafana Stack and Elastic Stack, elevating system performance visibility.
 
-Beyond technical skills, I am a strong communicator and team player, always eager to learn and think creatively to find the best solutions for technological challenges.
+Beyond technical expertise, I bring strong communication and collaborative skills, coupled with a passion for creative problem-solving to tackle complex challenges.
 
-I look forward to the opportunity to further discuss how I can contribute to future projects and the growth of the team!
+I’m excited about the prospect of contributing my skills to innovative projects and team success—let’s connect to explore the possibilities!
 
 </div>
 
