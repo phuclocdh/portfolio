@@ -43,7 +43,7 @@ I’m excited about the prospect of contributing my skills to innovative project
 </div>
 
 <div style="flex: 1;">
-  <img src="loc_ai.jpg" alt="My Photo" class="customProfilePicture">
+  <img src="/about/loc_ai.jpg" alt="My Photo" class="customProfilePicture">
 </div>
 
 </div>
