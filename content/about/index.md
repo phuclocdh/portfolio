@@ -22,9 +22,7 @@ layoutBackgroundHeaderSpace: false
 
 
 ---
-<div style="display: flex; align-items: flex-start; gap: 2rem;">
-
-<div style="flex: 2;">
+<div class="mx-auto max-w-[800px] p-6 border-2 border-dashed border-primary-500 rounded-lg">
 
 Greetings! I’m Le Nguyen Phuc Loc, a Junior DevOps Engineer with a proven track record at ATOM Solution, where I drove impactful projects in Payment Systems and Cloud Computing from June 2024 to April 2025.
 
@@ -39,12 +37,6 @@ I ensured robust system availability for critical technologies—PostgreSQL, Red
 Beyond technical expertise, I bring strong communication and collaborative skills, coupled with a passion for creative problem-solving to tackle complex challenges.
 
 I’m excited about the prospect of contributing my skills to innovative projects and team success—let’s connect to explore the possibilities!
-
-</div>
-
-<div style="flex: 1;">
-  <img src="/about/loc_ai.jpg" alt="My Photo" class="customProfilePicture">
-</div>
 
 </div>
 
